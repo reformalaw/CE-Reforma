@@ -1,0 +1,1364 @@
+CaseActivities:
+  connection: doctrine
+  tableName: CaseActivities
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    CaseId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ActivityType:                           { type: enum(22), fixed: false, unsigned: false, values: ['CustomerBillsSubmitted', '3rdPartyBillsSubmitted','3rdPartyBillsRejected','CheckSent','PaymentReceived'], primary: false, notnull: true, autoincrement: false }
+    Description:                            { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    CaseActivitiesCases:
+      class: Cases
+      local: CaseId
+      foreign: Id
+      type: one    
+    
+Cases:
+  connection: doctrine
+  tableName: Cases
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp    
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CaseNo:                                 { type: string(15), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:                            { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    FirstTitle:                             { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    LastTitle:                              { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ThirdParty:                             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BillDocumentRealName:                   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BillDocumentSystemName:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ActualAmount:                           { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CommisionPercentage:                    { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CommisionActual:                        { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ProcessingFees:                         { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    UnderpayAdjustment:                     { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PayableAmount:                          { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PaidAmount:                             { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    RemainToPay:                            { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    ReceivedAmount:                         { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    RemainToReceive:                        { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    DifferenceAmount:                       { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CustomerPaidDate:                       { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    PaymentReceivedDate:                    { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    AgreementDate:                          { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    Stage:                                  { type: enum(9), fixed: false, unsigned: false, values: ['Submitted', 'Accepted','Paid','Close'], primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+    CreatedBy:                              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ThirdPartyBillsSubmitted:               { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    CheckNo:                                { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    CasesUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    CasesCaseActivities:
+      class: CaseActivities
+      local: Id
+      foreign: CaseId
+      type: Many
+    CasesThirdParties:
+      class: ThirdParties
+      local: ThirdParty
+      foreign: Id
+      type: one
+    CasesCustomerPaymentSent:
+      class: CustomerPaymentSent
+      local: Id
+      foreign: CaseId
+      type: many
+    CasesThirdPartyPaymentReceived:
+      class: ThirdPartyPaymentReceived
+      local: Id
+      foreign: CaseId
+      type: one   
+    CasesUsersCreatedBy:
+      class: Users
+      local: CreatedBy
+      foreign: Id
+      type: one
+Counties:
+  connection: doctrine
+  tableName: Counties
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    StateId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Name:                                   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    CountiesStates:
+      class: States
+      local: StateId
+      foreign: Id
+      type: one
+    CountiesUsers:
+      class: Users
+      local: Id
+      foreign: CountyId
+      type: many
+      
+FAQs:
+  connection: doctrine
+  tableName: FAQs
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Question:                               { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Answer:                                 { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Globle:                                 { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }    
+  relations:
+    FAQsWebsiteXFAQs:
+      class: WebsiteXFAQs
+      local: Id
+      foreign: FAQId
+      type: many
+          
+Permissions:
+  connection: doctrine
+  tableName: Permissions
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp    
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    PermissionCategoryId:                   { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    UniqueKey:                              { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Name:                                   { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    PermissionsRolesXPermission:
+      class: RolesXPermission
+      local: Id
+      foreign: PermissionId
+      type: many
+    PermissionsPermissionCategory:
+      class: PermissionCategory
+      local: PermissionCategoryId
+      foreign: Id
+      type: one
+          
+PracticeAreas:
+  connection: doctrine
+  tableName: PracticeAreas
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+    Sluggable:
+      unique: true
+      canUpdate: false
+      fields: [Name]
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Name:                                   { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ParentId:                               { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:                            { type: text, fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    slug:                                   { type: string(200) }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active','Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    PracticeAreasParents:
+      class: PracticeAreas
+      local: ParentId
+      foreign: Id
+      type: One
+    PracticeAreasUserPracticeArea:
+      class: UserPracticeArea
+      local: Id
+      foreign: PracticeAreaId
+      type: Many  
+    PracticeAreasUserPracticeAreaCat:
+      class: UserPracticeArea
+      local: Id
+      foreign: CatId
+      type: Many
+    PracticeAreasUserPracticeAreaSubCat:
+      class: UserPracticeArea
+      local: Id
+      foreign: SubCatId
+      type: Many
+    PracticeAreasUserPracticeAreaChild:
+      class: UserPracticeArea
+      local: Id
+      foreign: ChildId
+      type: Many
+          
+Roles:
+  connection: doctrine
+  tableName: Roles
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Name:                                   { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active','Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    RolesRolesXPermission:
+      class: RolesXPermission
+      local: Id
+      foreign: RoleId
+      type: many
+           
+     
+RolesXPermission:
+  connection: doctrine
+  tableName: RolesXPermission
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp     
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    RoleId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PermissionId:                           { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PermissionCategoryId:                   { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+  relations:
+    RolesXPermissionRoles:
+      class: Roles
+      local: RoleId
+      foreign: Id
+      type: many
+    RolesXPermissionPermissions:
+      class: Permissions
+      local: PermissionId
+      foreign: Id
+      type: many
+    RolesXPermissionPermissionCategory:
+      class: PermissionCategory
+      local: PermissionCategoryId
+      foreign: Id
+      type: many
+            
+SiteConfig:
+  connection: doctrine
+  tableName: SiteConfig
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp    
+  columns:
+    ConfigKey:                      { type: string(45), fixed: false, unsigned: false, primary: true, notnull: true, autoincrement: false }
+    ConfigValue:                    { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    
+SiteEmails:
+  connection: doctrine
+  tableName: SiteEmails
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp     
+  columns:
+    Id:                                    { type: string(150), fixed: false, unsigned: false, primary: true, notnull: true, autoincrement: false }
+    Subject:                               { type: string(255), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MessageBody:                           { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    
+States:
+  connection: doctrine
+  tableName: States
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    CountryId:                              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Name:                                   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    StateUsers:
+      class: Users
+      local: Id
+      foreign: State
+      type: many
+    StateUserProfile:
+      class: UserProfile
+      local: Id
+      foreign: State
+      type: many
+    StateCounties:
+      class: Counties
+      local: Id
+      foreign: StateId
+      type: many
+        
+ThirdParties:
+  connection: doctrine
+  tableName: ThirdParties
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Name:                                   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address1:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address2:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    City:                                   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CountryId:                              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    CountyId:                               { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    StateId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Zip:                                    { type: string(10), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive', 'Deleted'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ThirdPartiesCounties:
+      class: Counties
+      local: CountyId
+      foreign: Id
+      type: one
+    ThirdPartiesStates:
+      class: States
+      local: StateId
+      foreign: Id
+      type: one
+    ThirdPartiesCases:
+      class: Cases
+      local: Id
+      foreign: ThirdParty
+      type: many      
+          
+UserPracticeArea:
+  connection: doctrine
+  tableName: UserPracticeArea
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PracticeareaId:                         { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CatId:                                  { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    SubCatId:                               { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ChildId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Level:                                  { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    UserPracticeAreaUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: many
+    UserPracticeAreaPracticeAreas:
+      class: PracticeAreas
+      local: PracticeareaId
+      foreign: Id
+      type: one
+    UserPracticeAreaCat:
+      class: PracticeAreas
+      local: CatId
+      foreign: Id
+      type: one
+    UserPracticeAreaSubCat:
+      class: PracticeAreas
+      local: SubCatId
+      foreign: Id
+      type: one
+    UserPracticeAreaChild:
+      class: PracticeAreas
+      local: ChildId
+      foreign: Id
+      type: one
+      
+                
+UserProfile:
+  connection: doctrine
+  tableName: UserProfile
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FirmName:                               { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address1:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address2:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    City:                                   { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    StateId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Zip:                                    { type: string(10), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Phone:                                  { type: string(20), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Summary:                                { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FeesInformation:                        { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FreeConsultation:                       { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    UserProfileUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: One
+    UserProfileStates:
+      class: States
+      local: StateId
+      foreign: Id
+      type: one
+    UserProfileUserPracticeAreaLocation:
+      class: UserPracticeAreaLocation
+      local: UserId
+      foreign: UserId
+      type: many
+          
+UserRoles:
+  connection: doctrine
+  tableName: UserRoles
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp     
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    RoleId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    UserRolesUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: many
+    UserRolesRoles:
+      class: Roles
+      local: RoleId
+      foreign: Id
+      type: many    
+            
+Users:
+  connection: doctrine
+  tableName: Users
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Email:                                  { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Username:                               { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FirstName:                              { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MiddleName:                             { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    LastName:                               { type: string(100), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Password:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ProfilePic:                             { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address1:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Address2:                               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    City:                                   { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CountyId:                               { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    StateId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Zip:                                    { type: string(10), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Phone:                                  { type: string(20), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ActivationCode:                         { type: string(10), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BillingSubscription:                    { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    WebsiteSubscriotion:                    { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    NetworkProfileSubscription:             { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    DefaultState:                           { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    UnderpayAmount:                         { type: float(), fixed: false, unsigned: false, primary: false, default: '0', notnull: false, autoincrement: false }
+    UserType:                               { type: enum(8), fixed: false, unsigned: false, values: [''Admin','Staff','Customer','User'], primary: false, notnull: false, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active','Inactive','Pending','Deleted'], primary: false, notnull: false, autoincrement: false }
+    IsFeatured:                             { type: enum(8), fixed: false, unsigned: false, values: ['Yes','No'], primary: false, notnull: false, autoincrement: false }
+    NoOfRating:                             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    AvgRating:                              { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PriorityListing:                        { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    LastLoginDateTime:                      { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+  relations:
+    UsersUserProfile:
+      class: UserProfile
+      local: Id
+      foreign: UserId
+      type: one
+    UsersCases:
+      class: Cases
+      local: Id
+      foreign: UserId
+      type: many
+    UsersUserPracticeArea:
+      class: UserPracticeArea
+      local: Id
+      foreign: UserId
+      type: many       
+    UsersUserRoles:
+      class: UserRoles
+      local: Id
+      foreign: UserId
+      type: many 
+    UsersUsersWebsite:
+      class: UsersWebsite
+      local: Id
+      foreign: UserId
+      type: one 
+    UsersStates:
+      class: States
+      local: StateId
+      foreign: Id
+      type: one 
+    UsersCounties:
+      class: Counties
+      local: CountyId
+      foreign: Id
+      type: one 
+    UsersCasesCreatedBy:
+      class: Cases
+      local: Id
+      foreign: CreatedBy
+      type: many
+    UsersUserPracticeAreaLocation:
+      class: UserPracticeAreaLocation
+      local: Id
+      foreign: UserId
+      type: many
+#    UsersForumsLastTopic:
+#      class: Forums
+#      local: Id
+#      foreign: LastTopicBy
+#      type: many
+#    UsersForums:
+#      class: Forums
+#      local: Id
+#      foreign: LastRepliedBy
+#      type: many
+#    UsersForumTopics:
+#      class: ForumTopics
+#      local: Id
+#      foreign: UserId
+#      type: many
+#    UsersForumsTopics:
+#      class: ForumTopics
+#      local: Id
+#      foreign: LastRepliedBy
+#      type: many
+#    UsersForumReply:
+#      class: ForumReply
+#      local: Id
+#      foreign: UserId
+#      type: many         
+UsersWebsite:
+  connection: doctrine
+  tableName: UsersWebsite
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ThemeId:                                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Websiteurl:                             { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    UsersWebsiteUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    UsersWebsiteWebsiteXFAQs:
+      class: WebsiteXFAQs
+      local: Id
+      foreign: WebsiteId
+      type: many
+    UsersWebsiteTheme:
+      class: Theme
+      local: ThemeId
+      foreign: Id
+      type: one
+          
+WebsiteXFAQs:
+  connection: doctrine
+  tableName: WebsiteXFAQs
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp     
+  columns:
+    Id:                                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    FAQId:                                  { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    WebsiteId:                              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Ordering:                               { type: integer(2), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }    
+  relations:
+    WebsiteXFAQsFAQs:
+      class: FAQs
+      local: FAQId
+      foreign: Id
+      type: one
+    WebsiteXFAQsUsersWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one
+      
+CustomerPaymentSent:
+  connection: doctrine
+  tableName: CustomerPaymentSent
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+     Id:                            { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+     UserId:                        { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     CaseNo:                        { type: string(15), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     CaseId:                        { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+     ActualAmount:                  { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     CommisionPercentage:           { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     CommisionActual:               { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     ProcessingFees:                { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     UnderpayAdjustment:            { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     PayableAmount:                 { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     CustomerPaidDate:              { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+     CheckNo:                       { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+     Description:                   { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+  relations:
+    CustomerPaymentSentCases:
+      class: Cases
+      local: CaseId
+      foreign: Id
+      type: one
+    CustomerPaymentSentUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+      
+ThirdPartyPaymentReceived:
+  connection: doctrine
+  tableName: ThirdPartyPaymentReceived
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                             { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ThirdParty:                     { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CaseId:                         { type: integer(4), fixed: false, unsigned: false, primary: flase, autoincrement: false }
+    CaseNo:                         { type: string(15), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ReceivedAmount:                 { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    PaymentReceivedDate:            { type: timestamp(25), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    DifferenceAmount:               { type: float(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:                    { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+  relations:
+    ThirdPartyPaymentReceivedThirdParties:
+      class: ThirdParties
+      local: ThirdParty
+      foreign: Id
+      type: one 
+    ThirdPartyPaymentReceivedCases:
+      class: Cases
+      local: CaseId
+      foreign: Id
+      type: one
+            
+ForumCategories:
+  connection: doctrine
+  tableName: ForumCategories
+  actAs:
+    Timestampable:
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                  { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Title:               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:         { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:              { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive', 'Delete'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ForumCategoriesForums:
+      class: Forums
+      local: Id
+      foreign: ForumCategoriesId
+      type: many
+      
+Forums:
+  connection: doctrine
+  tableName: Forums
+  actAs:
+    Timestampable:
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                  { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ForumCategoriesId:   { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    LastTopicId:         { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    LastTopicBy:         { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    LastRepliedId:       { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    LastRepliedBy:       { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    Title:               { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:         { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    TotalTopic:          { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    TotalReplies:        { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    Ordering:            { type: integer(2), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:              { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive', 'Delete'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ForumsForumCategories:
+      class: ForumCategories
+      local: ForumCategoriesId
+      foreign: Id
+      type: one
+    #ForumsForumsTopics:
+    #  class: ForumTopics
+    #  local: LastTopicId
+    #  foreign: Id
+    #  type: one
+    #ForumsUsers:
+    #  class: Users
+    #  local: LastTopicBy
+    #  foreign: Id
+    #  type: one
+    #ForumsForumsReply:
+    #  class: ForumReply
+    #  local: LastRepliedId
+    #  foreign: Id
+    #  type: one
+    #ForumsForumsUsers:
+    #  class: Users
+    #  local: LastRepliedBy
+    #  foreign: Id
+    #  type: one
+    ForumsForumTopics:
+      class: ForumTopics
+      local: Id
+      foreign: ForumId
+      type: many
+    ForumsForumReply:
+      class: ForumReply
+      local: Id
+      foreign: ForumId
+      type: many
+      
+ForumTopics:
+  connection: doctrine
+  tableName: ForumTopics
+  actAs:
+    Timestampable:
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                  { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ForumId:             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    LastRepliedId:       { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    LastRepliedBy:       { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    TotalViews:          { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Topic:               { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:         { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    TotalReplies:        { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    Status:              { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive', 'Deleted'], primary: false, notnull: true, autoincrement: false }
+    LastRepliedDateTime: { type: timestamp }
+  relations:
+    ForumTopicsUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    ForumTopicsForums:
+      class: Forums
+      local: ForumId
+      foreign: Id
+      type: one
+    #ForumsTopicsForumReply:
+    #  class: ForumReply
+    #  local: LastRepliedId
+    #  foreign: Id
+    #  type: one
+    #ForumsTopicsUsers:
+    #  class: Users
+    #  local: LastRepliedBy
+    #  foreign: Id
+    #  type: one
+    #ForumsTopicsForums:
+    #  class: Forums
+    #  local: Id
+    #  foreign: LastTopicId
+    #  type: one
+    ForumTopicsForumReply:
+      class: ForumReply
+      local: Id
+      foreign: TopicId
+      type: many
+      
+ForumReply:
+  connection: doctrine
+  tableName: ForumReply
+  actAs:
+    Timestampable:
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                  { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ForumId:             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    TopicId:             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    UserId:              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Reply:               { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:              { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive', 'Deleted'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ForumReplyForums:
+      class: Forums
+      local: ForumId
+      foreign: Id
+      type: one
+    ForumReplyForumTopics:
+      class: ForumTopics
+      local: TopicId
+      foreign: Id
+      type: one
+    ForumReplyUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    #ForumsReplyForums:
+    #  class: Forums
+    #  local: Id
+    #  foreign: LastRepliedId
+    #  type: one
+    #ForumsReplyForumTopics:
+    #  class: ForumTopics
+    #  local: Id
+    #  foreign: LastRepliedId
+    #  type: one
+
+Theme:
+  connection: doctrine
+  tableName: Theme
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:                         { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Name:                       { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    UniqueName:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ScreenShot:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                     { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+    IsDefault:                  { type: enum(8), fixed: false, unsigned: false, values: ['YES', 'NO'], primary: false, notnull: true, autoincrement: false }
+    Features:                   { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Options:                    { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ManageTopMenu:              { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ManageFooterMenu:           { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ManageBanner:               { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ManageColorAndBackground:   { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ManageSocialMedia:          { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ChangeLogo:                 { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    ManageFAQs:                 { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    TextWidgets:                { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+    BodyBackground:             { type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: false, autoincrement: false }
+
+Media:
+  connection: doctrine
+  tableName: Media
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+  columns:
+    Id:            { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Title:         { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    ImageName:     { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    OrgName:       { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Type:          { type: enum(8), fixed: false, unsigned: false, values: ['BannerBackground', 'BannerForeground', 'Unsorted', 'Logo'], primary: false, notnull: true, autoincrement: false }
+
+CMSPages:
+  connection: doctrine
+  tableName: CMSPages
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp
+#    Sluggable:
+#      unique: true
+#      canUpdate: true
+#      fields: [Title]
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    WebsiteId:              { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    Title:                  { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    SubTitle:               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaTitle:              { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaKeywords:           { type: string(250), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaDescription:        { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Content:                { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Template:               { type: enum(8), fixed: false, unsigned: false, values: ['column1', 'column2L','column2R','home','default'], primary: false, notnull: true, autoincrement: false }
+    Status:                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+    Type:                   { type: enum(8), fixed: false, unsigned: false, values: ['Static', 'Dynamic'], primary: false, notnull: true, autoincrement: false }
+    UniqueKey:              { type: string(150) }
+    Slug:                   { type: string(150) }
+  relations:
+    CMSPagesUserWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one
+
+WebsiteMenu:
+  connection: doctrine
+  tableName: WebsiteMenu
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                    { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    WebsiteId:             { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    CmsPageId:             { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    WebsitePracticeAreaId: { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    ParentId:              { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    Title:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Type:                  { type: enum(8), fixed: false, unsigned: false, values: [1, 2, 3], primary: false, notnull: true, autoincrement: false }
+    MenuType:              { type: enum(8), fixed: false, unsigned: false, values: ['Header','Footer'], primary: false, notnull: true, autoincrement: false }
+    Ordering:              { type: integer(2), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    WebsiteMenuCMSPages:
+      class: CMSPages
+      local: CmsPageId
+      foreign: Id
+      type: one
+    WebsiteMenuWebsitePracticeArea:
+      class: WebsitePracticeArea
+      local: WebsitePracticeAreaId
+      foreign: Id
+      type: one
+    WebsiteMenuUsersWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one
+
+WebsitePracticeArea:
+  connection: doctrine
+  tableName: WebsitePracticeArea
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+    #Sluggable:
+      #unique: true
+      #canUpdate: true
+      #fields: [Title]
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    WebsiteId:              { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false }
+    Title:                  { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    SubTitle:               { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaTitle:              { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaKeywords:           { type: string(250), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    MetaDescription:        { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Content:                { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Template:               { type: enum(8), fixed: false, unsigned: false, values: ['column1', 'column2L','column2R'], primary: false, notnull: true, autoincrement: false }
+    #Type:                  { type: enum(8), fixed: false, unsigned: false, values: ['Page', 'Left','Right'], primary: false, notnull: true, autoincrement: false }
+    Status:                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive','Deleted'], primary: false, notnull: true, autoincrement: false }
+    Slug:                   { type: string(150) }
+  relations:
+    WebsitePracticeAreaUsersWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one
+
+ThemeBanner:
+  connection: doctrine
+  tableName: ThemeBanner
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ThemeId:                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    WebsiteId:              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BannerName:             { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Image:                  { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Title1:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Title2:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Title3:                 { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Status:                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ThemeBannerTheme:
+      class: Theme
+      local: ThemeId
+      foreign: Id
+      type: one
+    ThemeBannerUserWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one
+
+ThemeOptions:
+  connection: doctrine
+  tableName: ThemeOptions
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ThemeId:                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    WebsiteId:              { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    OptionKey:              { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    OptionValue:            { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    ThemeOptionsTheme:
+      class: Theme
+      local: ThemeId
+      foreign: Id
+      type: one
+
+CustomerContact:
+  connection: doctrine
+  tableName: CustomerContact
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:						{ type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:					{ type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Label:					{ type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FieldType:				{ type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Options:				{ type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Required:				{ type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    Ordering:               { type: integer(2), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    OptionsSlug:            { type: string(150) }
+  relations:
+    CustomerContactUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: One     
+
+CaseDocuments:
+  connection: doctrine
+  tableName: CaseDocuments
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    CaseId:                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BillDocumentRealName:   { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    BillDocumentSystemName: { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    CaseDocumentsCases:
+      class: Cases
+      local: CaseId
+      foreign: Id
+      type: one 
+
+Statistics:
+  connection: doctrine
+  tableName: Statistics
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(8), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    WebsiteId:              { type: integer(8), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    IpAddress:              { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    VisitDate:              { type: date }
+  relations:
+    StatisticsUsersWebsite:
+      class: UsersWebsite
+      local: WebsiteId
+      foreign: Id
+      type: one 
+
+PermissionCategory:
+  connection: doctrine
+  tableName: PermissionCategory
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp    
+  columns:
+    Id:                      { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    Name:                    { type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    PermissionCategoryPermissions:
+      class: Permissions
+      local: Id
+      foreign: PermissionCategoryId
+      type: many
+
+AttorneyContact:
+  connection: doctrine
+  tableName: AttorneyContact
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp   
+  columns:
+    Id:						{ type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:					{ type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Label:					{ type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    FieldType:				{ type: string(50), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Options:				{ type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Required:				{ type: enum(3), fixed: false, unsigned: false, values: ['Yes', 'No'], primary: false, notnull: true, autoincrement: false }
+    Ordering:               { type: integer(2), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    OptionsSlug:            { type: string(150) }
+  relations:
+    AttorneyContactUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: One
+
+
+ReviewRating:
+  connection: doctrine
+  tableName: ReviewRating
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CustomerId:             { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Rate:                   { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }    
+    Review:                 { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Spam:                   { type: enum(3), fixed: false, unsigned: false, values: ['0', '1'], primary: false, notnull: false, autoincrement: false }
+    Status:                 { type: enum(8), fixed: false, unsigned: false, values: ['Active', 'Inactive'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    ReviewRatingUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    ReviewRatingCustomers:
+      class: Users
+      local: CustomerId
+      foreign: Id
+      type: one      
+
+AttorneyStatistics:
+  connection: doctrine
+  tableName: AttorneyStatistics
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(8), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                 { type: integer(8), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    IpAddress:              { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    VisitDate:              { type: date }
+    Type:                   { type: enum(8), fixed: false, unsigned: false, values: ['Profile', 'Contact'], primary: false, notnull: true, autoincrement: false }
+  relations:
+    AttorneyStatisticsUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+
+Testimonial:
+  connection: doctrine
+  tableName: Testimonial
+  actAs:
+    Timestampable:
+      created:
+        name: CreateDateTime
+        type: timestamp
+      updated:
+        name: UpdateDateTime
+        type: timestamp
+  columns:
+    Id:                     { type: integer(8), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    ClientName:             { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CompanyName:            { type: string(150), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    Description:            { type: string(), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+
+UserPracticeAreaLocation:
+  connection: doctrine
+  tableName: UserPracticeAreaLocation
+  actAs:
+    Timestampable: 
+        created:
+            name: CreateDateTime
+            type: timestamp
+        updated:
+            name: UpdateDateTime
+            type: timestamp  
+  columns:
+    Id:                     { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    UserId:                 { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    StateId:                { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    CountyId:               { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+  relations:
+    UserPracticeAreaLocationUsers:
+      class: Users
+      local: UserId
+      foreign: Id
+      type: one
+    UserPracticeAreaLocationState:
+      class: States
+      local: StateId
+      foreign: Id
+      type: one
+    UserPracticeAreaLocationCounties:
+      class: Counties
+      local: CountyId
+      foreign: Id
+      type: one

@@ -1,0 +1,84 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+
+dev:
+      site_url:                      'http://counceledge.demo.brainvire.com/legalgrip_dev.php'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+stage:
+      site_url:                      'http://counceledge.demo.brainvire.com/legalgrip_dev.php'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+prod:
+      site_url:                      'http://vcdev.demo.brainvire.com/legalgrip_dev.php'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'
+
+all:
+
+  no_of_records_per_page: 10
+  dateformat:  "Y-m-d"
+
+  UserStatus:
+    Active:         Active
+    Deleted:        Deleted
+    Inactive:       Inactive
+    Pending:        Pending 
+
+  UserType:
+    Admin:          Admin
+    Staff:          Staff
+    Customer:       Customer
+    User:           User
+
+  .pwdEncDecKey:
+    pwdEncDecKey:               '1HJ3AL6EC7MP9TS7O5'
+
+  State:
+    UsStateId: 223
+
+  .imageType:
+    imageType:
+      0:   image/jpeg 
+      1:   image/jpg
+      2:   image/png
+      3:   image/gif
+
+  Image:
+    SmallHeight:   55
+    SmallWidth:    75
+    ThumbHeight:   80
+    ThumbWidth:    80
+    MediamHeight:  83
+    MediamWidth:   83
+    LargeHeight:   140
+    LargeWidth:    175
+
+  Prefix:
+    Small:   small_
+    Large:   large_
+    Medium:  medium_
+    Org:     org_
+    Thumb:   thumb_
+
+  Forums:
+    Active:   Active
+    Inactive: Inactive
+    Deleted:  Deleted
+
+  Noreview:
+    Msg: No Reviews

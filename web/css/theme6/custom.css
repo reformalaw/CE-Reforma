@@ -1,0 +1,19 @@
+.banner, .social-icons, #contactus .content-area div.contact-form li input[type=submit], nav div.menu ul li ul li a:hover, .quick-contact li input[type=submit] {
+	background-color:##BGCOLOR##;
+}
+
+.quick-contact h3 span, .content-area h2 span, footer a, .practice-area ul li, .practice-area ul li a:hover, .practicearea-right ul li a:hover, #contactus .content-area div.contact-details label, .content-area h2 {
+	color:##TEXTCOLOR##;
+}
+
+nav .menu ul li a:hover, .middle-left ul li, #faq, #contactus, #full-width, #left-column, #right-column{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover, #faq .content-area h4 a:hover{
+	color:##LINKHOVERCOLOR##;
+}

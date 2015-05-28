@@ -1,0 +1,11 @@
+﻿/* Paging Start */
+.PagingFloat { float:left; width:100%; }
+.Paging { color:#3D4043; text-align:center; word-spacing:5px; line-height:10px; width:100%; }
+.Pagin_DotLnHr { background: url(Img/dot_hrln_paging.gif) center repeat-x; font-family:Arial, Sans-Serif; font-size:7px; float:left; width:100%; } 
+.Paging a { color:#3D4043; text-decoration:none;  }
+.Paging a:hover { color:#3D4043; text-decoration:underline;  }
+.Paging a.ActivePage { color:#ffffff; text-decoration:none; font-weight:bold; font-size:12px; background:#5787C5; border:1px solid #5787C5; padding:1px 3px 2px 3px; position:relative; }
+.Paging a.ActivePage:hover { color:#ffffff; text-decoration:underline; font-weight:bold; font-size:12px; background:#5787C5; border:1px solid #5787C5; padding:1px 3px 2px 3px; position:relative; }
+.Paging span.NextPrevArrow { font-family:MS Sans Serif, Sans-Serif; font-size:11px; }
+.Paging_BlankDv { float:inherit; width:100%; }
+/* Paging End */

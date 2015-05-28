@@ -1,0 +1,23 @@
+nav ul li a.active, nav ul li a:hover, .read-more-btn a, .submit-btn, .icon:hover, .icon1:hover, .icon2:hover, .icon3:hover , nav ul li ul li, .contact-submit, #contactus .content-area div.contact-form li.contact-message input{
+	background-color:##BGCOLOR##;
+}
+
+.services h3, .services strong, .practice-area h2, .practice-area li, .content-area h2, #contactus .content-area div.contact-details label, .areas-box li a:hover, .services-box {
+	color:##TEXTCOLOR##;
+}
+
+
+header, .services-box:hover { border-color:##BORDERCOLOR##;}
+
+a, .practice-area li a,  #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand{
+	color:##LINKCOLOR##;
+	text-decoration:none;
+}
+
+a:hover, .practice-area li a:hover,  #faq .content-area h4 a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+.banner {
+    background-image: ##BGIMAGE##;
+}    

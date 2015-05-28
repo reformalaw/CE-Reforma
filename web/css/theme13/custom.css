@@ -1,0 +1,20 @@
+
+
+/**=== Start Change Color =================================================************************/
+
+nav ul li ul li a, .quick-form input.send-btn, #contactus .content-area div.contact-form li input[type=submit] {background-color:##BGCOLOR##;}
+
+.banner, footer { background-image: ##BODYBACKGROUND##; background-repeat:repeat; background-position:left top;}
+
+#contactus .content-area div.contact-details label, .animate-in .title, .quick-contact h2, .services h3, .practice-area h2, .content-area h2 {
+	color:##TEXTCOLOR##;} /*text-color*/
+
+.practice-area li, nav ul li a:hover, .social-icons a:hover, nav ul li a.active, .footer-right .social-icons a:hover, #home .content-area, #faq .content-area, #contactus .content-area, .content-area, .practice-area, .quick-contact{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area li a{color:##LINKCOLOR##;}
+
+a:hover, .practice-area li a:hover, #faq .content-area h4 a:hover, a:hover{color:##LINKHOVERCOLOR##;} /*hover-color*/
+
+/**=== End Change Color =================================================************************/

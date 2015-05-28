@@ -1,0 +1,50 @@
+.treeMenu	{
+	height:205px; 
+	overflow-x:hidden; 
+	display:block;
+	position:absolute;
+	width:250px;
+	border-bottom:1px solid #e3e9ef; 
+	overflow-y:scroll;
+	border-top:1px solid #abadb3; 
+	border-right:1px solid #dbdfe6; 
+	border-left:1px solid #e2e3ea;
+	padding:5px 0 8px 20px;
+	}
+.treeMenu ul
+	{
+margin: 0;
+padding: 0;
+	}
+.treeMenu li
+	{
+	list-style-type: none;
+
+margin-bottom: 3px;
+color:#333333;
+	}
+
+/* Submenu styles */
+.treeMenu ul ul 
+	{
+	
+	}
+.treeMenu li li
+	{
+	margin:2px 0px 2px 16px;
+	}
+	
+.treeMenu li li label{padding:0 0 0 5px;}
+
+ul.checkboxTree li {
+    list-style-type: none;
+    position: relative;
+}
+ul.checkboxTree li label{padding:0 0 0 5px;}
+
+ul.checkboxTree li span {
+    cursor: default;
+    position: absolute;
+    top: 2px;
+    left: -16px;
+}

@@ -1,0 +1,30 @@
+
+/**=== Start Change Color =================================================************************/
+
+body {
+	background-image:##BODYBACKGROUND##;
+	
+}
+
+nav div.menu ul li a:hover, .practice-area h4, .content-area h2, #banner, #contactus .content-area div.contact-form li input[type=submit]{
+	background-color:##BGCOLOR##;
+}
+
+.quick-contact-btn input[type=submit], .content-text h5, .phoneno span, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+
+/**=== End Change Color =================================================************************/

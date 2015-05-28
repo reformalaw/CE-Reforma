@@ -1,0 +1,375 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+.page{width:96%;}
+#home .content-area, #faq .content-area, #contactus .content-area{width:100%;}
+.logo-part { width: 100%; padding: 15px 0; margin:0; text-align:center;}
+#sequence li * { position: relative!important;}
+.logo-part img { /*height:35px;*/ width:100%;}
+.search { float: left; width: 97%; margin:0 0 10px 5px;}
+.search input { border: medium none; border-radius: 5px 5px 5px 5px; float: left; margin: 5px 0 0 0; padding: 7px 5px; width: 80%;}
+.contact-no h4 { float: left; font-size: 28px; line-height: 0; margin: 16px 0; padding: 0;}
+.contact-no {float: left; margin: 0 0 0 0; width: 100%;}
+nav { float: left; width: 100%; height:auto; margin:0 0 10px 0;}
+nav ul { float: left; margin:0;	padding:0;}
+nav ul li {	display:inline; float:left; width:100%;}
+nav ul li a { padding:9px 0; line-height:15px; font-family: 'BebasNeueRegular';	font-size:18px; float:left; width:100%; text-align:center;}
+nav ul li ul{
+	display:none;
+	position: absolute;
+    z-index: 121;
+	top:90px;
+	margin:0;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul li ul li{
+	line-height: 18px;
+    width:100%;
+	display:block;
+	clear: both;
+}
+
+nav ul li ul li a{
+	line-height: 18px;
+    width:100%;
+	display:block;
+    padding: 5px 20px 5px 10px;
+}
+#home .page { width: 96%;}
+#home .content-text, #faq .content-text, #contactus .content-text { background-color: #FFFFFF; float: left; margin: 0; padding: 0 0; width: 100%;}
+.title { display:none;}
+header { height: auto; margin-top: 0;}
+.services, .services:hover { width:92%; height:auto; padding:10px;}
+.services:hover {padding:9px 9px 10px 9px;}
+.services-padding { margin: 15px 0;}
+.services h3 { font-size:18px;}
+.practice-area { margin: 0; padding: 0 0 10px; width: 100%; min-height:120px;}
+.practice-area ul{height:150px; overflow:auto;}
+.practice-area li{ width:95%; background-image:none; float:left; padding:2px 0px;}
+.practice-area h2, .content-area h2{ font-size:18px; margin-bottom:5px;}
+.content-area {color: #827F7F; font-size: 13px; margin: 0 0 0 0; padding: 0 0; text-align: justify; width: 100%;}
+.quick-contact {float: left; margin: 10px 0; padding: 0 6px 10px; width:96%;}
+.content-area h4 { font-size: 14px; line-height:16px; margin-bottom:5px;}
+.content-text{height:200px;	overflow:auto; padding-right:3%;}
+#faq div.content-area div.content-text{	height:auto; padding:0 10px; width: 93.4%;}
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details { width: 100%;}
+#contactus .content-area div.contact-details { width: 96%; margin-top:20px;	min-height:auto;}
+footer{	text-align:center;}
+
+.social-icons { float: right; margin: 10px 0; width: 100%;}
+.banner .page {display: inline-block; padding: 0; text-align: left; width: 96%;}
+.animate-in .title-new { display:none;}
+.animate-in .title { display:none;}
+.quick-form input, .quick-form textarea {border: 1px solid #616161; float: left; margin: 0 7px 10px 0; padding: 5px; width: 95%;}
+.send-btn { border: medium none !important; float: right !important; color:#181818!important; width: 60px !important; border-radius: 5px; margin:0!important;}
+footer .page {display: inline-block; padding: 0; text-align: left; width: 96%;}
+.footer-right { float: right; margin: 0; padding: 9px 0; width: 100%;}
+.footer-left { float: left; padding: 15px 0; width: 100%;}
+.footer-right .social-icons { float: left; margin: 0; width: 100%;}
+
+}
+
+@media (min-width: 351px) and (max-width: 490px){
+.page{width:96%;}
+#home .content-area, #faq .content-area, #contactus .content-area{width:100%;}
+.banner{/*height:154px;*/}
+.banner .page {display: inline-block; padding: 0; text-align: left; width: 96%;}
+.animate-in .title-new { display:none;}
+.animate-in .title { display:none;}
+.logo-part { width: 100%; padding: 15px 0; margin:0; text-align:center;}
+#sequence li * { position: relative!important;}
+.logo-part img { /*height:35px;*/ width:100%;}
+.search { float: left; width: 60%; margin:0 0 10px 30%;}
+.search input { border: medium none; border-radius: 5px 5px 5px 5px; float: left; margin: 5px 0 0; padding: 7px 5px; width: auto;}
+.contact-no h4 { float: left; font-size: 28px; line-height: 0; margin: 16px 0; padding: 0;}
+.contact-no { float: left; margin: 0 0 0 0; width: 100%;}
+nav { float: left; width: 100%;height:auto; margin:0 0 10px 0;}
+nav ul { float: left; margin:0;	padding:0; width:98%;}
+nav ul li {	display:inline; float:left; width:100%;}
+nav ul li a {padding:9px 0; line-height:15px; font-family: 'BebasNeueRegular';	font-size:18px; float:left; width:100%; text-align:center;}
+nav ul li ul{
+	display:none;
+	position: absolute;
+    z-index: 121;
+	top:90px;
+	margin:0;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul li ul li{
+	line-height: 18px;
+    width:89.6%;
+	display:block;
+	clear: both;
+}
+
+nav ul li ul li a{
+	line-height: 18px;
+    width:100%;
+	display:block;
+    padding: 5px 20px 5px 10px;
+}
+.title { display:none;}
+header { height: auto; margin-top: 0;}
+.services, .services:hover { width:92%; height:auto; padding:10px;}
+.services:hover {padding:9px 9px 10px 9px;}
+.services-padding { margin: 15px 0;}
+.services h3 { font-size:18px;}
+.practice-area { margin: 0; padding: 0 10px 10px; width: 94%; min-height:170px;}
+.practice-area ul{height:150px;	overflow:auto;}
+.practice-area li{width:95%; background-image:none;	float:left;	padding:2px 0px;}
+.practice-area h2, .content-area h2{ font-size:18px; margin-bottom:5px;}
+.content-area {color: #827F7F; font-size: 13px; margin: 0 0 0 0; padding: 0 0; text-align: justify; width: 100%;}
+.quick-contact { float: left; margin: 0 0; padding: 0 5px 10px; width: 98%;}
+.content-area h4 { font-size: 14px; line-height:16px; margin-bottom:5px;}
+.content-text{height:200px; overflow:auto; padding-right:3%;}
+#home .page { width: 96%;}
+#home .content-text, #faq .content-text, #contactus .content-text { background-color: #FFFFFF; float: left; margin: 0; padding: 0 0; width: 100%;}
+#faq div.content-area div.content-text{	height:auto; padding:0 10px; width: 95.2%;}
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details { width: 100%;}
+#contactus .content-area div.contact-details { width: 96%; margin-top:20px;	min-height:auto;}
+footer{	text-align:center;}
+.quick-form input, .quick-form textarea {border: 1px solid #616161; float: left; margin: 0 7px 10px 0; padding: 5px; width: 95%;}
+#left-column .page, #right-column .page { background-color: #FFFFFF; display: inline-block; padding: 0; text-align: left; width:96%;}
+footer .page {display: inline-block; padding: 0; text-align: left; width: 96%;}
+.footer-right { float: right; margin: 0; padding: 9px 0; width: 100%;}
+.footer-left { float: left; padding: 15px 0; width: 100%;}
+.footer-right .social-icons { float: right; margin: 0; width: 65%;}
+
+}
+
+@media (min-width: 491px) and (max-width: 700px){
+.page{width:470px;}
+#faq .page{width:470px; display:inline-block;}
+.animate-in .title-new { display:none;}
+.animate-in .title { display:none;}
+#home .content-area, #faq .content-area, #contactus .content-area{width:100%; margin:0;}
+.banner .page {display: inline-block; padding:0; text-align: left; width: 450px;}
+.logo-part { width:100%; padding: 15px 0; margin:0; text-align:center;}
+.social-icons {float: right; margin: 10px 0 10px 0; width: 82%;}
+#sequence li * { position: relative!important;}
+.logo-part img { height:35px;}
+.search { float: left; width: 60%; margin:0 0 10px 30%;}
+.search input { border: medium none; border-radius: 5px 5px 5px 5px; float: left; margin: 5px 0 0; padding: 7px 5px; width: auto;}
+.quick-form input, .quick-form textarea {border: 1px solid #AFAFAF; float: left; margin: 0 0px 10px; padding: 5px; width: 98%;}
+.contact-no h4 { float: left; font-size: 28px; line-height: 0; margin: 16px 0; padding: 0;}
+.contact-no {float: left; margin: 0 0 0 0; width: 57%;}
+nav { float: left; width: 100%; height:auto; margin:0 0 10px 0;}
+nav ul { float: left; margin:0;	padding:0; width:100%;}
+nav ul li {	display:inline; float:left; width:100%;}
+nav ul li a { padding:9px 0; line-height:15px; font-family: 'BebasNeueRegular';	font-size:18px; float:left; width:100%; text-align:center;}
+nav ul li ul{
+	display:none;
+	position: absolute;
+    z-index: 121;
+	top:90px;
+	margin:0;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul li ul li{
+	line-height: 18px;
+    width:66%;
+	display:block;
+	clear: both;
+}
+
+nav ul li ul li a{
+	line-height: 18px;
+    width:100%;
+	display:block;
+    padding: 5px 20px 5px 10px;
+}
+header { height: auto; margin-top: 0;}
+.services, .services:hover { width:92%; height:auto; padding:10px;}
+.services:hover {padding:9px 9px 10px 9px;}
+.services-padding { margin: 15px 0;}
+.services h3 { font-size:18px;}
+.practice-area { margin:0 10px; padding: 0 10px 10px; width: 91.5%; min-height:200px;}
+.practice-area ul{height:150px; overflow:auto;}
+.practice-area li{width:95%; background-image:none;	float:left;	padding:2px 0px;}
+.practice-area h2, .content-area h2{ font-size:18px; margin-bottom:5px;}
+.content-area {color: #827F7F; font-size: 13px; margin: 10px 10px 10px; padding: 0 10px; text-align: justify; width: 91.5%;}
+.quick-contact { float: left; margin: 0; padding: 0 12px 10px; width: 95%;}
+.content-area h4 { font-size: 14px; line-height:16px; margin-bottom:5px;}
+.content-text{height:200px;	overflow:auto; padding-right:3%;}
+#home .page { width: 470px; display:inline-block;}
+#home { text-align:center;}
+#home .content-area { margin:0; width:100%;}
+#home .content-text, #faq .content-text, #contactus .content-text { background-color: #FFFFFF; float: left; margin: 0; padding: 0 0; width: 100%;}
+#faq div.content-area div.content-text{	height:auto; padding:0 10px; width: 95.5%;}
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details { width: 100%;}
+#contactus .content-area div.contact-details { width: 96%; margin-top:20px;	min-height:auto;}
+footer{	text-align:center;}
+footer .page {display: inline-block; padding: 0; text-align: left; width: 470px;}
+.footer-right { float: right; margin: 0; padding: 9px 0; width: 100%;}
+.footer-left { float: left; padding: 15px 0; width: 100%; text-align:center;}
+.footer-right .social-icons { float:right; margin: 0; width: 65%;}
+footer .right { float: right; margin:0 60px 0 0;}
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+.page{width:680px;}
+.animate-in .title-new { display:none;}
+.animate-in .title { display:none;}
+.banner .page {display: inline-block; padding:0; text-align: left; width: 680px;}
+#home .content-area, #faq .content-area, #contactus .content-area{width:100%; margin:0;}
+.logo-part {/*width: 100%;*/ padding: 15px 0; margin:0; text-align:center; float:left;}
+#sequence li * { position: relative!important;}
+.logo-part img { /* height:35px;*/}
+.search { float: left; width: 30%; margin:0 0 10px 5%;}
+.search input { border: medium none; border-radius: 5px 5px 5px 5px; float: left; margin: 5px 0 0; padding: 7px 5px; width: auto;}
+.quick-form input, .quick-form textarea { border: 1px solid #AFAFAF; float: left; margin: 0 12px 10px 0; padding: 5px; width: 46%;}
+.contact-no h4 { float: left; font-size: 28px; line-height: 0; margin: 16px 0; padding: 0;}
+.contact-no { float: right; margin: 0 0 0 0; width: 26%;}
+.social-icons { margin:40px 0 0 0;}
+nav { float: right; width: 100%; height:40px; margin:0;}
+nav ul { float: left; margin:0;	padding:0;}
+nav ul li {	display:inline;}
+nav ul li a { padding:0 22px; line-height:40px; font-family: 'BebasNeueRegular';	font-size:18px;}
+nav ul li ul{
+	display:none;
+	position: absolute;
+    z-index: 121;
+	top:158px;
+	margin:0;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul li ul li{
+	line-height: 18px;
+    width:100%;
+	display:block;
+	clear: both;
+}
+
+nav ul li ul li a{
+	line-height: 18px;
+    width:100%;
+	display:block;
+    padding: 5px 20px 5px 10px;
+}
+.title { display:none;}
+header { margin-top: 0;}
+.services, .services:hover { width:92%; height:auto; padding:10px;}
+.services:hover {padding:9px 9px 10px 9px;}
+.services-padding { margin: 15px 0;}
+.services h3 { font-size:18px;}
+.practice-area { margin:0 10px; padding: 0 10px 10px; width: 94%; min-height:200px;}
+.practice-area ul{height:150px;	overflow:auto;}
+.practice-area li{	width:48%; background-image:none; float:left; padding:2px 0px; margin-right:10px;}
+.practice-area h2, .content-area h2{ font-size:18px; margin-bottom:5px;}
+.content-area {color: #827F7F; font-size: 13px; margin: 10px 10px 10px; padding: 0 10px; text-align: justify; width: 94%;}
+.quick-contact { float: left; margin: 10px 0; padding: 0 5px 10px; width: 98.5%;}
+.content-area h4 { font-size: 14px; line-height:16px; margin-bottom:5px;}
+.content-text{height:200px;	overflow:auto; padding-right:3%;}
+#faq div.content-area div.content-text{	height:auto; padding:0 10px; width: 97%;}
+#home .page { width: 680px; display:inline-block;}
+#home { text-align:center;}
+#home .content-area { margin:0; width:100%;}
+#faq .content-area { margin:0; width:100%;}
+#home .content-text, #faq .content-text, #contactus .content-text { background-color: #FFFFFF; float: left; margin: 0; padding: 0 13px; width: 96%;}
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details { width: 100%;}
+#contactus .content-area div.contact-details { width: 96%; margin-top:20px;	min-height:auto;}
+footer{	text-align:center;}
+.quick-contact { float: left; margin: 0; min-height: 205px; padding: 10px 15px; width: 95.6%;}
+.send-btn { margin:0 16px 0 0 !important;}
+footer .page {display: inline-block; padding: 0; text-align: left; width: 680px;}
+.footer-right { float: right; margin: 0; padding: 9px 0; width: 100%;}
+.footer-left { float: left; padding: 15px 0; width: 100%;}
+.footer-right .social-icons { float: right; margin: 0; width: 60%;}
+.quick-form textarea { height:40px;}
+
+
+}
+
+@media (min-width: 901px) and (max-width: 1024px){
+.page { width:880px;}
+#home .content-area, #faq .content-area, #contactus .content-area{width:100%; margin:0;}
+.logo-part { /*width: 100%;*/padding: 30px 0; margin:0; text-align:center; float:left;}
+#sequence li * { position: relative!important;}
+.logo-part img { /* height:35px;*/}
+.search { float: left; width: 24%; margin:0 0 10px 5%;}
+.search input { border: medium none; border-radius: 5px 5px 5px 5px; float: left; margin: 5px 0 0; padding: 7px 5px; width: auto;}
+.quick-form input, .quick-form textarea {border: 1px solid #AFAFAF; float: left; margin: 0 8px 10px 0; padding: 5px; width: 95%;}
+.contact-no h4 { float: left; font-size: 28px; line-height: 0; margin: 16px 0; padding: 0;}
+.contact-no {float: right; margin: 0 0 0 0; width: 26%;}
+nav { float: right; width: 61%; height:40px; margin:20px 0 0 0;}
+nav ul { float: left; margin:0;	padding:0;}
+nav ul li {	display:inline;}
+nav ul li a {padding:0 10px; line-height:40px; font-family: 'BebasNeueRegular';	font-size:18px;}
+nav ul li ul{
+	display:none;
+	position: absolute;
+    z-index: 121;
+	top:100px;
+	margin:0;
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul li ul li{
+	line-height: 18px;
+    width:100%;
+	display:block;
+	clear: both;
+}
+
+nav ul li ul li a{
+	line-height: 18px;
+    width:100%;
+	display:block;
+    padding: 5px 20px 5px 10px;
+}
+.title { display:none;}
+header {margin-top: 0;}
+.services, .services:hover { width:92%; height:auto; padding:10px;}
+.services:hover {padding:9px 9px 10px 9px;}
+.services-padding { margin: 15px 0;}
+.services h3 { font-size:18px;}
+.practice-area { margin:0 10px; padding: 0 10px 10px; width:30%; min-height: 530px;}
+.practice-area li{width:95%; background-image:none; float:left;	padding:2px 0px;}
+.practice-area h2, .content-area h2{ font-size:18px; margin-bottom:5px;}
+.content-area {color: #827F7F; font-size: 13px; margin: 0 0 10px; padding: 0 10px; text-align: justify; width: 62%;}
+.quick-contact {float: left; margin:0 0; padding: 0 5px 0 6px; width: 23.2%; min-height: 318px;}
+.content-area h4 {font-size: 14px; line-height:16px; margin-bottom:5px;}
+#faq div.content-area div.content-text{	height:auto; padding:0 10px; width: 97.8%;}
+#home .page { width: 882px; display:inline-block;}
+#home { text-align:center;}
+#home .content-area { margin:0; width:100%;}
+#home .content-text, #faq .content-text, #contactus .content-text { background-color: #FFFFFF; float: left; margin: 0; padding: 0 17px 0 18px; width: 96.2%;}
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details { width: 100%;}
+#contactus .content-area div.contact-details { width: 96%; margin-top:20px;	min-height:auto;}
+.quick-form textarea { height:40px; }
+footer .page { display: inline-block; padding: 0 10px; text-align: left; width: 862px;}
+.footer-left { float: left; padding: 15px 0; width: 600px;}
+.footer-right { width:272px;}
+footer a { padding: 0 2px;}
+footer a:hover { color:#EAA315;}
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+}

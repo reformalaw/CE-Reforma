@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Counsel Edge
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [ frontend/normalize.css, frontend/style.css, frontend/sequencejs-theme.modern-slide-in.css, frontend/sequencejs-theme.modern-slide-in.ie.css { condition: lt IE 8 } ]
+
+  javascripts:    [ frontend/modernizr-2.0.6.min.js, frontend/jquery.js, frontend/sequence.jquery.js, frontend/sequence.jquery-min.js, frontend/slides.min.jquery.js ]
+
+  has_layout:     true
+  layout:         layout

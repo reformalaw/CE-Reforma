@@ -1,0 +1,23 @@
+nav ul li ul li a:hover, .phoneno, #contactus .content-area div.contact-form li input[type=submit], #home .practice-area, .practice-area{
+	background-color:##BGCOLOR##;
+}
+
+nav ul li a, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+nav ul li a:hover{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+#sequence li{
+	background-image:##BGIMAGE##;
+}

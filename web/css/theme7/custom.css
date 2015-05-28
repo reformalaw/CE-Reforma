@@ -1,0 +1,19 @@
+.phoneno, nav ul li a:hover, .practice-area h4, #contactus .content-area div.contact-form li input[type=submit]{
+	background-color:##BGCOLOR##;
+}
+
+.service-box strong, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+.practice-area ul li, .service-box, footer, .subtitle, .banner, #full-width, #left-column, #right-column, #faq, #contactus{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover{
+	color:##LINKHOVERCOLOR##;
+}

@@ -1,0 +1,1016 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+
+.top-number-part{
+	padding-bottom:10px;
+}
+
+.top-social-icons {
+    border-left:none 0px;
+    float: none;
+    margin:auto;
+    padding: 10px 0 0px 0px;
+}
+
+.top-number {
+    float: none;
+    margin:auto;
+	padding:0px;
+    text-align:center;
+    width: 100%;
+	clear:both;
+	padding-top:10px;
+}
+.top-number img {
+    float: none;
+    padding-top: -4px;
+	position:absolute;
+}
+.top-number span {
+    float: none;
+    padding-left: 30px;
+}
+
+.logo, .logo span.name{
+	float:none;
+	text-align:center;
+	clear:both;
+}
+.top-search, .top-search input, .top-search input[type="button"]{
+	float:none;
+	text-align:center;
+}
+
+.top-search input{
+	text-align:left;
+}
+
+.top-search{
+	padding-top:0px;
+	padding-bottom:15px;
+}
+
+nav .menu ul li a{
+	padding:0 7px;
+}
+
+nav{
+	background-image:none;
+	background-color:#313131;
+	height:auto;
+	width:auto;
+}
+
+nav .menu ul li{
+	width:100%;
+	background-image:none;
+	border-bottom:solid 1px #5c5c5c;
+	line-height:36px;
+	text-align:center;
+	padding:0px;
+}
+
+nav .menu ul li:last-child{
+	border-bottom:none 0px;
+}
+
+nav .menu ul{
+	background-image:none;
+	height:auto;
+}
+
+nav .menu ul li a:hover {
+    border:none 0px;
+}
+
+nav .menu ul li:hover ul {
+    display:none;
+}
+
+.our-services {
+    border-right:none 0px;
+    width: 95%;
+}
+
+.our-services h4 {
+    font-size: 19px;
+    padding-bottom: 7px;
+}
+
+.our-services a.readmore{
+	float:right;
+}
+
+.free-consultation {
+    width: 90%;
+	padding:5%;
+}
+
+.middle{
+	padding-bottom:0px;
+}
+
+.practice-area {
+    float: left;
+    padding:0;
+    width:100%;
+}
+
+.middle-part{
+	border:none 0px;
+	width:96%;
+	padding:0 2%;
+	border-top:none 0px;
+	margin-bottom:0px;
+}
+
+.tellus-border {
+    width: 100%;
+}
+
+.tellus-form-part {
+    width: 100%;
+}
+
+.tellus-form {
+    width: 90%;
+	padding: 10px 5%;
+	border-bottom:1px solid #4E4C4D;
+}
+
+.tellus-form ul li{
+    width: 100%;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+    width: 96%;
+}
+
+.tellus-form ul li input[type="button"] {
+    margin-top:0px;
+	float:right;
+}
+
+.middle-part h2, .content-area h2, .practice-area h2, .content-area h2{
+	font-size:19px;
+	padding-bottom:0px;
+}
+
+.practice-area a img{
+	width: 100%;
+	display:none;
+}
+
+.practice-area p{
+	float:left;
+	width:100%;
+}
+
+.practice-area p input, .practice-area p textarea{
+	width:94%;
+	padding:2% 3%;
+}
+
+.practice-area ul{
+	width:90%;
+	padding:5%;
+	height:200px;
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.content-area{
+	width:100%;
+	padding:0;
+	margin-left:0px;
+}
+
+.content-area div.content-text{
+	width:90%;
+	padding:0 5% !important;
+	height:200px;
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.practice-area h4, .welcome-content h2, .tellus-form h3, .free-consultation h3  {
+	font-size:18px;
+}
+.welcome-content h5, .welcome-content p {
+    padding-right: 0px;
+}
+
+
+.content-area ul, .content-area ul{
+	height:200px;
+	overflow:auto;
+}
+
+.content-area h2, .content-area h2{
+	padding-bottom:10px;
+}
+
+.middle-part-border {
+	width:100%;
+}
+
+.formbox-shadow {
+    padding: 0;
+    width: 100%;
+}
+
+.formbox-shadow img {
+    width: 100%;
+}
+
+.welcome-content {
+    width:100%;
+}
+
+.home-contactus, .whychooseus{
+	display:none;
+}
+
+#home .content-area{
+	width:100%;
+	margin-bottom:0px;
+}
+
+#cmspages .content-area, #faq .content-area, #contactus .content-area{
+	width:100%;
+	margin-bottom:0px;
+}
+
+#faq .content-area div.content-text{
+	margin-top:10px;
+}
+
+#contactus .content-area div.contact-form {
+    padding:10px 3%;
+    padding-top: 10px;
+    width: 94%;
+}
+
+#contactus .content-area div.contact-form li{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	 padding:3%;
+    margin-top: 15px;
+    width: 94%;
+	min-height:inherit;
+}
+
+footer{
+	line-height:18px;
+	padding:10px 0px;
+	text-align:center;
+}
+
+footer a.facebook, footer a.twitter, footer a.linkedin, footer a.gmailplus{
+	position:absolute;
+	margin-top:25px;
+	display:none;
+	
+}
+
+footer a.facebook{
+	margin-left:-220px;
+}
+
+footer a.twitter{
+	margin-left:-185px;
+}
+
+footer a.linkedin{
+	margin-left:-115px;
+}
+
+footer a.gmailplus{
+	margin-left:-150px;
+}
+
+.banner {
+    height: 200px;
+}
+
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:340px;
+}
+
+.top-number-part{
+	padding-bottom:10px;
+}
+
+.top-social-icons {
+    border-left:none 0px;
+    float: none;
+    margin:auto;
+    padding: 10px 0 0px 0px;
+}
+
+.top-number {
+    float: none;
+    margin:auto;
+	padding:0px;
+    text-align:center;
+    width: 100%;
+	clear:both;
+	padding-top:10px;
+}
+.top-number img {
+    float: none;
+    padding-top: -4px;
+	position:absolute;
+}
+.top-number span {
+    float: none;
+    padding-left: 30px;
+}
+
+.logo, .logo span.name{
+	float:none;
+	text-align:center;
+	clear:both;
+}
+.top-search, .top-search input, .top-search input[type="button"]{
+	float:none;
+	text-align:center;
+}
+
+.top-search input{
+	text-align:left;
+}
+
+.top-search{
+	padding-top:0px;
+	padding-bottom:15px;
+}
+
+nav .menu ul{
+	height:auto;
+}
+
+nav .menu ul li a{
+	padding:0 7px;
+}
+
+nav{
+	background-image:none;
+	background-color:#313131;
+	height:auto;
+	width:auto;
+}
+
+nav .menu ul li{
+	width:100%;
+	background-image:none;
+	border-bottom:solid 1px #5c5c5c;
+	line-height:36px;
+	text-align:center;
+	padding:0px;
+}
+
+nav .menu ul li:last-child{
+	border-bottom:none 0px;
+}
+
+nav .menu ul{
+	background-image:none;
+}
+
+nav .menu ul li a:hover {
+    border:none 0px;
+}
+
+nav .menu ul li:hover ul {
+    display:none;
+}
+
+.our-services {
+    border-right:none 0px;
+    width: 95%;
+}
+
+.our-services h4 {
+    font-size: 19px;
+    padding-bottom: 7px;
+}
+
+.our-services a.readmore{
+	float:right;
+}
+
+.middle{
+	padding-bottom:0px;
+}
+
+.practice-area {
+    float: left;
+    padding:0;
+    width:100%;
+}
+
+.middle-part{
+	border:none 0px;
+	width:96%;
+	padding:0 2%;
+	border-top:none 0px;
+	margin-bottom:0px;
+}
+
+.tellus-border {
+    width: 100%;
+}
+
+.tellus-form-part {
+    width: 100%;
+}
+
+.tellus-form {
+    width: 90%;
+	padding: 10px 5%;
+	border-bottom:1px solid #4E4C4D;
+}
+
+.tellus-form ul li{
+    width: 100%;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+    width: 96%;
+}
+
+.tellus-form ul li input[type="button"] {
+    margin-top:0px;
+	float:right;
+}
+
+.middle-part h2, .content-area h2, .practice-area h2, .content-area h2{
+	font-size:19px;
+	padding-bottom:0px;
+}
+
+.practice-area a img{
+	width: 100%;
+	display:none;
+}
+
+.practice-area p{
+	float:left;
+	width:100%;
+}
+
+.practice-area p input, .practice-area p textarea{
+	width:94%;
+	padding:2% 3%;
+}
+
+.practice-area ul{
+	width:90%;
+	padding:5%;
+	height:200px;
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.content-area, .content-area{
+	width:100%;
+	padding:0;
+	margin-left:0px;
+}
+
+.content-area div.content-text, .content-area div.content-text{
+	width:90%;
+	padding:0 5%;
+	height:200px;
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.welcome-content h5, .welcome-content p {
+    padding-right: 0px;
+}
+
+.content-area ul, .content-area ul{
+	height:200px;
+	overflow:auto;
+}
+
+.content-area h2, .content-area h2{
+	padding-bottom:10px;
+}
+
+.middle-part-border {
+	width:100%;
+}
+
+.formbox-shadow {
+    padding: 0;
+    width: 100%;
+}
+
+.formbox-shadow img {
+    width: 100%;
+}
+
+.welcome-content {
+    width:100%;
+}
+
+.home-contactus, .whychooseus{
+	display:none;
+}
+
+#home .content-area{
+	width:100%;
+	margin-bottom:0px;
+}
+
+#cmspages .content-area, #faq .content-area, #contactus .content-area{
+	width:100%;
+	margin-bottom:0px;
+}
+
+#faq .content-area div.content-text{
+	margin-top:10px;
+}
+
+#contactus .content-area div.contact-form {
+    padding:10px 3%;
+    padding-top: 10px;
+    width: 94%;
+}
+
+#contactus .content-area div.contact-form li{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	 padding:3%;
+    margin-top: 15px;
+    width: 94%;
+	min-height:inherit;
+}
+
+footer{
+	line-height:18px;
+	padding:10px 0px;
+	min-height:70px;
+}
+
+footer a.facebook, footer a.twitter, footer a.linkedin, footer a.gmailplus{
+	position:absolute;
+	margin-top:25px;
+	
+}
+
+footer a.facebook{
+	margin-left:-220px;
+}
+
+footer a.twitter{
+	margin-left:-185px;
+}
+
+footer a.linkedin{
+	margin-left:-115px;
+}
+
+footer a.gmailplus{
+	margin-left:-150px;
+}
+
+.banner {
+    height: 200px;
+}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+
+.logo, .logo span.name {
+    float: none;
+	text-align:center;
+	padding-top:15px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav{
+	width:470px;
+	height:35px;
+}
+
+nav .menu ul {
+    background-image:none;
+    height: auto;
+}
+
+nav .menu ul li {
+    line-height:35px;
+    padding-right: 2px;
+    padding-top:0px;
+}
+
+nav .menu ul li:last-child {
+    background-image:none;
+}
+
+nav .menu ul li a {
+    padding: 0 7px;
+	padding-bottom:6px;
+}
+
+nav .menu ul li a:hover {
+	padding-bottom:0px;
+}
+
+.tellus-form-part, .tellus-border {
+	width: 470px;
+}
+
+.tellus-form{
+	width:440px;
+	background-image:none;
+	border-bottom:1px solid #4E4C4D
+}
+
+.tellus-form ul li {
+    width: 215px;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+    width: 190px;
+}
+
+.tellus-form ul li input[type="button"] {
+    margin-top: 0px;
+}
+
+.free-consultation {
+    padding: 10px 15px;
+    width: 440px;
+}
+
+.middle-part {
+    width: 460px;
+}
+
+.middle-part-border {
+    width: 458px;
+}
+
+.formbox-shadow, .formbox-shadow img {
+    width: 440px;
+}
+
+.formbox-shadow img{
+    width: 440px;
+}
+
+.practice-area {
+    width: 458px;
+}
+
+.practice-area ul li {
+    clear: none;
+    float: left;
+	width:46%;
+}
+
+.content-area, .welcome-content, .content-area {
+    width: 458px;
+}
+
+.content-area, .content-area {
+	padding-left:0px;
+	margin-left:0px;
+	margin-right:0px;
+	padding-right:0px;
+	padding-bottom:10px;
+	border:none 0px;
+}
+
+div.content-area .welcome-content div.content-text{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.whychooseus, .home-contactus {
+   display:none;
+}
+
+#home .content-area{
+	width:458px;
+	margin-bottom:0px;
+}
+
+#cmspages .content-area, #faq .content-area, #contactus .content-area{
+	width:458px;
+	margin-bottom:0px;
+}
+
+#faq .content-area div.content-text{
+	margin-top:10px;
+}
+
+#contactus .content-area div.contact-form {
+    padding:10px 3%;
+    padding-top: 10px;
+    width: 94%;
+}
+
+#contactus .content-area div.contact-details{
+	 padding:3%;
+    margin-top: 15px;
+    width: 94%;
+	min-height:inherit;
+}
+
+footer {
+    line-height: 18px;
+	padding:10px 0px;
+}
+
+footer div.page{
+	text-align:center;
+	height:70px;
+}
+
+footer a.facebook, footer a.twitter, footer a.linkedin, footer a.gmailplus{
+	position:absolute;
+	margin-top:25px;
+	
+}
+
+footer a.facebook{
+	margin-left:-170px;
+}
+
+footer a.twitter{
+	margin-left:-135px;
+}
+
+footer a.linkedin{
+	margin-left:-65px;
+}
+
+footer a.gmailplus{
+	margin-left:-100px;
+}
+
+.banner{
+	height:auto;
+}
+
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:680px;
+}
+
+.logo, .logo span.name {
+    float: none;
+	text-align:center;
+	padding-top:15px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav{
+	width:680px;
+	height:35px;
+}
+
+nav .menu ul {
+    background-image:none;
+    height: auto;
+}
+
+nav .menu ul li {
+    line-height:35px;
+    padding-right: 2px;
+    padding-top:0px;
+}
+
+nav .menu ul li:last-child {
+    background-image:none;
+}
+
+nav .menu ul li a {
+    padding: 0 24px;
+	padding-bottom:6px;
+}
+
+nav .menu ul li a:hover {
+	padding-bottom:0px;
+}
+
+
+.tellus-form-part, .tellus-border {
+	width: 680px;
+}
+
+.tellus-form{
+	width:650px;
+	background-image:none;
+}
+
+.tellus-form ul li {
+    width: 215px;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+    width: 190px;
+}
+
+.free-consultation {
+    padding: 10px 15px;
+    width: 650px;
+}
+
+.middle-part {
+    width: 670px;
+}
+
+.middle-part-border {
+    width: 668px;
+}
+
+.formbox-shadow, .formbox-shadow img {
+    width: 650px;
+}
+
+.formbox-shadow img{
+    width: 650px;
+}
+
+.practice-area {
+    width: 200px;
+}
+
+.whychooseus {
+   clear:both;
+   margin:0px;
+   margin-top:15px;
+}
+
+div.content-area div.home-contactus, div.content-area div.whychooseus{
+	display:none;
+}
+
+#home .content-area, #faq .content-area, #contactus .content-area{
+	width:668px;
+	margin-bottom:0px;
+}
+
+#cmspages .content-area{
+	width:450px;
+	margin-bottom:0px;
+}
+
+#contactus .content-area{
+	margin-bottom:15px;
+}
+
+footer div.page{
+	text-align:center;
+	height:70px;
+}
+
+footer a.facebook, footer a.twitter, footer a.linkedin, footer a.gmailplus{
+	position:absolute;
+	margin-top:35px;
+	
+}
+
+footer a.facebook{
+	margin-left:-425px;
+}
+
+footer a.twitter{
+	margin-left:-390px;
+}
+
+footer a.linkedin{
+	margin-left:-355px;
+}
+
+footer a.gmailplus{
+	margin-left:-320px;
+}
+
+.banner{
+	height:auto;
+}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page{
+	width:880px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav{
+	width:570px;
+}
+
+.tellus-form-part, .tellus-border {
+	width: 880px;
+}
+
+.tellus-form{
+	width:600px;
+}
+
+.tellus-form ul li {
+    width: 200px;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+    width: 180px;
+}
+
+.free-consultation {
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 12px;
+    width: 225px;
+}
+
+.middle-part {
+    width: 870px;
+}
+
+.middle-part-border {
+    width: 868px;
+}
+
+.formbox-shadow, .formbox-shadow img {
+    width: 850px;
+}
+
+.formbox-shadow img{
+    width: 850px;
+}
+
+.practice-area {
+    width: 235px;
+}
+
+#cmspages .content-area {
+    width: 610px;
+}
+
+#home .content-area, #faq .content-area, #contactus .content-area{
+	width:868px;
+}
+
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

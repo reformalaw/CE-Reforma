@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.7.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfFCKEditorPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>A FCKEditor Plugin</summary>
+ <description>A new sfForm widget that handles FCKEditor (doesn't work with CKEditor)</description>
+ <lead>
+  <name>Sidney Ferreira</name>
+  <user>SidGBF</user>
+  <email>sid.gbf@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-02-23</date>
+ <time>15:14:33</time>
+ <version>
+  <release>0.4.0</release>
+  <api>0.4.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.fckeditor.net/license">LGPL/GPL/MPL</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="b5da32d4eced28196802cbca6f0258d5" name="lib/helper/FormHelper.php" role="data"/>
+   <file md5sum="3475e526abc7fdbdeb9187a36d92f96e" name="lib/helper/sfRichTextEditor.class.php" role="data"/>
+   <file md5sum="f8c028f948411566c0bf6c7c6d982f4a" name="lib/helper/sfRichTextEditorFCK.class.php" role="data"/>
+   <file md5sum="cec28cade6e087e50774b681527562e3" name="lib/widget/sfWidgetFormFCKEditor.class.php" role="data"/>
+   <file md5sum="0987dbda6d6ea045be5ec63ed209f778" name="README" role="data"/>
+   <file md5sum="43338a67dceb0c3a21180fe8d04c019c" name="LICENSE" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.4.0</release>
+    <api>0.4.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.fckeditor.net/license">LGPL/GPL/MPL</license>
+   <license>LGPL</license>
+   <date>2010-02-23</date>
+   <notes>* After 1 year, Im porting it to 1.4 and dropping 1.2</notes>
+  </release>
+ </changelog>
+</package>

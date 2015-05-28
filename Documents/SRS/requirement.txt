@@ -1,0 +1,42 @@
+There will be different levels of administrators
+    - super administrator
+    - assistant administrators
+group features into user access levels 
+
+
+Accounting
+    - User management
+        o	Each user will have a separate account
+        o	Each user account will have individual cases
+    - Logable event entries
+        o	Document upload
+        o	Admin receives Customer bill
+        o	Admin submits bill to 3rd party (viewable by admin only)
+        o	Admin mails check to Customer
+        o	Admin paid by 3rd party (viewable by admin only)
+    - Accounting function
+        o	Detailed reports
+            ?	By User
+            ?	By Global
+        o	Keep live track of outstanding payments due from 3rd party with aging
+        o	Keep live track of cases received but not submitted with aging
+        o	When customer is paid by Admin, keep track of payment amount
+        o	When Admin is paid by 3rd party, calculate underpayment, if any
+        o	If underpayment, account for the underpayment in Customer’s account to be deducted from following payment to Customer
+        o	Keep track of any money transaction logged for any day or period of time – in order to reconcile with receivables/payables and income.
+            ?	Daily reports
+            ?	Time period reports
+Case Status
+    o	Each case should have a case status that is automatically set and editable by Admin
+        - Case status should be color coded to help Admin when viewing all cases.  Customer can only see status 1, 2, 3.
+        - Customer cannot see 2a, 2b, 2c
+        - ?	1) Case submitted by customer (PURPLE)
+        - ?	2) Case accepted by CounselEdge (GREEN)
+            •	2a) Payment made to customer (YELLOW)
+            •	2b) Case submitted to 3rd party (BLUE)
+            •	2c) Underpayment by 3rd party (RED)
+        - ?	3) Payment received - case closed (No color)
+    o	Customer can upload supporting document.  Customer can only delete documents uploaded by customer while case is in stage 1, in case they upload bad files, they can correct it.
+    
+
+        

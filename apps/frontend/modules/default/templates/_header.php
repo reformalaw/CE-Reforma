@@ -1,0 +1,47 @@
+<?php
+$currentHome = "";
+if (($sf_context->getModuleName() == "default") && ($sf_context->getActionName() == "index")){
+    $currentHome = 'current';
+}
+$currentAbout = "";
+if ($sf_request->getParameter('pagename') == 'about-us') {
+    $currentAbout = 'current';
+}
+$currentWhyus = "";
+if ($sf_request->getParameter('pagename') == 'why-us') {
+    $currentWhyus = 'current';
+}
+$currentGetStart = "";
+if ($sf_request->getParameter('pagename') == 'getting-started') {
+    $currentGetStart = 'current';
+}
+$currentFAQs = "";
+if (($sf_context->getModuleName() == "faqs") && ($sf_context->getActionName() == "index")){
+    $currentFAQs = 'current';
+}
+$currentContact = "";
+if (($sf_context->getModuleName() == "contactus") && ($sf_context->getActionName() == "index")){
+    $currentContact = 'current';
+}
+?>
+<header>
+	<section class="top page row clearfix">
+    	<div class="logo"><?php echo link_to(image_tag('counsel-edge-logo.png'),'default/index'); ?></div>
+   	  <section class="top-right">
+    	<div class="customer-login clearfix">
+        	<div class="customer-login-icons"><span class="customer-icon">&nbsp;</span><a href="admin.php">Customer Login</a></div>
+            <div class="customer-login-icons"><span class="customer-icon">&nbsp;</span><a href="contactus">Contact</a></div>
+        </div> 
+    	<nav>
+          <ul>
+                <li><?php echo link_to("Home","default/index",array('class'=>$currentHome));?></li>
+                <li><?php echo link_to("About","pages/about-us",array('class'=>$currentAbout));?></li>
+                <li><?php echo link_to("Why Us?","pages/why-us",array('class'=>$currentWhyus));?></li>
+                <li><?php echo link_to("Getting Started","pages/getting-started",array('class'=>$currentGetStart));?></li>
+                <li><?php echo link_to("FAQs","faqs/index",array('class'=>$currentFAQs));?></li>
+                <li><?php echo link_to("Contact Us","contactus/index",array('class'=>$currentContact));?></li>
+            </ul>
+    	</nav>
+    </section>
+    </section>
+</header>

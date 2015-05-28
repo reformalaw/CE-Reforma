@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<themecontent>
+	<themecolor>
+		<item>
+			<optionkey><![CDATA[BGColor]]></optionkey>
+			<optionvalue><![CDATA[#bf0000]]></optionvalue>
+		</item>		
+		<item>
+			<optionkey><![CDATA[TextColor]]></optionkey>
+			<optionvalue><![CDATA[#bf0000]]></optionvalue>
+		</item>		
+		<item>
+			<optionkey><![CDATA[BorderColor]]></optionkey>
+			<optionvalue><![CDATA[#bf0000]]></optionvalue>
+		</item>		
+		<item>
+			<optionkey><![CDATA[LinkColor]]></optionkey>
+			<optionvalue><![CDATA[#08bbef]]></optionvalue>
+		</item>		
+		<item>
+			<optionkey><![CDATA[LinkHoverColor]]></optionkey>
+			<optionvalue><![CDATA[#bf0000]]></optionvalue>
+		</item>		
+	</themecolor>
+	<logo>
+		<item>
+			<optionkey><![CDATA[Logo]]></optionkey>
+			<optionvalue><![CDATA[logo.png]]></optionvalue>
+		</item>		
+	</logo>
+	
+	<textwidget>
+		<item>
+			<title><![CDATA[Free Consultation]]></title>
+			<content><![CDATA[At the Joyner Law Firm our first consultation with you is always offered at no cost to you. Call <strong>770-472-7334</strong> to schedule your appointment today!]]></content>
+		</item>
+		<item>
+			<title><![CDATA[FAQs]]></title>
+			<content><![CDATA[For answers to other questions that are not addressed below, don't hesitate to Frequently Asked Questions to us.]]></content>
+		</item>
+		<item>
+			<title><![CDATA[Contact Us]]></title>
+			<content><![CDATA[Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi ula, eget lacinia odio sem nec elit commodo luctus, nisi ula commodo luctus..]]></content>
+		</item>
+		<item>
+			<title><![CDATA[Why Choose Us]]></title>
+			<content><![CDATA[Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi ula, eget lacinia odio sem nec elit commodo luctus, nisi ula commodo luctus..]]></content>
+		</item>
+		<item>
+			<title><![CDATA[Video Center]]></title>
+			<content><![CDATA[Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi ula, eget lacinia odio sem nec elit commodo luctus, nisi ula commodo luctus..]]></content>
+		</item>
+		
+	</textwidget>	
+	
+	<socialmedia>
+		<item>
+			<optionkey><![CDATA[Facebook]]></optionkey>
+			<optionvalue><![CDATA[chintanfadia]]></optionvalue>
+		</item>
+		<item>
+			<optionkey><![CDATA[Twitter]]></optionkey>
+			<optionvalue><![CDATA[chintanfadia]]></optionvalue>
+		</item>
+		<item>
+			<optionkey><![CDATA[LinkedIn]]></optionkey>
+			<optionvalue><![CDATA[chintanfadia]]></optionvalue>
+		</item>
+		<item>
+			<optionkey><![CDATA[Google]]></optionkey>
+			<optionvalue><![CDATA[chintanfadia]]></optionvalue>
+		</item>
+	</socialmedia>
+	
+	<headermenu>
+		<item>	
+			<title><![CDATA[Home]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype><![CDATA[Header]]></menutype>
+		</item>
+		<item>
+			<title><![CDATA[About us]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype><![CDATA[Header]]></menutype>
+		</item>
+		<item>
+			<title><![CDATA[Attorney Profile]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype>><![CDATA[Header]]></menutype>
+		</item>
+		
+		<item>
+			<title><![CDATA[Practice Areas]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype><![CDATA[Header]]></menutype>
+			<subitem>
+				<title><![CDATA[Criminal Defense]]></title>
+				<parentid>0</parentid>
+				<type>2</type>
+				<menutype><![CDATA[Header]]></menutype>
+			</subitem>
+		
+			<subitem>
+				<title><![CDATA[Domestic Violence]]></title>
+				<parentid>0</parentid>
+				<type>2</type>
+				<menutype><![CDATA[Header]]></menutype>
+			</subitem>
+			<subitem>
+				<title><![CDATA[Drug Crimes]]></title>
+				<parentid>0</parentid>
+				<type>2</type>
+				<menutype><![CDATA[Header]]></menutype>
+			</subitem>
+			<subitem>
+				<title><![CDATA[DUI]]></title>
+				<parentid>0</parentid>
+				<type>2</type>
+				<menutype><![CDATA[Header]]></menutype>
+			</subitem>
+			<subitem>
+				<title><![CDATA[Expungements/Pardons]]></title>
+				<parentid>0</parentid>
+				<type>2</type>
+				<menutype><![CDATA[Header]]></menutype>
+			</subitem>
+		</item>
+
+		<item>
+			<title><![CDATA[FAQs]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype><![CDATA[Header]]></menutype>
+		</item>
+
+		<item>
+			<title><![CDATA[Contact US]]></title>
+			<parentid>0</parentid>
+			<type>1</type>
+			<menutype><![CDATA[Header]]></menutype>
+		</item>
+	</headermenu>
+	
+	<footermenu>
+		<item>
+			<title><![CDATA[Disclaimer]]></title>
+			<type>1</type>
+			<menutype><![CDATA[Footer]]></menutype>
+		</item>
+		<item>
+			<title><![CDATA[Site Map]]></title>
+			<type>1</type>
+			<menutype><![CDATA[Footer]]></menutype>
+		</item>
+		<item>
+			<title><![CDATA[Privacy Policy]]></title>
+			<type>1</type>
+			<menutype><![CDATA[Footer]]></menutype>
+		</item>
+		<item>
+			<title><![CDATA[Legal Marketing]]></title>
+			<type>1</type>
+			<menutype><![CDATA[Footer]]></menutype>
+		</item>
+	</footermenu>
+	
+	<banner>
+	   <backgroundimage><![CDATA[Banner-Background/banner-bg-1-1370883201.png]]></backgroundimage>
+		<item>
+			<bannername><![CDATA[Banner1]]></bannername>
+			<title1><![CDATA[Beyond the Emotions of Family Law for you and yours in Georgia's Metro Atlanta.]]></title1>
+			<title2><![CDATA[Results Matter]]></title2>
+			<title3><![CDATA[When It's your Life, You need a Former Prosecutor on your Side]]></title3>						
+			<image><![CDATA[Banner-Foreground/1-1366107426.jpg]]></image>
+		</item>
+		<item>
+			<bannername><![CDATA[Banner2]]></bannername>
+			<title1><![CDATA[Beyond the Emotions of Family Law for you and yours in Georgia's Metro Atlanta.]]></title1>
+			<title2><![CDATA[Results Matter]]></title2>
+			<title3><![CDATA[When It's your Life, You need a Former Prosecutor on your Side]]></title3>						
+			<image><![CDATA[Banner-Foreground/the-light-hd-1366107450.jpg]]></image>
+		</item>
+		<item>
+			<bannername><![CDATA[Banner3]]></bannername>
+			<title1><![CDATA[Beyond the Emotions of Family Law for you and yours in Georgia's Metro Atlanta.]]></title1>
+			<title2><![CDATA[Results Matter]]></title2>
+			<title3><![CDATA[When It's your Life, You need a Former Prosecutor on your Side]]></title3>						
+			<image><![CDATA[Banner-Foreground/pixars-up-hd-wide-1366107464.jpg]]></image>
+		</item>
+		<item>
+			<bannername><![CDATA[Banner4]]></bannername>
+			<title1><![CDATA[Beyond the Emotions of Family Law for you and yours in Georgia's Metro Atlanta.]]></title1>
+			<title2><![CDATA[Results Matter]]></title2>
+			<title3><![CDATA[When It's your Life, You need a Former Prosecutor on your Side]]></title3>						
+			<image><![CDATA[Banner-Foreground/lost-aurora-hdtv-1080p-hd-1366107476.jpg]]></image>
+		</item>
+		<item>
+			<bannername><![CDATA[Banner5]]></bannername>
+			<title1><![CDATA[Beyond the Emotions of Family Law for you and yours in Georgia's Metro Atlanta.]]></title1>
+			<title2><![CDATA[Results Matter]]></title2>
+			<title3><![CDATA[When It's your Life, You need a Former Prosecutor on your Side]]></title3>						
+			<image><![CDATA[Banner-Foreground/preview-1366092170.png]]></image>
+		</item>
+	</banner>	
+
+	
+	<cmspages>
+		<item>
+			<title><![CDATA[Areas of Practice]]></title>
+			<subtitle><![CDATA[Areas of Practice]]></subtitle>
+			<metatitle><![CDATA[Areas of Practice]]></metatitle>
+			<metakeywords><![CDATA[Areas of Practice]]></metakeywords>
+			<metadescription><![CDATA[Areas of Practice]]></metadescription>
+			<content><![CDATA[<h4>Twenty-three year's experience in criminal and family law </h4>
+                <p>Ralph Jackson Attorney at Law, my diligence, coupled with my 23 years of experience, enables me to anticipate your unique concerns, challenges and needs, while remaining mindful of the big picture. I have a reputation for successfully winning difficult criminal and family trials through dedication and hard work. I have represented my clients in more than 60 jury trials, and have only lost two cases in the last five years. </p>
+                <p>I also have also gained the respect of my peers for my professionalism and ethics, earning a BV® Distinguished Peer Review Rating by Martindale-Hubbell®. Whether you are planning to adopt, are going through a divorce or have been charged with a criminal offense in Georgia, I offer a variety of innovative and workable solutions to help you make the best of any situation.</p>
+                <h4>Adhering to principles of integrity </h4>
+                <p>M. Byron Morgan Attorney at Law is dedicated to providing personalized legal services to individuals throughout South Metro Atlanta. I am also dedicated to working within my Christian principles. This does not mean I force my faith upon my clients, but rather, it means you can expect direct and honest guidance about your case. </p>
+                 <h4>Contact a seasoned Jonesboro law firm today </h4>
+                <p>Call Ralph Jackson Attorney at Law at 770-472-7334 or contact us online to schedule an appointment. </p>]]></content>
+			<template><![CDATA[home]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[home]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[About Us]]></title>
+			<subtitle><![CDATA[About Us]]></subtitle>
+			<metatitle><![CDATA[About Us]]></metatitle>
+			<metakeywords><![CDATA[About Us]]></metakeywords>
+			<metadescription><![CDATA[About Us]]></metadescription>
+			<content><![CDATA[Counsel Edge, a Thomson Reuters business, is the pioneer and leader in online legal information and services for lawyers, businesses, and individuals. Counsel Edge's roots go back to 1995, when two attorneys compiled a list of Internet resources for a group of law librarians in northern California. The response to the material was so positive they decided to post the information on the Internet. Launched on Jan. 9, 1996, Counsel Edge.com soon offered a mix of cases, statutes, legal news, a lawyer directory, an online career center and community-oriented tools such as mailing lists and message boards. Counsel Edge, a Thomson Reuters business, is the pioneer and leader in online legal information and services for lawyers, businesses, and individuals. Counsel Edge's roots go back to 1995, when two attorneys compiled a list of Internet resources for a group of law librarians in northern California. The response to the material was so positive they decided to post the information on the Internet.
+
+Launched on Jan. 9, 2001, Counsel Edge.com soon offered a mix of cases, statutes, legal news, a lawyer directory, an online career center and community-oriented tools such as mailing lists and message boards. The Web site rapidly developed into the leading legal information site on the Internet.
+
+West Group, a Thomson Corporation business unit, recognized CounselEdge.com as a powerful tool for reaching legal professionals and for connecting attorneys with people in need of legal representation. In Jan., 2001, Counsel Edge and its 55 employees became part of West Group. The company enhanced the legal information portal while rapidly developing its law firm online marketing business and client development solutions.]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[about-us]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Attorney Profile]]></title>
+			<subtitle><![CDATA[Attorney Profile]]></subtitle>
+			<metatitle><![CDATA[Attorney Profile]]></metatitle>
+			<metakeywords><![CDATA[Attorney Profile]]></metakeywords>
+			<metadescription><![CDATA[Attorney Profile]]></metadescription>
+			<content><![CDATA[Attorney Profile]]></content>
+			<template><![CDATA[column2L]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[attorney-profile]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Practice Areas]]></title>
+			<subtitle><![CDATA[Practice Areas]]></subtitle>
+			<metatitle><![CDATA[Practice Areas]]></metatitle>
+			<metakeywords><![CDATA[Practice Areas]]></metakeywords>
+			<metadescription><![CDATA[Practice Areas]]></metadescription>
+			<content><![CDATA[Practice Areas]]></content>
+			<template><![CDATA[column2R]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[practice-areas]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[FAQs]]></title>
+			<subtitle><![CDATA[FAQs]]></subtitle>
+			<metatitle><![CDATA[FAQs]]></metatitle>
+			<metakeywords><![CDATA[FAQs]]></metakeywords>
+			<metadescription><![CDATA[FAQs]]></metadescription>
+			<content><![CDATA[FAQs]]></content>
+			<template><![CDATA[default]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[faq]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Contact]]></title>
+			<subtitle><![CDATA[Contact]]></subtitle>
+			<metatitle><![CDATA[Contact]]></metatitle>
+			<metakeywords><![CDATA[Contact]]></metakeywords>
+			<metadescription><![CDATA[Contact]]></metadescription>
+			<content><![CDATA[Contact]]></content>
+			<template><![CDATA[default]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[contact]]></slug>
+		</item>
+
+		<item>
+			<title><![CDATA[Disclaimer]]></title>
+			<subtitle><![CDATA[Disclaimer]]></subtitle>
+			<metatitle><![CDATA[Disclaimer]]></metatitle>
+			<metakeywords><![CDATA[Disclaimer]]></metakeywords>
+			<metadescription><![CDATA[Disclaimer]]></metadescription>
+			<content><![CDATA[Disclaimer]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[disclaimer]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Site Map]]></title>
+			<subtitle><![CDATA[Site Map]]></subtitle>
+			<metatitle><![CDATA[Site Map]]></metatitle>
+			<metakeywords><![CDATA[Site Map]]></metakeywords>
+			<metadescription><![CDATA[Site Map]]></metadescription>
+			<content><![CDATA[Site Map]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[site-map]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Privacy Policy]]></title>
+			<subtitle><![CDATA[Privacy Policy]]></subtitle>
+			<metatitle><![CDATA[Privacy Policy]]></metatitle>
+			<metakeywords><![CDATA[Privacy Policy]]></metakeywords>
+			<metadescription><![CDATA[Privacy Policy]]></metadescription>
+			<content><![CDATA[Privacy Policy]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[privacy-policy]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Legal Marketing]]></title>
+			<subtitle><![CDATA[Legal Marketing]]></subtitle>
+			<metatitle><![CDATA[Legal Marketing]]></metatitle>
+			<metakeywords><![CDATA[Legal Marketing]]></metakeywords>
+			<metadescription><![CDATA[Legal Marketing]]></metadescription>
+			<content><![CDATA[Legal Marketing]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[legal-marketing]]></slug>
+		</item>
+		
+	</cmspages>
+	
+	<practice-areas>
+		<item>
+			<title><![CDATA[Criminal Defense]]></title>
+			<subtitle><![CDATA[Criminal Defense]]></subtitle>
+			<metatitle><![CDATA[Criminal Defense]]></metatitle>
+			<metakeywords><![CDATA[Criminal Defense]]></metakeywords>
+			<metadescription><![CDATA[Criminal Defense]]></metadescription>
+			<content><![CDATA[Criminal Defense]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[criminal-defense]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Domestic Violence]]></title>
+			<subtitle><![CDATA[Domestic Violence]]></subtitle>
+			<metatitle><![CDATA[Domestic Violence]]></metatitle>
+			<metakeywords><![CDATA[Domestic Violence]]></metakeywords>
+			<metadescription><![CDATA[Domestic Violence]]></metadescription>
+			<content><![CDATA[Domestic Violence]]></content>
+			<template><![CDATA[column2L]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[domestic-violence]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[Drug Crimes]]></title>
+			<subtitle><![CDATA[Drug Crimes]]></subtitle>
+			<metatitle><![CDATA[Drug Crimes]]></metatitle>
+			<metakeywords><![CDATA[Drug Crimes]]></metakeywords>
+			<metadescription><![CDATA[Drug Crimes]]></metadescription>
+			<content><![CDATA[Drug Crimes]]></content>
+			<template><![CDATA[column2R]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[drug-crimes]]></slug>
+		</item>
+		<item>
+			<title><![CDATA[DUI]]></title>
+			<subtitle><![CDATA[DUI]]></subtitle>
+			<metatitle><![CDATA[DUI]]></metatitle>
+			<metakeywords><![CDATA[DUI]]></metakeywords>
+			<metadescription><![CDATA[DUI]]></metadescription>
+			<content><![CDATA[DUI]]></content>
+			<template><![CDATA[column1]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[dui]]></slug>
+		</item>
+		
+		<item>
+			<title><![CDATA[Expungements/Pardons]]></title>
+			<subtitle><![CDATA[Expungements/Pardons]]></subtitle>
+			<metatitle><![CDATA[Expungements/Pardons]]></metatitle>
+			<metakeywords><![CDATA[Expungements/Pardons]]></metakeywords>
+			<metadescription><![CDATA[Expungements/Pardons]]></metadescription>
+			<content><![CDATA[Expungements/Pardons]]></content>
+			<template><![CDATA[column2L]]></template>
+			<status><![CDATA[Active]]></status>
+			<slug><![CDATA[expungements-pardons]]></slug>
+		</item>
+		
+	</practice-areas>
+	<faq>
+		<item>
+			<question><![CDATA[How do I answer a question that is posted?]]></question>
+			<answer><![CDATA[Answering questions is easy. Just Sign-in and then go to the post you wish to answer. Click the orange button “Reply to this Topic” in the original post and you will be taken to a page with a text box where you can type in your answer. You may also scroll to the bottom of the page, and start typing in the reply box. Once you hit post, your response will be posted instantaneously.]]></answer>
+		</item>
+		
+		<item>
+			<question><![CDATA[How do I create a Counsel Edge Answers Account?]]></question>
+			<answer><![CDATA[You can register for a Counsel Edge Answers account by clicking the orange “Create Account” button on the Counsel Edge Answers homepage. When you register for an account, you will be able to select a screen name. Your screen name will be shown publicly when you ask or respond to posts.]]></answer>
+		</item>
+		<item>
+			<question><![CDATA[Are answers equivalent to legal advice?]]></question>
+			<answer><![CDATA[No. The information exchanged on Counsel Edge Answers is not legal advice. If you are seeking legal advice or representation, please contact a licensed attorney about your legal matter.]]></answer>
+		</item>
+		<item>
+			<question><![CDATA[Who can post to Counsel Edge Answers?]]></question>
+			<answer><![CDATA[You are welcome to browse Counsel Edge Answers as a guest, but posting a question or responding to a post requires a Counsel Edge Answers account. Creating an account is absolutely free and can be done quickly and easily by clicking here.]]></answer>
+		</item>
+		<item>
+			<question><![CDATA[How do I create a Counsel Edge Answers Account?]]></question>
+			<answer><![CDATA[You can register for a Counsel Edge Answers account by clicking the orange “Create Account” button on the Counsel Edge Answers homepage. When you register for an account, you will be able to select a screen name. Your screen name will be shown publicly when you ask or respond to posts. To protect your privacy, it’s recommended that you not include any personally identifiable information in your screen name. To avoid violating ourCommunity Guidelines, do not use obscene or offensive usernames. You can learn more about guidelines in choosing a screen name here.]]></answer>
+		</item>
+	</faq>
+	<contactpage>
+		<item>
+			<label><![CDATA[Name]]></label>
+			<fieldtype><![CDATA[Text]]></fieldtype>
+			<options><![CDATA[-]]></options>
+			<required><![CDATA[Yes]]></required>
+		</item>
+		<item>
+			<label><![CDATA[Email]]></label>
+			<fieldtype><![CDATA[Text]]></fieldtype>
+			<options>-</options>
+			<required><![CDATA[Yes]]></required>
+		</item>
+		<item>
+			<label><![CDATA[Phone]]></label>
+			<fieldtype><![CDATA[Text]]></fieldtype>
+			<options>-</options>
+			<required><![CDATA[Yes]]></required>
+		</item>
+		<item>
+			<label><![CDATA[Message]]></label>
+			<fieldtype><![CDATA[TextArea]]></fieldtype>
+			<options>-</options>
+			<required><![CDATA[Yes]]></required>
+		</item>
+		
+		<item>
+			<label><![CDATA[Gender]]></label>
+			<fieldtype><![CDATA[DropDown]]></fieldtype>
+			<options>Male,Female</options>
+			<required><![CDATA[Yes]]></required>
+		</item>
+		
+	</contactpage>
+</themecontent>

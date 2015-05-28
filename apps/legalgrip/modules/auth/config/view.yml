@@ -1,0 +1,3 @@
+all:
+    stylesheets:    [legalgrip/jquery.fancybox.css]
+    javascripts:    [legalgrip/jquery.fancybox.js]

@@ -1,0 +1,25 @@
+
+
+/**=== Start Change Color =================================================************************/
+
+
+.social-icon-main, nav ul li a:hover, nav ul li a.active, .practice-area h2, .content-area h2, nav ul li ul li, #contactus .content-area div.contact-form li input[type=submit], .quick-form input.send-btn {background-color:##BGCOLOR##;}
+
+.call-main h2, #contactus .content-area div.contact-details label { color:##TEXTCOLOR##;}
+
+body, nav ul li a:hover, .services, .services:hover, .facebook:hover, .twitter:hover, .linkedin:hover, .rss:hover{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area li a, #faq .content-area h4 a.twisty-collapse, a.twisty-expand{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .services h3, .animate-in .subtitle, .animate-in .title, #faq .content-area h4 a:hover, .practice-area li a:hover, #faq .content-area h4 a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+.banner {
+    background-image: ##BGIMAGE##;
+}
+/**=== End Change Color =================================================************************/

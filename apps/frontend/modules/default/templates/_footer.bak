@@ -1,0 +1,49 @@
+<footer>
+	<section class="page row clearfix">
+   	  <div class="choose-us">
+        	<h3>Why Choose Us</h3>
+            <ul>
+                <li><?php echo link_to("Attorney Web Design","pages/attorney-web-design");?></li>
+            	<!--<li><a href="#">Attorney Web Design</a></li>-->
+            	<li><?php echo link_to("Client Testimonials","pages/client-testimonials");?></li>
+                <!--<li><a href="#">Client Testimonials</a></li>-->
+                <li><?php echo link_to("Effective & Aggressive Marketing","pages/effective-and-aggressive-marketing");?></li>
+                <!--<li><a href="#">Effective & Aggressive Marketing</a></li>-->
+                <li><?php echo link_to("Our Dedication","pages/our-dedication");?></li>
+                <!--<li><a href="#">Our Dedication</a></li>-->
+                <li><?php echo link_to("Our Philosophy","pages/our-philosophy");?></li>
+                <!--<li><a href="#">Our Philosophy</a></li>-->
+                <li><?php echo link_to("What Makes Us Different?","pages/what-makes-us-different?");?></li>
+                <!--<li><a href="#">What Makes Us Different?</a></li>-->
+            </ul>
+      </div>
+        <div class="stay-connected">
+        	<h3>Stay connected</h3>
+            <ul>
+            	<li><a href="#"><!--<img src="images/facebook-icon.png">--><?php echo image_tag('facebook-icon.png'); ?> Facebook</a></li>
+                <li><a href="#"><!--<img src="images/twitter-icon.png">--><?php echo image_tag('twitter-icon.png'); ?> Twitter</a></li>
+                <li><a href="#"><!--<img src="images/linkedin-icon.png">--><?php echo image_tag('linkedin-icon.png'); ?> Linked in</a></li>
+                <li><a href="#"><!--<img src="images/rss-icon.png">--><?php echo image_tag('rss-icon.png'); ?> RSS</a></li>
+              <li><a href="#"><!--<img src="images/google-plus-icon.png">--><?php echo image_tag('google-plus-icon.png'); ?> Google+</a></li>
+            </ul>
+      </div>
+
+      <!--start comment by jaydip dodiya for remove newletter-->
+        <!--<div class="stay-tuned">
+        	<h3>Stay Tuned</h3>
+          <p>Subscribe to our email newsletter for interesting information and news.</p>
+          	<p><input name="" type="text"> <a href="#"><!--<img src="images/subscribe-btn.png">--><?php //echo image_tag('subscribe-btn.png'); ?><!--</a></p>-->
+            <div class="footer-conteact-information">
+                <ul>
+                    <li><a href="mailto:example@mail.com"><!--<img src="images/email-icon.png">--><?php echo image_tag('email-icon.png'); ?> example@mail.com</a></li>
+                    <li><!--<img src="images/phone-icon.png">--><?php echo image_tag('phone-icon.png'); ?> 855 658 1300</li>
+                    <li><a href="#"><!--<img src="images/skype-icon.png">--><?php echo image_tag('skype-icon.png'); ?> exampleskypeusername</a></li>
+                    <li><!--<img src="images/address-icon.png">--><?php echo image_tag('address-icon.png'); ?> 2000 Regency Parkway Cary, NC 27518</li>
+                </ul>
+            </div>
+      <!--</div>-->
+      <!--end comment by jaydip dodiya for remove newsletter-->
+
+        <div class="footer-links">&copy; 2012 Counsel Edge. All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp;     |     <?php echo link_to("Terms of Use","pages/terms-of-use");?>    |     <?php echo link_to("Privacy Policy","pages/privacy-policy");?>     |     <?php echo link_to("Community Guidelines","pages/community-guidelines");?></div>
+    </section>
+</footer>

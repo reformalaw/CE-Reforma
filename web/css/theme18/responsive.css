@@ -1,0 +1,589 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+
+.banner{
+	height:auto;
+}
+
+nav{
+	width:100%;
+}
+
+nav div.menu ul li{	
+	width:100%;
+	text-align:center;
+	padding:5px 8px;
+}
+
+nav div.menu ul li a{
+	padding: 10px 8px;
+}
+
+nav div.menu ul li ul{
+	top:110px;
+	display:none;
+}
+
+nav div.menu ul li:hover ul{
+	top:110px;
+	display:none;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding:10px 0px;
+	text-align:center;
+}
+
+.phoneno{
+	width:100%;
+	padding:0px;
+	text-align:center;
+	background-image:none;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding:5px 0px 3px 0px;
+}
+
+.logo img{
+	height:40px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:100%;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+.practice-area{
+	width:100%;
+}
+.practice-area ul{
+	min-height:inherit;
+	float:left;
+}
+
+.practice-area ul li{
+	width:100%;
+	float:left;
+}
+
+.content-area h2{margin:20px 0px 10px 0px;}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+	text-align:center;
+}
+
+.quick-contact li{padding-right:0px;width:100%;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 2%;
+    width:90%;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	height:130px;
+	text-align:center;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+
+.banner {
+    height: 200px;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:340px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav, nav div.menu{
+	width:340px;
+}
+
+nav{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+nav div.menu ul li{	
+	width:100%;
+	text-align:center;
+	padding:5px 0;
+	border-right:none 0px;
+	border-bottom:1px solid #414141;
+}
+
+nav div.menu ul li a{
+	padding: 10px 8px;
+}
+
+nav div.menu ul li:first-child a:hover, nav div.menu ul li a:hover{
+	padding: 10px 8px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+nav div.menu ul li ul{
+	top:110px;
+	display:none;
+}
+
+nav div.menu ul li:hover ul{
+	top:110px;
+	display:none;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding:15px 0px;
+	text-align:center;
+}
+
+.phoneno{
+	width:100%;
+	padding:0px;
+	text-align:center;
+	background-image:none;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding:5px 0px 3px 0px;
+	margin:0px;
+}
+
+.logo img{
+	height:40px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:340px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+	margin-bottom:20px;
+}
+.practice-area ul{
+	min-height:inherit;
+	float:left;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:100%;
+	float:left;
+}
+
+.quick-contact {
+    float: left;
+    padding:15px;
+    width:308px;
+}
+
+.quick-contact li{width:50%;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 85%;
+}
+
+#contactus .content-area div.contact-form{
+	width:90%;
+	padding:5%;
+}
+
+#contactus .content-area div.contact-form li{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:80%;
+	min-height:inherit;
+	padding:5%;
+	margin:5%;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	width:90%;
+	padding:5% 5%;
+	text-align:center;
+	margin-top:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.social-icons a{
+	display:inline-block;
+	float:none;
+}
+
+footer .footer-bg{
+	width:310px;
+	text-align:center;
+	line-height:16px;
+}
+
+footer .footer-bg .right{
+	float:none;
+	margin-top:10px;
+}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav, nav div.menu{
+	width:470px;
+}
+
+nav{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+nav div.menu ul li a{
+	padding: 15px 10px;
+	font-size:13px;
+}
+
+nav div.menu ul li ul{
+	top:275px;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding-bottom:0px;
+	text-align:center;
+}
+
+.logo img{
+	height:40px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:470px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.practice-area ul{
+	min-height:inherit;
+	float:left;
+}
+
+.practice-area ul li, #full-width .practice-area li{
+	width:45%;
+	float:left;
+	margin-right:2%;
+}
+
+
+.quick-contact {
+    float: left;
+    padding:15px;
+    width: 438px;
+}
+
+.quick-contact li{width:50%;margin:5px 0;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 85%;
+}
+
+#contactus .content-area div.contact-form{
+	width:90%;
+	padding:3% 5%;
+}
+
+#contactus .content-area div.contact-details{
+	width:80%;
+	min-height:inherit;
+	padding:5%;
+	margin:5%;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	text-align:center;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	width:94%;
+	padding:3%;
+	margin-top:30px;
+}
+
+.social-icons a{
+	display:inline-block;
+	float:none;
+}
+
+.phoneno{
+	width:100%;
+	text-align:center;
+	padding:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+footer .footer-bg{
+	width:440px;
+	text-align:center;
+	line-height:24px;
+}
+
+footer .footer-bg .right{
+	float:none;
+}
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:680px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav, nav div.menu{
+	width:680px;
+}
+
+nav{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+nav div.menu ul li a{
+	padding: 15px 22px;
+}
+
+nav div.menu ul li ul{
+	top:175px;
+}
+
+.logo{
+	width:300px;
+	overflow:hidden;
+}
+
+.logo img{
+	height:40px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:680px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:440px;
+}
+
+.practice-area{
+	width:220px;
+}
+
+.quick-contact {
+    float:left;
+    padding:15px;
+    width:650px;
+}
+
+.quick-contact li input, .quick-contact li textarea {
+    padding: 5px;
+    width:85%;
+}
+
+.social-icons{
+	text-align:center;
+	margin-top:0px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-webkit-border-radius:0px 0px 10px 10px;
+	border-radius:0px 0px 10px 10px;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+
+.phoneno{
+	margin:0px;
+	padding:10px 0px;
+}
+
+#full-width .practice-area{
+	width:680px;
+}
+
+#full-width .practice-area li{
+	width:45%;
+}
+
+#contactus .content-area div.contact-form{
+	padding:4%;
+    width:92%;
+}
+
+#contactus .content-area div.contact-details{
+	padding:4% 4% 2% 4%;
+    width:84%;
+	margin:0 4% 4% 4%;
+	min-height:inherit;
+}
+
+footer .footer-bg{
+	width:650px;
+	text-align:center;
+	line-height:24px;
+}
+
+footer .footer-bg .right{
+	float:none;
+}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page{
+	width:880px;
+}
+
+.banner{
+	height:auto;
+}
+
+nav, nav div.menu{
+	width:878px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:880px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:600px;
+}
+
+.practice-area{
+	width:260px;
+}
+
+#full-width .practice-area{
+	width:880px;
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px;
+    width:848px;
+}
+
+.quick-contact li input, .quick-contact li textarea {
+    width:85%;
+}
+
+footer .footer-bg{
+	width:850px;
+}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

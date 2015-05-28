@@ -1,0 +1,3 @@
+all:
+    stylesheets:    [legalgrip/jquery.mCustomScrollbar.css]
+    javascripts:    [legalgrip/jquery-ui-1.8.21.custom.min.js, legalgrip/jquery.mousewheel.min.js, legalgrip/jquery.mCustomScrollbar.js]

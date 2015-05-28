@@ -1,0 +1,31 @@
+
+/**=== Start Change Color =================================================************************/
+
+body {
+	background-image:##BODYBACKGROUND##;
+	background-repeat:repeat;
+	
+}
+
+.phoneno, nav, .quick-contact li input[type=submit], nav ul li ul, #contactus .content-area div.contact-form li input[type=submit]{
+	background-color:##BGCOLOR##;
+}
+
+.practice-area ul li, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+.practice-area h4, .content-area h2, #contactus .content-area div.contact-form li input, #contactus .content-area div.contact-form li textarea, #contactus .content-area div.contact-form li select, .quick-contact h4{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+
+/**=== End Change Color =================================================************************/

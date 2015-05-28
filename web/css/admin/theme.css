@@ -1,0 +1,146 @@
+.ThemeOfficeMenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 13px; PADDING-BOTTOM: 0px; CURSOR: default; PADDING-TOP: 0px; FONT-FAMILY: arial, verdana, sans-serif; WHITE-SPACE: nowrap; HEIGHT: 25px
+}
+.ThemeOfficeSubMenuTable {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 13px; PADDING-BOTTOM: 0px; CURSOR: default; PADDING-TOP: 0px; FONT-FAMILY: arial, verdana, sans-serif; WHITE-SPACE: nowrap; HEIGHT: 25px; border:none;
+}
+.ThemeOfficeSubMenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 100; FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#BDC3BD, Direction=135, Strength=4); VISIBILITY: hidden; PADDING-BOTTOM: 0px; OVERFLOW: visible; PADDING-TOP: 0px; POSITION: absolute
+}
+.ThemeOfficeSubMenuTable {
+	OVERFLOW: visible
+}
+.ThemeOfficeMainItem {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: default; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap; color:#424242;padding:5px 8px 7px 8px;font-size:12px;font-weight:bold;
+}
+.ThemeOfficeMainItemHover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap;padding:5px 8px 7px 8px;font-size:12px;font-weight:bold;
+}
+.ThemeOfficeMainItemActive {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap;padding:5px 8px 7px 8px;font-size:12px;font-weight:bold;
+}
+.ThemeOfficeMenuItem {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMenuItemHover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap; 
+}
+.ThemeOfficeMenuItemActive {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMainItem {
+	
+}
+.ThemeOfficeMainItemHover {
+	BACKGROUND-COLOR: #000048;color:#FFFFFF;
+}
+.ThemeOfficeMainItemActive {
+	BACKGROUND-COLOR: #0d85c4;color:#FFFFFF;
+}
+.ThemeOfficeMenuItem {
+	BACKGROUND-COLOR: #000048
+}
+.ThemeOfficeMenuItemHover {
+	BACKGROUND-COLOR: #0d85c4
+}
+.ThemeOfficeMenuItemActive {
+	BACKGROUND-COLOR: #0d85c4
+}
+
+TD.ThemeOfficeMainFolderLeft {
+	PADDING-RIGHT: 2px; BORDER-TOP: #7C7A7A 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; BORDER-LEFT: #30559c 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid
+}
+TD.ThemeOfficeMainItemLeft {
+	PADDING-RIGHT: 2px; BORDER-TOP: #7C7A7A 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; BORDER-LEFT: #30559c 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid
+}
+TD.ThemeOfficeMainFolderText {
+	PADDING-RIGHT: 5px; BORDER-TOP: #7C7A7A 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid; WHITE-SPACE: nowrap
+}
+TD.ThemeOfficeMainItemText {
+	PADDING-RIGHT: 5px; BORDER-TOP: #7C7A7A 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid; WHITE-SPACE: nowrap
+}
+TD.ThemeOfficeMainFolderRight {
+	BORDER-RIGHT: #30559c 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #30559c 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid
+}
+TD.ThemeOfficeMainItemRight {
+	BORDER-RIGHT: #30559c 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #30559c 1px solid
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainFolderLeft {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 1px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainItemLeft {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 1px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainFolderText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainItemText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainItemRight {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px
+}
+TR.ThemeOfficeMainItem TD.ThemeOfficeMainFolderRight {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px
+}
+.ThemeOfficeMenuFolderLeft {
+	PADDING-RIGHT: 3px; BORDER-TOP: #8D8D8D 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 5px; BORDER-LEFT: #30559c 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #30559c 1px solid; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMenuItemLeft {
+	PADDING-RIGHT: 3px; BORDER-TOP: #000048 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 5px; BORDER-LEFT: #000048 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #000048 1px solid; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMenuFolderText {
+	PADDING-RIGHT: 5px; BORDER-TOP: #000048 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #000048 1px solid; WHITE-SPACE: nowrap;color:#ffffff;font-size:12px;
+}
+.ThemeOfficeMenuItemText {
+	PADDING-RIGHT:5px; BORDER-TOP: #000048 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #000048 1px solid; WHITE-SPACE: nowrap; 
+	display:block; height:auto; line-height:19px; color:#ffffff;font-size:12px;
+}
+.ThemeOfficeMenuFolderRight {
+	BORDER-RIGHT: #000048 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000048 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #000048 1px solid; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMenuItemRight {
+	BORDER-RIGHT: #000048 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000048 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #000048 1px solid; WHITE-SPACE: nowrap
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderLeft {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 6px; BORDER-LEFT: 0px; PADDING-TOP: 6px; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #0d85c4
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemLeft {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; BORDER-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #0d85c4
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 6px; BORDER-LEFT: 0px; PADDING-TOP: 6px; BORDER-BOTTOM: 0px; color:#ffffff;font-size:12px;
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 6px; BORDER-LEFT: 0px; PADDING-TOP: 6px; BORDER-BOTTOM: 0px; color:#ffffff;font-size:12px;
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderRight {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 6px; BORDER-LEFT: 0px; PADDING-TOP: 6px; BORDER-BOTTOM: 0px;color:#424242;font-size:12px;
+}
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemRight {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 6px; BORDER-LEFT: 0px; PADDING-TOP: 6px; BORDER-BOTTOM: 0px
+}
+.ThemeOfficeMenuSplit {
+	BORDER-TOP: #c6c3bd 1px solid; MARGIN: 2px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.ThemeOfficeMenuItem IMG.seq1 {
+	DISPLAY: inline
+}
+.ThemeOfficeMenuItemHover seq2 {
+	DISPLAY: inline
+}
+.ThemeOfficeMenuItemActive seq2 {
+	DISPLAY: inline
+}
+.ThemeOfficeMenuItem .seq2 {
+	DISPLAY: none
+}
+.ThemeOfficeMenuItemHover .seq1 {
+	DISPLAY: none
+}
+.ThemeOfficeMenuItemActive .seq1 {
+	DISPLAY: none
+}
+
+TABLE.menubar {	WIDTH: 100%; border-bottom:1px solid #000048;}
+.menubackgr {	BACKGROUND: url(../../images/admin/mainlinks_bg.gif) repeat-x #d7eaf5;padding:5px 10px !important;background-position:top;}

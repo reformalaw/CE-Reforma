@@ -1,0 +1,749 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme:   Sliding Horizontal Parallax (Responsive)
+Version:   0.2.2 Beta
+Theme Author:   Ian Lunn @IanLunn
+Author URL:   http://www.ianlunn.co.uk/
+Theme URL:   http://www.sequencejs.com/themes/sliding-horizontal-parallax/
+
+This is a FREE theme and is dual licensed under the following: 
+http://www.opensource.org/licenses/mit-license.php | http://www.gnu.org/licenses/gpl.html
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise stated.
+Aside from these comments, you may modify and distribute this file as you please. Have fun!
+ */
+
+
+#header-container{
+	background: #d9d9d9;
+	border-bottom: black solid 5px;
+	width: 100%;
+}
+
+#banner {
+	height:370px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/*max-width: 1280px;*/
+	width:680px;
+	padding:0px 0px;
+}
+
+#main, #aside{
+	font-size: 1.6em;
+}
+
+
+.next,.prev {
+	color: white;
+	cursor: pointer;
+	display: none !important;
+	/*font-weight: bold;
+	padding: 10px 15px;*/
+	position: absolute;
+	/*top: 33%;*/
+	z-index: 1000;
+	/*height: 76px;
+	margin-top: -100px;*/
+}
+
+#banner:hover .next, #banner:hover .prev{
+	display:block !important;
+}
+
+.pause {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+}
+
+.paused {
+	opacity: 0.3;
+}
+
+.prev {
+	left: 2%;
+}
+
+.next {
+	right: 2%;
+}
+
+.prev img, .next img{
+	height: 100%;
+	width: auto;
+}
+
+#sequence-preloader{
+	background: #d9d9d9;
+}
+
+#banner-nav{
+	width:680px;
+	margin:auto;
+}
+
+#nav {
+	bottom: 0;
+	/*right: 0;*/
+	display: none;	
+	position: absolute;
+	width:100%;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+#nav li {
+	display: inline-block;
+	height: 106px;
+	margin:1px 0px;
+}
+
+#nav li img {
+	cursor: pointer;
+	opacity: 0.5;	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#nav li img.active {
+	opacity: 1;
+}
+
+@media only screen and (min-width : 1224px) {
+	/*only display the hover effect on desktops/laptops*/
+	#nav li img:hover {
+		opacity: 1;
+	
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		-ms-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+
+}
+
+#sequence li{
+	height: 100%;
+	position: absolute;
+	/*top: -50%;*/
+	width: 100%;
+	height:370px;
+	margin:auto;
+	background-color:#1e1e1c;
+}
+
+#sequence li * {
+	position: absolute;
+}
+
+#sequence li img{
+	/*height: 100%;*/
+	height:370px;
+	width:680px;
+}
+
+#sequence {
+	background: url("../../images/theme10/banner-round.png") no-repeat 50% 100%;
+	background-position:left top;
+	display: block;
+	height:370px;
+	margin: 0;
+	position: absolute;
+	/*max-width: 1280px;*/
+	width:680px;
+	
+	/*backface-visibility prevents graphical glitches when frames are animating*/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+h2 {
+	color: #363535;
+	font-weight: bold;
+	line-height:40px;
+	top:91px;
+}
+
+h3 {
+	font-family: 'AmbleRegular';
+	font-weight:normal;
+}
+
+.next,.prev {
+	background-image:url(../../images/theme10/slider-nav.png);
+	background-repeat:no-repeat;
+	width:40px;
+	height:40px;
+	position: absolute;
+	opacity: 0.9;
+	margin-top:160px;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.next{
+	background-position:0 -50px;
+}
+
+.next:hover,.prev:hover {
+	opacity: 0.5;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.title {
+	font-family: 'CorbelRegular';
+	font-size:48px;
+	left:0;
+	/*opacity: 0;*/
+	/*top: 30%;*/
+	z-index: 50;
+	margin-top:215px;
+	color:#FFFFFF;
+	line-height:21px;
+	text-align:center;
+	width:370px;
+	padding:0px 20px;
+	font-weight:normal;
+	top:0;
+}
+
+.animate-in .title {
+	left:0;
+	opacity: 0.8;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .title {
+	left:0;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.subtitle {
+	font-family: 'CorbelRegular';
+	color: #ffffff;
+	font-size: 44px;
+	left: 0;
+	width:auto;
+	opacity: 0;
+	/*top: 50%;*/
+	margin:0px 1px;
+	margin-top:280px;
+	background-image:url(../../images/theme10/banner-caption.png);
+	background-repeat:repeat;
+	padding:10px 20px;
+	line-height:36px;
+	z-index: 50;
+	width:938px;
+	height:75px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+
+.get-started-link{
+	font-family: 'CorbelRegular';
+	font-size:23px;
+	color:#ffffff;
+	padding:0px 10px 10px 0px;
+	width:auto;
+	display:block;
+	margin-top:5px;
+	text-align:center;
+	line-height:30px;
+}
+
+.get-started-link span{
+	position:static !important;
+	font-weight:bold;
+}
+
+.animate-in .subtitle {
+	left:0;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .subtitle {
+	left:0;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.model {
+	/*left: 30%;
+	bottom: -48%;*/
+	opacity: 0;
+	position: relative;
+	/*max-height: 517px !important;
+	height: auto !important;
+	width: 30%;*/
+	width: auto; /*prevents the model from shrinking when the browser is resized*/
+	/*max-width: auto;*/
+}
+
+.animate-in .model {
+	left:0;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .model {
+	right:0;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+#intro{
+	background-image:url(../../images/theme10/banner-bg-1.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#creative{
+	background-image:url(../../images/theme10/banner-bg-1.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#support{
+	background-image:url(../../images/theme10/banner-bg-1.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#intro-1{
+	background-image:url(../../images/theme10/banner-bg-1.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#creative-1{
+	background-image:url(../../images/theme10/banner-bg-1.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+
+
+#banner {
+	height: 200px;
+	width:100%;
+}
+
+#sequence {
+	height:200px;
+	width:100%;
+}
+
+#sequence li img{
+	width:100%;
+	height:145px;
+}
+
+.title {
+	font-size:14px;
+	left:0;
+	margin-top:0px;
+	line-height:16px;
+	width:90%;
+	text-align:center;
+}
+
+
+.animate-in .title {
+	left:0;
+	padding:5%;
+}
+
+.subtitle {
+	font-size: 22px;
+	width: 84%;
+	margin-top:60px;
+	text-align:center;
+	display:none;
+}
+
+
+.get-started-link{
+	font-size:14px;
+	padding:3%;
+}
+
+.animate-in .subtitle {
+	left:0;
+	padding:5%;
+}
+
+.next,.prev {
+	display:block;
+	margin-top:60px;
+	width:40px;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+
+#banner {
+	height:147px;
+	width:100%;
+}
+
+#sequence {
+	height:145px;
+	width:100%;
+}
+
+
+#sequence li{
+	display:inline-block;
+}
+
+#sequence li img{
+	width:100%;
+	height:145px;
+}
+
+
+.title {
+	font-size:18px;
+	left:0;
+	margin-top:0px;
+	line-height:22px;
+	width:90%;
+	text-align:center;
+}
+
+
+.animate-in .title {
+	left:0;
+	padding:5%;
+}
+
+.subtitle {
+	font-size: 22px;
+	width: 84%;
+	margin-top:60px;
+	text-align:center;
+}
+
+
+.get-started-link{
+	font-size:16px;
+	padding:3%;
+}
+
+.animate-in .subtitle {
+	left:0;
+	padding:5%;
+	display:none;
+}
+
+.next,.prev {
+	display:block;
+	margin-top:60px;
+	width:40px;
+}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+
+#banner {
+	height:212px;
+	width:470px;
+}
+
+#sequence {
+	height:210px;
+	width:470px;
+}
+
+
+#sequence li{
+	display:inline-block;
+}
+
+#sequence li img{
+	width:470px;
+	height:210px;
+}
+
+
+.title {
+	font-size:18px;
+	left:0;
+	margin-top:0px;
+	line-height:18px;
+	width:90%;
+	text-align:center;
+}
+
+
+.animate-in .title {
+	left:0;
+	padding:0;
+	width:100%;
+	margin-top:100px;
+	height:90px;
+	overflow:hidden;
+}
+
+.subtitle {
+	font-size: 22px;
+	width: 90%;
+	margin-top:20px;
+	text-align:center;
+}
+
+
+.get-started-link{
+	font-size:16px;
+	padding:0;
+	margin:0;
+	margin-top:5px;
+	text-align:center;
+	width:100%;
+	line-height:18px;
+}
+
+.animate-in .subtitle {
+	left:0;
+	padding:1%;
+	width:98%;
+	margin:0px;
+	margin-top:135px;
+	height:55px;
+	line-height:24px;
+}
+
+.next,.prev {
+	margin-top:80px;
+}
+
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+
+#banner {
+	width:680px;
+	height:282px;
+}
+
+#sequence {
+	width:680px;
+	height:280px;
+}
+
+#sequence li{
+	display:inline-block;
+}
+
+#sequence li img{
+	height:280px;
+	width:678px;
+}
+
+.title {
+	font-size:28px;
+	left:0;
+	margin-top:0px;
+	line-height:30px;
+	width:65%;
+}
+
+.animate-in .title {
+	left:0;
+	padding:0% 0 0% 0;
+	font-size:18px;
+	line-height:18px;
+	text-align:left;
+	margin-top:105px;
+	height:110px;
+	overflow:hidden;
+}
+
+.subtitle {
+	font-size: 24px;
+	width: 90%;
+	margin-top:100px;
+}
+
+.get-started-link{
+	font-size:16px;
+	padding:0% 0%;
+	text-align:left;
+	line-height:20px;
+	margin-top:0px;
+	width:auto;
+}
+
+.animate-in .subtitle {
+	left:0;
+	/*padding:3% 0 5% 0;*/
+	width:648px;
+	margin-top:190px;
+	padding:2px 15px 10px 15px;
+	height:55px;
+}
+
+.next,.prev {
+	margin-top:100px;
+}
+
+.animate-in .model {
+    right:0;
+}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+
+#banner {
+	width:880px;
+	height:395px;
+}
+
+#sequence {
+	width:880px;
+	height:395px;
+}
+
+
+#sequence li{
+	display:inline-block;
+}
+
+#sequence li img{
+	/*height:300px;
+	width:300px;*/
+}
+
+.title {
+	font-size:18px;
+	left:40px !important;
+	margin-top:190px;
+	line-height:30px;
+	width:330px;
+	line-height:24px;
+	height:90px;
+	overflow:hidden;
+}
+
+.animate-in .title {
+	left:0;
+	padding:1% 0;
+}
+
+.subtitle {
+	font-size: 24px;
+	width: 878px;
+	margin-top:300px;
+	margin-left:0px;
+	line-height:24px;
+	height:60px;
+}
+
+.get-started-link{
+	font-size:16px;
+	width:auto;
+	padding:0px;
+	line-height:18px;
+	margin-top:10px;
+	text-align:left;
+}
+
+.animate-in .subtitle {
+	left:0;
+	padding:1% 2%;
+}
+
+.next,.prev {
+	top:3%;
+	/*width:3%;*/
+}
+
+.animate-in .model {
+    right:0;
+}
+
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

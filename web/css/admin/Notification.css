@@ -1,0 +1,28 @@
+﻿/* No Record Start */
+.ErrorNoRecord { text-align:center; width:100%; margin:auto; margin:5px 0px 10px 0px; }
+.ErrorNoRecord div.Message { border:1px dashed #BD160D; background:#ffffff; width:70%; padding:10px; color:#BD160D; font-size:12px; font-weight:bold; margin:auto; line-height:20px; }
+.ErrorNoRecord a { color:#000000; }
+/* No Record End */
+
+/* Error Start */
+.ErrorEmptyField { text-align:center; width:100%; margin:auto; margin:5px 0px 10px 0px; }
+.ErrorEmptyField div.Message { border:1px dashed #BD160D; width:70%; padding:10px; color:#BD160D; font-size:12px; font-weight:bold; margin:auto; line-height:20px; text-align:left; }
+.ErrorEmptyField div.MessageImg { background:transparent url(../../AdminArea/Img/icon_errorsymbol.gif) no-repeat; height:30px; padding:5px 10px 0px 40px;  }
+.ErrorEmptyField UL { font-size:11px; font-weight:normal; margin:0px 0px 0px 25px; padding:0px; }
+.ErrorEmptyField li a { font-size:11px; font-weight:bold; color:#000000; text-decoration:underline; }
+/* Error End */
+
+/* Update Success Start */
+.UpdateRecord { text-align:center; width:100%; margin:auto; float:left; margin:5px 0px 10px 0px; }
+.UpdateRecord div.Message { border:1px dashed #004071; background:#ffffff; width:70%; padding:10px; color:#004071; font-size:12px; font-weight:bold; margin:auto; line-height:20px; }
+.UpdateRecord div.Text { color:#000000; font-size:11px; padding:10px; font-weight:normal; }
+/* Update Success End */
+
+/* Update Confirm Success Start */
+.UpdateRecordConfirm { text-align:left; width:70%; margin:5px auto 10px auto; }
+.UpdateRecordConfirm div.Message { border:1px dashed #004071; background:#ffffff; width:100%; padding:10px; color:#004071; font-size:12px; font-weight:bold; margin:auto; line-height:20px; }
+.UpdateRecordConfirm div.MessageImg { background:transparent url(../../AdminArea/Img/icon_successsymbol.gif) no-repeat; height:30px; padding:5px 10px 0px 40px;  }
+.UpdateRecordConfirm UL { font-size:11px; font-weight:normal; margin:0px 0px 0px 25px; padding:0px; }
+.UpdateRecordConfirm ul li a { font-size:11px; font-weight:bold; color:#000000; text-decoration:underline; }
+.UpdateRecordConfirm div.Text { color:#000000; font-size:11px; padding:10px; font-weight:normal; }
+/* Update Confirm Success End */

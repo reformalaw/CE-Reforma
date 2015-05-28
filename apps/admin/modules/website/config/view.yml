@@ -1,0 +1,3 @@
+all: 
+ javascripts:    [ admin/raphael-min.js, admin/morris.js, admin/prettify.js, admin/example.js]
+ stylesheets:    [ admin/prettify.css, admin/morris.css]

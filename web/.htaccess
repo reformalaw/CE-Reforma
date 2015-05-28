@@ -1,0 +1,52 @@
+php_flag display_errors 1
+php_value error_reporting 30719
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+    # uncomment the following line, if you are having trouble
+    # getting no_script_name to work
+    #RewriteBase /
+    
+    # Comment by Chintan to run LG Front in local
+    RewriteCond %{HTTP_HOST} ^(www\.)?lgdemo.com$
+    #RewriteCond %{HTTP_HOST} ^(www\.)?legalgrip.com$
+    RewriteCond %{REQUEST_URI} !^/(css|js|images|uploads|sf)/
+    RewriteRule ^(.*)$ legalgrip.php [QSA,L]
+
+    # Comment by Chintan to run Counceledge in local
+    RewriteRule ^robots.txt - [L]    
+    RewriteCond %{HTTP_HOST} !^(www\.)?cedemo.com$
+    #RewriteCond %{HTTP_HOST} !^(www\.)?counseledge.com$
+    #RewriteCond %{HTTP_HOST} !^(www\.)?counseledge.com$
+    RewriteCond %{REQUEST_URI} !^/(css|js|images|uploads|sf)/
+        RewriteRule ^(.*)$ customer.php [QSA,L]   
+    
+    # we skip all files with .something
+    #RewriteCond %{REQUEST_URI} \..+$
+    #RewriteCond %{REQUEST_URI} !\.html$
+    #RewriteRule .* - [L]
+
+    # we check if the .html version is here (caching)
+    RewriteRule ^$ index.html [QSA]
+    RewriteRule ^([^.]+)$ $1.html [QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    # no, so we redirect to our front web controller
+    RewriteRule ^(.*)$ index.php [QSA,L]
+
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule ^admin https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+</IfModule>
+
+#AuthType Basic
+#AuthName "Password Required"
+#AuthUserFile /var/www/html/web/.htpasswd
+#AuthGroupFile .grp
+#Require user counceadmin

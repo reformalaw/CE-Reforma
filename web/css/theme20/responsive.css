@@ -1,0 +1,536 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+   
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+.banner{
+	/*height:180px;*/
+}
+
+.logo-part {
+    width: 100%;
+	padding-bottom:15px;
+    padding-top:15px;
+	text-align:center;
+}
+
+.logo-part img {
+    /*height:35px;*/
+	width:100%
+}
+
+header { height:auto;}
+nav { float: left; width: 100%; height:auto; margin:0 0 10px 0; background-image:none;}
+nav ul { float: left; margin:0 0 0 0; padding:0; width:100%;}
+nav ul li {	display:inline; text-align:center; width:100%;}
+nav ul li a {padding:5px 2px; font-family: 'CorbelRegular'; font-size:16px; float:left; width:100%; text-align: center; line-height:30px;}
+nav ul li a:hover, nav ul li a.active { background-color:#3d3d3d; color:#fff; float:left; width:100%; text-align:center;}
+nav ul li ul li { width:89%;}
+nav ul li ul { width:97%;}
+.contact-no { width:250px; float:left;}
+.social-icons h2 { color: #3D3D3D; float: left; font-size: 18px; margin: 0px 10px 0 0;}
+.services, .services:hover { width:92%;	height:auto; padding:10px;}
+.quick-contact {float: left; margin: 0; padding: 0 10px; width: 89%;}
+.quick-form input, .quick-form textarea {float: left; margin: 0 7px 10px 0; padding: 5px;  width: 95%;}
+
+.services:hover {
+	padding:9px 9px 10px 9px;
+}
+
+.services-padding {
+    margin: 15px 0;
+}
+
+.services h3 {
+    font-size:18px;
+}
+
+.practice-area {
+    padding:4%;
+    width: 92%;
+    min-height:auto;
+}
+
+.practice-area ul{
+	height:150px;
+	overflow:auto;
+}
+
+.practice-area li{
+	width:95%;
+	float:left;
+	padding:2px 0px;
+}
+.practice-area li {background-image:url(../../images/theme20/areas-icon.png); background-repeat:no-repeat; background-position:center left;}
+
+.practice-area h2, .content-area h2{
+    font-size:18px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 100% !important;
+}
+
+.content-area h4 {
+    font-size: 14px;
+    line-height:16px;
+	margin-bottom:5px;
+}
+.why-us {
+    color: #FFFFFF;
+    float: left;
+    min-height: 207px;
+    padding: 0 16px;
+    width: 86%;
+}
+.content-text{
+	height:200px;
+	overflow:auto;
+	width:100%;
+}
+#home .content-text, #faq .content-text, #contactus .content-text {
+    float: left;
+    margin: 0 4px 4px;
+    padding: 0 16px;
+    width: 87.5%;
+}
+
+
+#faq div.content-area div.content-text{
+	height:auto;
+	padding-right:3%;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+}
+
+.social-icons {
+    margin-top:5px;
+	width:100%;
+	display:inline-block;
+	text-align:center;
+}
+
+.social-icons a {
+    float:none;
+	display:inline-block;
+}
+footer {
+    background-color: #E1E1E1;
+    color: #3D3D3D;
+    font-size: 12px;
+    height: auto;
+    margin: -75px 0 0;
+    padding: 15px 0;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:324px;
+}
+
+/*.banner{
+	height:200px;
+}*/
+
+.logo-part {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.logo-part img {
+    /*height:35px;*/
+	width:100%
+}
+
+header { height:auto;}
+nav { float: left; width: 100%; height:auto; margin:0 0 10px 0; background-image:none;}
+nav ul { float: left; margin:0 0 0 0; padding:0; width:100%;}
+nav ul li {	display:inline; text-align:center; width:100%;}
+nav ul li a {padding:5px 2px; font-family: 'CorbelRegular'; font-size:16px; float:left; width:100%; text-align: center; line-height:30px;}
+nav ul li a:hover, nav ul li a.active { background-color:#3d3d3d; color:#fff; float:left; width:100%; text-align:center;}
+nav ul li ul li { width:89%;}
+nav ul li ul { width:97%;}
+.contact-no { width:250px; float:left;}
+.social-icons h2 { color: #3D3D3D; float: left; font-size: 18px; margin: 0px 10px 0 0;}
+.services, .services:hover { width:92%;	height:auto; padding:10px;}
+.quick-contact {float: left; margin: 0; padding: 0; width: 100%;}
+.quick-form input, .quick-form textarea { float: left; margin: 0 7px 10px 0; padding: 5px;  width: 40%;}
+
+
+.services, .services:hover {
+    width: 320px;
+	height:100px;
+	padding:10px;
+}
+
+.services:hover {
+	padding:9px 9px 10px 9px;
+}
+
+.services-padding {
+    margin: 15px 0;
+}
+
+.services h3 {
+    font-size: 21px;
+}
+
+.practice-area {
+    padding: 10px 10px 15px 10px;
+    width: 309px;
+	min-height:auto;
+}
+
+.practice-area ul{
+	height:150px;
+	overflow:auto;
+}
+
+.practice-area li{
+	width:90%;
+	float:left;
+	padding:2px 0px;
+}
+.practice-area li {background-image:url(../../images/theme20/areas-icon.png); background-repeat:no-repeat; background-position:center left;}
+
+.practice-area h2, .content-area h2 {
+    font-size: 21px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 100% !important;
+}
+
+.content-text{
+	height:200px;
+	overflow:auto;
+	width:100%;
+}
+#home .content-text, #faq .content-text, #contactus .content-text {
+    float: left;
+    margin: 0 4px 4px;
+    padding: 0 16px;
+    width: 87.8%;
+}
+
+#faq div.content-area div.content-text{
+	height:auto;
+	padding-right:3%;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+	height:auto;
+	background:none;
+}
+
+.social-icons {
+	width:100%;
+	display:inline-block;
+	text-align:center;
+}
+
+.social-icons a {
+    float:none;
+	display:inline-block;
+}
+
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+.logo-part {
+    float: left;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 52%;
+}
+
+.logo-part img {
+    /*height:35px;*/
+	width:100%
+}
+header { height:auto;}
+nav { float: left; width: 100%; height:auto; margin:0 0 10px 0; background-image:none;}
+nav ul { float: left; margin:0 0 0 0; padding:0; width:100%;}
+nav ul li {	display:inline; text-align:center; width:100%;}
+nav ul li a {padding:5px 2px; font-family: 'CorbelRegular'; font-size:16px; float:left; width:100%; text-align: center; line-height:30px;}
+nav ul li a:hover, nav ul li a.active { background-color:#3d3d3d; color:#fff; float:left; width:100%; text-align:center;}
+nav ul li ul li { width:65%;}
+.contact-no h4 { float:left;}
+.contact-no { width:352px; margin:0 0 10px 0;}
+.social-icons h2 { color: #3D3D3D; float: left; font-size: 18px; margin: 0px 10px 0 0;}
+.services, .services:hover { width:92%;	height:auto; padding:10px;}
+.quick-contact { float: left; margin: 0; padding:0; width: 100%;}
+.quick-form input, .quick-form textarea {float: left; margin: 0 3px 10px 0; padding: 5px;  width:18%;}
+.why-us { color: #FFFFFF; float: left; min-height: 150px; padding: 0 16px; width: 93%;}
+.content-text { background-color: #FFFFFF; float: left; padding: 0 16px; width: 92%; margin:0 3px 3px;}
+
+.services, .services:hover {
+    width: 440px;
+	height:85px;
+}
+
+.services-padding {
+    margin: 15px 0;
+}
+
+.services h3 {
+    font-size: 21px;
+}
+
+#home .content-text, #faq .content-text, #contactus .content-text {
+    float: left;
+    margin: 0 4px 4px;
+    padding: 0 16px;
+    width: 91.5%;
+}
+
+.practice-area {
+    padding: 10px 15px;
+    width: 440px;	
+    min-height:auto;
+}
+.practice-area ul {
+    margin: 0;
+    padding-left: 15px;
+	height:200px;
+	overflow-y:scroll;
+}
+.practice-area li {background-image:url(../../images/theme20/areas-icon.png); background-repeat:no-repeat; background-position:center left;}
+
+.practice-area li{
+	width:60%;
+	float:left;
+	padding-right:5%;
+}
+
+.practice-area h2, .content-area h2 {
+    font-size: 21px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 470px !important;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+	background:none;
+}
+footer .right {
+    float: right;
+    margin: 0 68px 0 0;
+}
+
+.social-icons {
+    margin-top:5px;
+	width:470px;
+	display:inline-block;
+	text-align:center;
+}
+
+.social-icons a {
+    float:none;
+	display:inline-block;
+}
+
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:680px;
+}
+
+.logo-part {
+    width: 200px;
+	padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.logo-part img {
+    height:40px;
+}
+.contact-no { display:none;}
+nav { float: left; width: 100%; height:34px; margin:0 0 10px 0; background-image:url(../../images/theme20/main-menu-bg.png); background-repeat:repeat-x;}
+nav ul { float: left; padding:0;}
+nav ul li {	display:inline;}
+nav ul li a {padding:16px 14px; line-height:58px; font-size:18px;}
+.social-icons h2 { color: #3D3D3D; float: left; font-size: 18px; margin: 30px 10px 0 0;}
+.social-icons { width:170px;}
+.services, .services:hover { width:92%;	height:auto; padding:10px;}
+.quick-contact { float: left; margin: 0; width: 100%;}
+.quick-form input, .quick-form textarea {float: left; margin: 0 7px 10px 0; padding: 5px;  width: 20%;}
+.why-us { color: #FFFFFF; float: left; min-height: 150px; padding: 0 16px; width: 93%;}
+.content-text { background-color: #FFFFFF; float: left; padding: 0 16px; width: 91.2%; margin:0 3px 3px;}
+.services, .services:hover {
+    width: 182px;
+	height:135px;
+}
+
+#home .content-text, #faq .content-text, #contactus .content-text {
+    float: left;
+    margin: 0 4px 4px;
+    padding: 0 16px;
+    width: 94.1%;
+}
+
+.services h3 {
+    font-size: 21px;
+}
+
+.practice-area {
+    padding: 10px 15px;
+    width: 220px;
+}
+
+.practice-area h2, .quick-main h2, .why-us h2 {
+    font-size: 21px;
+}
+
+.content-area {
+    width: 430px;
+}
+.quick-main {
+    float: left;
+    width: 100%;
+}
+
+#home .content-area, #home .content-area, #faq .content-area, #contactus .content-area {
+    width: 680px;
+}
+
+#faq .content-area, #contactus .content-area{
+	min-height:400px;
+}
+footer .left { width:75%; margin:0;}
+footer { padding:5px 0;}
+.practice-area li { font-size:13px; padding:4px 0;}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page, #home .content-area, #faq .content-area, #contactus .content-area{
+	width:880px;
+}
+
+.logo-part {
+    width: 250px;
+}
+
+nav { float: left; width: 100%; height:34px; margin:0 0 10px 0; background-image:url(../../images/theme20/main-menu-bg.png); background-repeat:repeat-x;}
+nav ul { float: left; padding:0;}
+nav ul li {	display:inline;}
+nav ul li a {padding:15px 11px; line-height:48px; font-size:18px;}
+.social-icons h2 { color: #3D3D3D; float: left; font-size: 18px; margin: 30px 10px 0 0;}
+.social-icons { margin:0;}
+.services, .services:hover { width:92%;	height:auto; padding:10px;}
+.quick-contact {float: left; margin: 0; width: 100%;}
+.quick-form input, .quick-form textarea { float: left; margin: 0 7px 10px 0; padding: 5px;  width: 20%;}
+.why-us { color: #FFFFFF; float: left; min-height: 150px; padding: 0 16px; width: 93%;}
+.content-text { float: left; width: 96.7%; margin:0 3px 3px;}
+
+.services, .services:hover {
+    width: 248px;
+}
+
+#home .content-text, #faq .content-text, #contactus .content-text {
+    float: left;
+    margin: 0 4px 4px;
+    padding: 0 16px;
+    width: 95.5%;
+}
+
+.practice-area {
+    padding: 10px 15px;
+    width: 240px;
+}
+.practice-area h2, .quick-main h2, .why-us h2 {
+    font-size: 21px;
+}
+.practice-area h2, .content-area h2 {
+    font-size: 24px;
+}
+
+.content-area{
+    width: 610px;
+}
+
+#home .content-area {
+    width: 880px;
+}
+
+#faq .content-area, #contactus .content-area{
+	min-height:400px;
+}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

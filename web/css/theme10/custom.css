@@ -1,0 +1,19 @@
+nav, nav ul li a:hover, #contactus .content-area div.contact-form li input[type=submit], .tellus-form h2, .tellus-form ul li input:hover[type=submit], nav ul li ul li a{
+	background-color:##BGCOLOR##;
+}
+
+.service-box strong, .content-text h5, .practice-area ul li, .phoneno, .practice-area h4, .content-area h2, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+.practice-area ul li, footer, #full-width, #left-column, #right-column, #faq, #contactus{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover{
+	color:##LINKHOVERCOLOR##;
+}

@@ -1,0 +1,279 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+#all:
+
+dev:
+      site_url:                      'http://www.counseledge.com'
+      smtp_username:                 'c@c.com'
+      smtp_password:                 '2013'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+stage:
+      site_url:                      'http://www.counseledge.com'
+      smtp_username:                 'c@c.com'
+      smtp_password:                 '2013'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+prod:
+      site_url:                      'http://www.counseledge.com'
+      smtp_username:                 'c@c.com'
+      smtp_password:                 '2013'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'
+    
+all:
+  themebanner: "website/"
+  banner:      "banner/"
+  logo:        "logo/"
+  background:  "background/"
+  thumb:       "thumb/"
+  mediapath: "Media/"
+  no_of_records_per_page: 10
+  no_of_records_per_page_for_users : 20
+  max_end_range: 200000
+  currency:     "$"
+  dateformat:  "Y-m-d"
+  .pwdEncDecKey:
+    pwdEncDecKey:               '1HJ3AL6EC7MP9TS7O5' 	
+
+  .year_range:
+    year_range:
+      <?php for ($j = 1900; $j <= (date("Y")+1); $j++){ ?>
+      '<?php echo $j; ?>': '<?php echo $j; ?>'
+      <?php } ?>
+  
+  .caseFileType:
+    caseFileType:
+      0:   application/pdf 
+      1:   application/msword
+      2:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      3:   application/vnd.ms-excel
+      4:   application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      5:   image/jpg
+      6:   image/jpeg
+      7:   image/gif
+    caseInvoicePath: "caseBills/"
+      
+  UserStatus:
+    Active:                       Active
+    Deleted:                      Deleted
+    Inactive:                     Inactive
+    Pending:                      Pending 
+
+  UserType:
+    Admin:                        Admin
+    Staff:                        Staff
+    Customer:                     Customer
+    User:                         User
+
+  WebsitePrecticeType:
+    Page:   Page
+    Left:   Left
+    Right:  Right
+
+  FAQs:
+    Inactive:                    Inactive
+    Active:                      Active
+
+  CaseStage:
+    Submitted:                    Submitted
+    Accepted:                     Accepted
+    Paid:                         Paid
+    3rdPartyBillsSubmitted:       3rdPartyBillsSubmitted
+    Close:                        Close
+    
+  CaseStatus:
+    Active:                       Active
+    Deleted:                      Deleted
+    Inactive:                     Inactive
+
+  CaseActivityType:
+    CustomerBillsSubmitted:       CustomerBillsSubmitted
+    CaseAccepted:                 CaseAccepted
+    3rdPartyBillsSubmitted:       3rdPartyBillsSubmitted
+    3rdPartyBillsRejected:        3rdPartyBillsRejected  
+    CheckSent:                    CheckSent 
+    PaymentReceived:              PaymentReceived   
+        
+  Status:
+    Active:                      Active
+    Inactive:                    Inactive
+    Deleted:                     Deleted
+
+  .imageType:
+    imageType:
+      0:   image/jpeg 
+      1:   image/jpg
+      2:   image/png
+      3:   image/gif
+    profileImagePath: "Theme/"
+
+  BannerImageSize:
+    Height:  400
+    Width:   350
+    
+  ImageSize:
+    Height:  200
+    Width:   200
+  ThumbnailPath: 
+    Thumbpath:  '/uploads/Theme/thumb/'
+
+  Theme:
+    Yes: Yes
+    No:  No
+
+  ReservedSlugForPageAndPracticeArea:
+    keywords:    ['default','home','page','pages', 'practice-area','faq', 'contact']
+
+  TextWidget:
+    NumberOfTextWedget: 5
+
+  BannerTitle:
+    NumberOfBannerTitle: 3
+    
+  LogoPath:
+    LogoPath:    'logo'
+    WebsitePath: 'website'
+    
+
+  Options:
+      BGcolorPicker:        BGcolorPicker
+      TextcolorPicker:      TextcolorPicker
+      BordercolorPicker:    BordercolorPicker
+      TextWidgetCombo:      TextWidgetCombo
+      LinkcolorPicker:      LinkcolorPicker
+      LinkHoverColorPicker: LinkHoverColorPicker
+      BannerTitleCombo:     BannerTitleCombo
+      BannerBackground:     BannerBackground 
+
+  Color: 
+       BGColor:          BGColor
+       TextColor:        TextColor
+       BorderColor:      BorderColor
+       TextWidgets:      TextWidgets
+       LinkColor:        LinkColor
+       LinkHoverColor:   LinkHoverColor
+       TextWidgetsTitle: TextWidgetsTitle
+       Logo:             Logo
+       ManageBanner:     ManageBanner
+       BannerBackground: BannerBackground
+       BannerForeground: BannerForeground
+
+  .Menutype:
+    Menutype:
+      1: Pages
+      2: Practice Area
+      #3: External
+  
+  ThemeOptions:
+    Color:
+      BGColor:        BGColor
+      TextColor:      TextColor
+      BorderColor:    BorderColor
+      LinkColor:      LinkColor
+      LinkHoverColor: LinkHoverColor
+    Image:
+      BGImage:        BGImage
+    SocialMedia:
+      Facebook:       Facebook
+      Twitter:        Twitter
+      LinkedIn:       LinkedIn
+      Google:         Google
+      Skype:          Skype
+      Rss:            Rss
+    Logo:
+      Logo:           Logo
+    TextWidgets:
+      TextWidgets:    TextWidgets
+    BodyBackground:
+      BodyBackground: BodyBackground
+
+  user:
+    Yes:      Yes
+    No:       No
+    Active:   Active
+    Inactive: Inactive
+    Limit:    5
+    Deleted:  Deleted
+    currency: $
+
+  WebsitePracticeAreaTemplate:
+    Column1:  Column One
+    Column2R: Column To Right
+    Column2L: Column To Left
+
+  MenuUniqueType:
+    Pages:        Pages
+    PracticeArea: Practice Area
+    External:     External
+
+  MenuType:
+    Header: Header
+    Footer: Footer
+
+  Permission:
+    Message: You are not authorized for this action
+
+  State:
+    UsStateId: 223
+
+  CmsPageType:
+    Static:  Static
+    Dynamic: Dynamic
+
+  Statistics:
+    no_visit: 'No visits'
+
+  Image:
+    SmallHeight:   55
+    SmallWidth:    75
+    ThumbHeight:   80
+    ThumbWidth:    80
+    MediamHeight:  83
+    MediamWidth:   83
+    LargeHeight:   140
+    LargeWidth:    175
+
+  Prefix:
+    Small:   small_
+    Large:   large_
+    Medium:  medium_
+    Org:     org_
+    Thumb:   thumb_
+
+  BannerImage:
+    ThumbWidth:  100
+    ThumbHeight: 100
+  
+  BannerCustomImage:
+    ThumbWidth:  100
+    ThumbHeight: 100
+
+  Website:
+    BannerBackground: banner-background
+
+  CaseClosed:
+    Closed:  Closed
+
+  AgreementDate:
+    YearRange: "'1990:<?php echo (date('Y')+1) ;?>'"
+
+  BannerBackgroundResize:
+    Width:  350
+    Height: 350
+
+  Phone:
+    Note: (212) 999-2345 or 212.999.2344 or 212-999-0983
+
+  ActiveDeactive:
+    DactiveToolTip: "Click to deactivate."
+    ActiveToolTip:  "Click to activate."
+    DeleteToolTip:  "Click to Delete."

@@ -1,0 +1,39 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    language:     en
+    robots:       index, no-follow
+    title:        ..::Counsel Edge::.. Administrator
+
+  stylesheets:    [admin/Admin.css, admin/notification.css, admin/paging.css, admin/popup.css, admin/theme.css, jqUi/jquery-ui.css,checkboxtree.css, admin/lightbox.css, admin/jquery.fancybox.css, admin/jquery.ui.all.css] 
+
+  javascripts:    [admin/JSCookMenu.js, admin/theme.js ,admin/AdminCommon.js, admin/jquery-1.7.1.min.js, admin/jquery-ui.js, admin/lightbox.js ,admin/jquery.validate.js, admin/jquery.fancybox.js, admin/ui/jquery.ui.core.js, admin/ui/jquery.ui.widget.js, admin/ui/jquery.ui.position.js, admin/ui/jquery.ui.menu.js, admin/ui/jquery.ui.autocomplete.js, admin/jquery.checkboxtree.js]
+
+  has_layout:     true
+  layout:         layout
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+#default:
+#  http_metas:
+#    content-type: text/html
+
+#  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+#  stylesheets:    [main.css]
+
+#  javascripts:    []
+
+#  has_layout:     true
+#  layout:         layout

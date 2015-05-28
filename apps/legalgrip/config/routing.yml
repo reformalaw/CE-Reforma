@@ -1,0 +1,80 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+    
+faq:
+  url:   /faq
+  param: { module: faq, action: index }
+
+contact:
+  url:   /contact
+  param: { module: contact, action: index }
+
+contactus:
+  url:   /contactus
+  param: { module: contact, action: contactus }
+
+forums:
+  url:   /forums
+  param: { module: forums, action: index }
+  
+attoney_browse_level3_state:
+  url:      /:state/attornies/:parentcat/:subcat/:childcat
+  param:    { module: attornies, action: index } 
+
+attoney_rowse_level3:
+  url:      /attornies/:parentcat/:subcat/:childcat
+  param:    { module: attornies, action: index } 
+
+attoney_browse_level2_state:
+  url:      /:state/attornies/:parentcat/:subcat
+  param:    { module: attornies, action: index } 
+
+attoney_browse_level2:
+  url:      /attornies/:parentcat/:subcat
+  param:    { module: attornies, action: index } 
+  
+attoney_browse_level1_state:
+  url:      /:state/attornies/:parentcat
+  param:    { module: attornies, action: index } 
+ 
+attoney_browse_level1:
+  url:      /attornies/:parentcat
+  param:    { module: attornies, action: index } 
+   
+attoney_profile_state:
+  url:      /:state/attorny/:id/:nameslug
+  param:    { module: attornies, action: profile } 
+  
+attoney_profile:
+  url:      /attorny/:id/:nameslug
+  param:    { module: attornies, action: profile } 
+
+attoney_basic_search:
+  url:      /attornies
+  param:    { module: attornies, action: index }  
+
+attoney_search:
+  url:      /:state/attornies
+  param:    { module: attornies, action: index }    
+    
+#job_show_user:
+#  url:   /job/:company/:location/:id/:position
+#  param: { module: job, action: show }  
+  
+pages:
+  url:      /pages/:pagename/*
+  param:    { module: pages, action: index }
+  
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

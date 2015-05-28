@@ -1,0 +1,19 @@
+button, .tellus-form ul li input[type=submit], #home .home-contactus, #cmspages .home-contactus, nav .menu ul li ul li a:hover, #contactus .content-area div.contact-form li input[type=submit], nav .menu ul li a:hover {
+	background-color:##BGCOLOR##;
+}
+
+button:hover, .text-color-website, .logo span, .tellus-form h3, .free-consultation h3, #contactus .content-area div.contact-form li input[type=submit]:hover, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+nav .menu ul li a:hover, .middle-left ul li, #contactus .content-area div.contact-form li input[type=submit], #cmspages .content-area li, footer, .practice-area ul li {
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover, #faq .content-area h4 a:hover{
+	color:##LINKHOVERCOLOR##;
+}

@@ -1,0 +1,13 @@
+
+
+/**=== Start Change Color =================================================************************/
+
+#contactus .content-area div.contact-form li input[type=submit], nav ul li ul li a, nav ul li a:hover, nav ul li a.active, .send-btn, .practice-area h2, .quick-form input.send-btn {background-color:##BGCOLOR##;}
+
+.why-us, .send-btn, .content-area h2, .practice-area li, .contact-no h4 span, #contactus .content-area div.contact-details label {color:##TEXTCOLOR##;}
+
+a, .social-icons h2, .practice-area li a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand, .content-area p a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand {color:##LINKCOLOR##;}
+
+a:hover, .content-area p a:hover, .practice-area li a:hover, #faq .content-area h4 a.twisty-collapse:hover, #faq .content-area h4 a:hover {color:##LINKHOVERCOLOR##;}
+
+/**=== End Change Color =================================================************************/

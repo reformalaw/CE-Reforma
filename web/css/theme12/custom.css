@@ -1,0 +1,29 @@
+
+
+/**=== Start Change Color =================================================************************/
+/* body {
+	background-image:##BODYBACKGROUND##;
+	background-repeat:repeat;
+	background-position:center top;
+	
+}*/
+
+
+
+/*body, nav ul li a:hover, .services, .services:hover, footer, .facebook:hover, .twitter:hover, .linkedin:hover, .rss:hover{
+	border-color:##BORDERCOLOR##;
+}*/
+
+.logo-part, nav ul li a:hover, nav ul li a.active, .call-icon, .teet-icon:hover, .fb-icon:hover, .linkdin-icon:hover, .google-icon:hover, .rss-icon:hover, .quick-form input.send-btn, #contactus .content-area div.contact-form li input[type=submit] {background-color:##BGCOLOR##;}
+
+.practice-area h2, .content-area h2, .practice-area li, #contactus .content-area div.contact-details label {color:##TEXTCOLOR##;} /*text-color*/
+
+a, .practice-area li a{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .services h3, .services strong, .animate-in .subtitle, .practice-area li a:hover{
+	color:##LINKHOVERCOLOR##;}/*hover-color*/
+
+
+/**=== End Change Color =================================================************************/

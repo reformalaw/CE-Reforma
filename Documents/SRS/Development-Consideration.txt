@@ -1,0 +1,4 @@
+Notes to consider:
+    1. Attorney with Personal site will be created from Network Site Sections
+    2. Attorney with just an account for directory listing will be created from Network Users sections
+    3. 

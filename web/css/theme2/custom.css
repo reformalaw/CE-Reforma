@@ -1,0 +1,29 @@
+button, .top-search input[type=button], .our-services a.readmore, .practice-area p input[type=submit], .banner, #contactus .content-area div.contact-form li input[type=submit], .our-services:hover, nav .menu ul li ul li a:hover, nav .menu ul li a:hover {
+	/*background-color:#15a7bd;*/
+	background-color:##BGCOLOR##;
+}
+
+input, textarea, button:hover, .text-color-website, .top-number, .practice-area li a:hover, .logo span, .practice-area li, .our-services:hover a.readmore, #contactus .content-area div.contact-form li input:hover[type=button], .content-area h2, .practice-area h2, #contactus .content-area div.contact-details label {
+	/*color:#15a7bd;*/
+	color:##TEXTCOLOR## ;
+}
+
+border-color-website, nav, .banner, #contactus .content-area div.contact-form li input[type=button], #contactus .content-area div.contact-form li input:hover[type=button], .our-services a.readmore, .our-services a:hover.readmore{
+	/*border-color:#15a7bd;*/
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area li a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand{
+	/*color:red;*/
+	color:##LINKCOLOR##
+}
+
+a:hover, .practice-area li a:hover, #faq .content-area h4 a:hover{
+	/*color:#15A7BD;*/
+	color:##LINKHOVERCOLOR##;
+}
+
+.banner{
+	/*background-image:url(../../uploads/website/126/banner-background/cool-wallpaper-hd-0000001-1366279678.jpg);*/
+	background-image:##BGIMAGE##;
+}

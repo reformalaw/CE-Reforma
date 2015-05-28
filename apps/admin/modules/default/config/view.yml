@@ -1,0 +1,6 @@
+newSuccess:
+  stylesheets:    [form.css]	
+  javascripts:    [jquery.js, jquery.validate.js]
+editSuccess:
+  stylesheets:    [form.css]
+  javascripts:    [jquery.js, jquery.validate.js]

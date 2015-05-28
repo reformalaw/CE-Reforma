@@ -1,0 +1,17 @@
+
+
+/**=== Start Change Color =================================================************************/
+
+
+
+
+a, .why-us, .practice-area li a, #faq .content-area h4 a { color:##LINKCOLOR##;} /*linkcolor*/
+
+.content-text h2, .contact-no h4, #contactus .content-area div.contact-details label{color:##TEXTCOLOR##;} /*textcolor*/
+
+.quick-contact, #contactus .content-area div.contact-details, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand, .banner, #contactus .content-area div.contact-form li input[type=submit] {background-color:##BGCOLOR##;}
+
+a:hover, #faq .content-area h4 a:hover, .practice-area li a:hover {color:##LINKHOVERCOLOR##;} /*hover*/
+
+
+/**=== End Change Color =================================================************************/

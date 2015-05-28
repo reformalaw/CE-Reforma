@@ -1,0 +1,697 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+
+.banner{
+	height:auto;
+}
+
+.banner .page img{
+	display:none;
+}
+
+header{
+	background-image:none;
+	height:auto;
+}
+
+.logo-part{
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+nav{
+	width:100%;
+	padding:0px;
+}
+
+nav ul li{	
+	width:100%;
+	text-align:center;
+}
+
+nav ul li a{
+	padding:8px 8px;
+	display:block;
+}
+
+nav ul li ul{
+	top:110px;
+	display:none;
+}
+
+nav ul li:hover ul{
+	top:110px;
+	display:none;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding:10px 0px;
+	text-align:center;
+}
+
+.phoneno{
+	width:100%;
+	padding:0px;
+	text-align:center;
+	background-image:none;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding:5px 0px 3px 0px;
+	margin-top:10px;
+}
+
+.logo img{
+	height:40px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:100%;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#right-column .content-text, #left-column .content-text, #full-width .content-text, #home .content-text	{
+	padding:10px 0px;
+	height:200px;
+	overflow:auto;
+}
+
+#home{
+	margin-top:0px;
+}
+
+#home .page{
+	border:none 0px;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+	margin-bottom:15px;
+}
+.practice-area ul, #full-width .practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:92%;
+	height:200px;
+	overflow:auto;
+	padding:4%;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:98%;
+	float:left;
+}
+
+.content-area h2{
+	height:auto;
+	font-size:18px;
+	line-height:21px;
+	padding:5px 10px;
+}
+
+.service-box{
+	margin-right:0px;
+	width:98%;
+	margin-bottom:20px;
+}
+
+.services .last{
+	margin-bottom:0px;
+}
+
+.service-box div.content{
+	height:auto
+}
+
+#contactus .content-area div.contact-form li{	
+	width:100%;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+.social-icons{
+	text-align:center;
+	float:none;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+.social-icons ul li a{
+	display:inline-block;
+}
+
+
+.banner {
+    height:150px;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:340px;
+}
+
+.banner{
+	height:auto;
+}
+
+.banner .page img{
+	display:none;
+}
+
+header{
+	background-image:none;
+	height:auto;
+}
+
+.logo-part{
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+nav{
+	width:340px;
+	padding:0px;
+}
+
+nav ul li{	
+	width:100%;
+	text-align:center;
+}
+
+nav ul li a{
+	padding:8px 8px;
+	display:block;
+}
+
+nav ul li ul{
+	top:110px;
+	display:none;
+}
+
+nav ul li:hover ul{
+	top:110px;
+	display:none;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding:10px 0px;
+	text-align:center;
+}
+
+.phoneno{
+	width:100%;
+	padding:0px;
+	text-align:center;
+	background-image:none;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding:5px 0px 3px 0px;
+}
+
+.logo img{
+	height:40px;
+}
+
+#home{
+	margin-top:0px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:340px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#left-column .content-text, #right-column .content-text{
+	padding:0px;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+}
+.practice-area ul, #full-width .practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:90%;
+	padding:4% 5%;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:100%;
+	float:left;
+}
+
+.content-area h2{/*margin:20px 0px 10px 0px;*/}
+
+.service-box{
+	margin-right:0px;
+	width:98%;
+	margin-bottom:20px;
+}
+
+.services .last{
+	margin-bottom:0px;
+}
+
+.service-box div.content{
+	height:auto
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 340px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 145px;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	text-align:center;
+	float:none;
+	padding:10px 0px;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+
+.social-icons a.rss, .social-icons a.twitter, .social-icons a.facebook, .social-icons a.linkedin{
+	float:none;
+	display:inline-block;
+}
+
+.banner {
+    height:150px;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+.banner{
+	/*height:auto;*/
+}
+
+.banner .page img{
+	width:470px;
+}
+
+header{
+	height:auto;
+}
+
+nav{
+	width:470px;
+	padding:0px;
+}
+
+nav ul{
+	float:none;
+}
+
+nav ul li a{
+	padding:15px 5px 15px 5px;
+	float:left;
+}
+
+nav ul li ul{
+	top:146px;
+}
+
+.logo-part{
+	margin-top:15px;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	padding-bottom:0px;
+	text-align:center;
+	margin-bottom:15px;
+}
+
+.logo img{
+	height:40px;
+}
+
+.phoneno{
+	float:none;
+	display:inline-block;
+}
+
+#home {
+    margin-top:90px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:470px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#right-column .content-text, #left-column .content-text{
+	padding: 10px 0px 10px 0;
+}
+
+#full-width .practice-area{
+	width:100%;
+}
+
+.practice-area{
+	width:100%;
+}
+
+.practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:92%;
+	padding:4%;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:46%;
+	float:left;
+	clear:none;
+}
+
+.content-area h2{/*margin:20px 0px 10px 0px;*/}
+
+.service-box{
+	margin-right:0px;
+	width:464px;
+	margin-bottom:20px;
+}
+
+.services .last{
+	margin-bottom:0px;
+}
+
+.service-box div.content{
+	height:auto
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 470px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 132px;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	text-align:center;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:680px;
+}
+
+.banner{
+	/*height:auto;*/
+}
+
+nav{
+	width:480px;
+}
+
+nav ul li a{
+	padding: 20px 6px 51px 6px;
+}
+
+.logo{
+	width:200px;
+	overflow:hidden;
+}
+
+.logo img{
+	height:40px;
+}
+
+.banner .page img{
+	width:680px;
+}
+
+#home{
+	margin-top:165px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:680px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:460px;
+}
+
+#full-width .practice-area{
+	width:680px;
+}
+
+#full-width .practice-area li{
+	width:48%;
+}
+
+.practice-area{
+	width:220px;
+}
+
+.service-box{
+	margin-right:3%;
+}
+
+.service-box div.content{
+	height:160px;
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 680px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 132px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+.social-icons{
+	text-align:center;
+}
+
+.social-icons ul{
+	display:inline-block;
+	float:none;
+}
+
+footer{
+	text-align:center;
+}
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+	margin-bottom:5px;
+	display:inline-block;
+}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page{
+	width:880px;
+}
+
+.banner{
+	/*height:auto;*/
+}
+
+.banner .page img{
+	width:880px;
+}
+
+nav{
+	width:580px;
+}
+
+nav ul li a{
+	padding: 20px 15px 51px 15px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area, #full-width .practice-area{
+	width:880px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:630px;
+}
+
+.practice-area{
+	width:250px;
+}
+
+.service-box{
+	margin-right:35px;
+}
+
+.service-box div.content{
+	height:120px;
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 880px;
+}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 160px;
+}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

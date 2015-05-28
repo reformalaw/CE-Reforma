@@ -1,0 +1,1 @@
+<?php include_partial('formReviewRating', array('form' => $form,'customerId'=>$customerId)) ?>

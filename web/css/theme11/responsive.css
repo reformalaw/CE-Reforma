@@ -1,0 +1,826 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+   
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+
+.consultation-main {
+    float: left;
+    margin: 6px 0 0;
+    width: 100%;
+	background-image:none;
+	height:auto
+}
+header {
+    background-image: none;
+    height: auto;
+}
+.free-consultation h1 {
+    margin: 6px 0 0;
+	font-size:13px;
+}
+
+.free-consultation {
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    width: 100%;
+}
+
+.banner{
+	height:180px;
+}
+
+.logo {
+    width: 100%;
+	padding-bottom:15px;
+    padding-top:15px;
+	text-align:center;
+}
+
+
+.logo img {
+   width:100%;
+}
+
+nav {
+    width: 100%;
+	text-align:center;
+}
+
+nav ul{
+    float:none;
+	display:inline-block;
+    width:100%;
+}
+
+nav ul li{
+	clear:both;
+    width:100%;
+	float:left;
+}
+.practice-area {
+    background-color: #F9F9F9;
+    box-shadow: none;
+    padding:4%;
+    width: 92%;
+    min-height:auto;
+	border-radius:0;
+}
+.content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 690px;
+}
+
+.practice-area ul{
+	height:150px;
+	overflow:auto;
+}
+
+.practice-area li{
+	width:95%;
+	background-image:none;
+	float:left;
+	padding:2px 0px;
+}
+
+.practice-area h2, .content-area h2{
+    font-size:18px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 100% !important;
+}
+
+.content-area h4 {
+    font-size: 14px;
+    line-height:16px;
+	margin-bottom:5px;
+}
+
+.content-text{
+	height:200px;
+	overflow:auto;
+	padding-right:3%;
+}
+
+
+#faq div.content-area div.content-text{
+	height:auto;
+	padding-right:3%;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+}
+
+.social-icons { float:right; width:100%; margin:10px 10px 0 0;}
+
+/*.social-icons a {
+    float:none;
+	display:inline-block;
+}*/
+.main-menu {
+    background-image:none;
+    float: left;
+    height: auto;
+    margin: 13px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.social-icons { float:right; width:93%; margin:10px 0px 0 0;}
+.tweet-icons, .fb-icons, .linkdin-icons, .google-icons, .rss-icons, .tweet-icons:hover, .fb-icons:hover, .linkdin-icons:hover, .google-icons:hover, .rss-icons:hover { background-image:url(../../images/theme11/social-icon.png); background-repeat:no-repeat; width:25px; height:25px; float:left; margin:0 0 0 16px;}
+
+.tweet-icons { background-position:0 0;}
+.fb-icons {background-position:-41px 0;}
+.linkdin-icons {background-position:-81px 0;}
+.google-icons {background-position:-123px 0;}
+.rss-icons {background-position:-166px 0;}
+.tweet-icons:hover { background-position:0 -26px;}
+.fb-icons:hover {background-position:-41px -26px;}
+.linkdin-icons:hover {background-position:-81px -26px;}
+.google-icons:hover {background-position:-123px -26px;}
+.rss-icons:hover {background-position:-166px -26px;}
+
+nav {background-color:#525252; height:auto; float:left; width:100%; border-radius:0;}
+nav ul { margin:0; padding:0; border-radius: 12px;}
+nav li a { margin:0; padding:10px 0px; float:left; text-align:center; width:100%; font-size:20px; background-image:none;}
+nav li a:hover { width:100%; float:left;}
+nav li a.active { width:100%; float:left;}
+nav li a.home-active { border-radius: 0; float:left; width:100%;}
+nav li a.contect-active { border-radius: 0; float:left; width:100%;}
+nav li a.home:hover { border-radius: 0; float:left; width:100%;}
+nav li a.contect:hover { border-radius: 0; float:left; width:100%;}
+
+.results-box { float:right; background-color:#fff; height:160px; width:95%; border-radius: 20px 20px 0 0; bottom: -1px; -moz-box-shadow: inset 0 10px 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 10px 34px 0 #BEBEBE; box-shadow: inset 0 10px 34px 0 #BEBEBE; border-top:7px solid; border-left:7px solid; border-right:7px solid; top:14px; display:none;}
+.results-box p { color: #898989; float: left; font-family: 'CorbelRegular'; font-size: 20px; line-height: 30px; margin: 10px 0 0 22px; text-align: center; width: 95%;}
+.practicearea-left, .practicearea-right {background-color: #E9E7E3; border-radius: 0; float: left; width: 100%;}
+.content-right, .content-left { float: left; margin: 0 0 0 0; width: 100%;}
+.footer-social-icons { background-color: #FFFFFF; border-radius: 0 0 10px 10px; float: right; height: auto; margin: -7px 0 0; width: 90%; border-bottom:7px solid; border-right:7px solid; border-left:7px solid;}
+#home .content-right {float: left; margin: 0 0 0 17px; width: 93%;}
+#left-column .page, #right-column .page, #right-column .page, #home .page {width:96%; margin:20px auto 0; box-shadow:none; border-radius:0; text-align:left; display:inline-block;}
+#contactus .page, #faq .page {width:96%; margin:0 auto; box-shadow:none; border-radius:0; text-align:left; display:inline-block;padding:0;}
+#home .content-area {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:96%;
+	border-radius: 0;
+}
+
+#left-column .page, #right-column .page, #home .page {width:96%; border-radius: 0; box-shadow: none; margin:20px auto 0; text-align:left; display:inline-block;}
+#contactus .page, #faq .page {width:96%; border-radius: 0; box-shadow: none; margin:0 auto; text-align:left; display:inline-block; padding:0;}
+.consultation-main {
+    float: left;
+    margin: 6px 0 0;
+    width: 100%;
+	background-image:none;
+	height:auto
+}
+#home .content-area {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+header {
+    background-image: none;
+    height: auto;
+}
+.free-consultation h1 {
+    margin: 6px 0 0;
+	font-size:13px;
+}
+
+.free-consultation {
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    width: 100%;
+}
+
+.banner{
+	height:180px;
+}
+
+.logo {
+    width: 100%;
+	padding-bottom:15px;
+    padding-top:15px;
+	text-align:center;
+}
+
+nav {
+    width: 100%;
+	text-align:center;
+}
+
+nav ul{
+    float:none;
+	display:inline-block;
+    width:100%;
+}
+
+nav ul li{
+	clear:both;
+    width:100%;
+	float:left;
+}
+
+
+.services, .services:hover {
+    width: 320px;
+	height:100px;
+	padding:10px;
+}
+
+.services:hover {
+	padding:9px 9px 10px 9px;
+}
+
+.services-padding {
+    margin: 15px 0;
+}
+
+.services h3 {
+    font-size: 21px;
+}
+
+.practice-area {
+    background-color: #F9F9F9;
+    box-shadow: none;
+    padding: 10px 10px 15px 10px;
+    width: 95%;
+	min-height:auto;
+	border-radius: 0;
+}
+
+.practice-area ul{
+	height:150px;
+	overflow:auto;
+}
+
+.practice-area li{
+	width:90%;
+	background-image:none;
+	float:left;
+	padding:2px 0px;
+}
+
+.practice-area h2, .content-area h2 {
+    font-size: 21px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 100%;
+	margin:0;
+}
+
+.content-text{
+	height:200px;
+	overflow:auto;
+	padding-right:3%;
+}
+
+#faq div.content-area div.content-text{
+	height:auto;
+	padding-right:3%;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+}
+
+.social-icons {
+    margin-top:5px;
+	width:340px;
+	display:inline-block;
+	text-align:center;
+}
+
+.social-icons a {
+    float:left;
+	display:inline-block;
+}
+
+.main-menu {
+    background-image:none;
+    float: left;
+    height: auto;
+    margin: 13px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.social-icons { float:right; width:72%; margin:10px 0px 0 0;}
+.tweet-icons, .fb-icons, .linkdin-icons, .google-icons, .rss-icons, .tweet-icons:hover, .fb-icons:hover, .linkdin-icons:hover, .google-icons:hover, .rss-icons:hover { background-image:url(../../images/theme11/social-icon.png); background-repeat:no-repeat; width:25px; height:25px; float:left; margin:0 0 0 16px;}
+
+.tweet-icons { background-position:0 0;}
+.fb-icons {background-position:-41px 0;}
+.linkdin-icons {background-position:-81px 0;}
+.google-icons {background-position:-123px 0;}
+.rss-icons {background-position:-166px 0;}
+.tweet-icons:hover { background-position:0 -26px;}
+.fb-icons:hover {background-position:-41px -26px;}
+.linkdin-icons:hover {background-position:-81px -26px;}
+.google-icons:hover {background-position:-123px -26px;}
+.rss-icons:hover {background-position:-166px -26px;}
+
+nav {background-color:#525252; height:auto; float:left; width:100%; border-radius:0;}
+nav ul { margin:0; padding:0; border-radius: 12px;}
+nav li a { margin:0; padding:10px 0px; float:left; text-align:center; width:100%; font-size:20px; background-image:none;}
+nav li a:hover { width:100%; float:left;}
+nav li a.active { width:100%; float:left;}
+nav li a.home-active { border-radius: 0; float:left; width:100%;}
+nav li a.contect-active { border-radius: 0; float:left; width:100%;}
+nav li a.home:hover { border-radius: 0; float:left; width:100%;}
+nav li a.contect:hover { border-radius: 0; float:left; width:100%;}
+
+.results-box { float:right; background-color:#fff; height:160px; width:95%; border-radius: 20px 20px 0 0; bottom: -1px; -moz-box-shadow: inset 0 10px 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 10px 34px 0 #BEBEBE; box-shadow: inset 0 10px 34px 0 #BEBEBE; border-top:7px solid; border-left:7px solid; border-right:7px solid; top:14px; display:none;}
+.results-box p { color: #898989; float: left; font-family: 'CorbelRegular'; font-size: 20px; line-height: 30px; margin: 10px 0 0 22px; text-align: center; width: 95%;}
+.practicearea-left, .practicearea-right {background-color: #E9E7E3; border-radius: 0; float: left; width: 100%;}
+.content-right, .content-left { float: left; margin: 0 0 0 0; width: 100%;}
+.footer-social-icons { background-color: #FFFFFF; border-radius: 0 0 10px 10px; float: right; height: auto; margin: -7px 0 0; width: 47%; border-bottom:7px solid; border-right:7px solid; border-left:7px solid;}
+
+.copyright {
+    float: left;
+    padding: 17px 0 0;
+    width: 100%;
+}
+
+.practicearea-left ul li, .practicearea-right ul li {
+    background-image: url("../../images/theme11/practice-line.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none outside none;
+    padding: 0 0 2px;
+}
+#home .content-right {float: left; margin: 0 0 0 17px; width: 93%;}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+#left-column .page, #right-column .page, #home .page {width:96%; margin:20px auto 0; box-shadow: none; border-radius: 0; text-align:left; display:inline-block;}
+#contactus .page, #faq .page {width:96%; margin:0 auto; border-radius: 0; box-shadow: none; text-align:left; display:inline-block; padding:0;}
+
+.consultation-main {
+    float: left;
+    margin: 6px 0 0;
+    width: 100%;
+	background-image:none;
+	height:auto
+}
+#home .content-area {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+header {
+    background-image: none;
+    height: auto;
+}
+.free-consultation h1 {
+    margin: 6px 0 0;
+	font-size:13px;
+}
+
+.free-consultation {
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    width: 100%;
+}
+
+.banner{
+	height:180px;
+}
+
+.logo {
+    width: 100%;
+	padding-bottom:15px;
+    padding-top:15px;
+	text-align:center;
+}
+
+nav {
+    width: 100%;
+	text-align:center;
+}
+
+nav ul{
+    float:none;
+	display:inline-block;
+    width:100%;
+}
+
+nav ul li{
+	clear:both;
+    width:100%;
+	float:left;
+}
+
+
+.services, .services:hover {
+    width: 320px;
+	height:100px;
+	padding:10px;
+}
+
+.services:hover {
+	padding:9px 9px 10px 9px;
+}
+
+.services-padding {
+    margin: 15px 0;
+}
+#contactus .content-area { width:100%!important;}
+
+.services h3 {
+    font-size: 21px;
+}
+
+.practice-area {
+    background-color: #F9F9F9;
+    box-shadow: none;
+    padding: 10px 10px 15px 10px;
+    width: 96%;
+	min-height:auto;
+	border-radius:0;
+}
+.practice-area ul li { width:48%;}
+
+.practice-area ul{
+	height:150px;
+	overflow:auto;
+}
+
+.practice-area li{
+	width:90%;
+	background-image:none;
+	float:left;
+	padding:2px 0px;
+}
+
+.practice-area h2, .content-area h2 {
+    font-size: 21px;
+	margin-bottom:5px;
+}
+
+.content-area {
+    width: 96%;
+}
+
+.content-text{
+	height:200px;
+	overflow:auto;
+	padding-right:3%;
+}
+
+#faq div.content-area div.content-text{
+	height:auto;
+	padding-right:3%;
+}
+
+#contactus .content-area div.contact-form, #contactus .content-area div.contact-details {
+    width: 100%;
+}
+
+#contactus .content-area div.contact-details {
+    width: 96%;
+	margin-top:20px;
+	min-height:auto;
+}
+
+footer{
+	text-align:center;
+}
+
+.social-icons {
+    margin-top:5px;
+	width:340px;
+	display:inline-block;
+	text-align:center;
+}
+
+.social-icons a {
+    float:left;
+	display:inline-block;
+}
+
+.main-menu {
+    background-image:none;
+    float: left;
+    height: auto;
+    margin: 13px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.social-icons { float:right; width:72%; margin:10px 0px 0 0;}
+.tweet-icons, .fb-icons, .linkdin-icons, .google-icons, .rss-icons, .tweet-icons:hover, .fb-icons:hover, .linkdin-icons:hover, .google-icons:hover, .rss-icons:hover { background-image:url(../../images/theme11/social-icon.png); background-repeat:no-repeat; width:25px; height:25px; float:left; margin:0 0 0 16px;}
+
+.tweet-icons { background-position:0 0;}
+.fb-icons {background-position:-41px 0;}
+.linkdin-icons {background-position:-81px 0;}
+.google-icons {background-position:-123px 0;}
+.rss-icons {background-position:-166px 0;}
+.tweet-icons:hover { background-position:0 -26px;}
+.fb-icons:hover {background-position:-41px -26px;}
+.linkdin-icons:hover {background-position:-81px -26px;}
+.google-icons:hover {background-position:-123px -26px;}
+.rss-icons:hover {background-position:-166px -26px;}
+
+nav {background-color:#525252; height:auto; float:left; width:100%; border-radius:0;}
+nav ul { margin:0; padding:0; border-radius: 12px;}
+nav li a { margin:0; padding:10px 0px; float:left; text-align:center; width:100%; font-size:20px; background-image:none;}
+nav li a:hover { width:100%; float:left;}
+nav li a.active { width:100%; float:left;}
+nav li a.home-active { border-radius: 0; float:left; width:100%;}
+nav li a.contect-active { border-radius: 0; float:left; width:100%;}
+nav li a.home:hover { border-radius: 0; float:left; width:100%;}
+nav li a.contect:hover { border-radius: 0; float:left; width:100%;}
+
+.results-box { float:right; background-color:#fff; height:160px; width:95%; border-radius: 20px 20px 0 0; bottom: -1px; -moz-box-shadow: inset 0 10px 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 10px 34px 0 #BEBEBE; box-shadow: inset 0 10px 34px 0 #BEBEBE; border-top:7px solid; border-left:7px solid; border-right:7px solid; top:14px; display:none;}
+.results-box p { color: #898989; float: left; font-family: 'CorbelRegular'; font-size: 20px; line-height: 30px; margin: 10px 0 0 22px; text-align: center; width: 95%;}
+.practicearea-right { float: right; width: 30%; border-radius: 0 20px 20px 0; background-color:#e9e7e3;}
+.practicearea-left { float: left; width: 30%; border-radius: 20px 0 0 20px; background-color:#e9e7e3;}
+.content-right, .content-left { float: left; margin: 0 0 0 10px; width: 61%;}
+.footer-social-icons { background-color: #FFFFFF; border-radius: 0 0 10px 10px; float: right; height: auto; margin: -7px 0 0; width: 47%; border-bottom:7px solid; border-right:7px solid; border-left:7px solid;}
+
+.copyright {
+    float: left;
+    padding: 17px 0 0;
+    width: 100%;
+}
+
+.practicearea-left ul li, .practicearea-right ul li {
+    background-image: url("../../images/theme11/practice-line.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none outside none;
+    padding: 0 0 2px;
+}
+#banner {
+    /*height: 340px;*/
+    margin: 0px auto 0 !important;
+    padding: 0;
+    position: relative;
+    /*width: 980px;*/
+}
+#home .content-right {float: left; margin: 0 0 0 17px; width: 94%;}
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:95%;
+}
+
+#left-column .page, #right-column .page, #home .page {width:95%; margin:20px auto 0; -moz-box-shadow: inset 0 0 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 0 34px 0 #BEBEBE; box-shadow: inset 0 0 34px 0 #BEBEBE; border-radius: 20px; text-align:left; display:inline-block;}
+#contactus .page, #faq .page {width:94%; margin:0 auto; -moz-box-shadow: inset 0 0 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 0 34px 0 #BEBEBE; box-shadow: inset 0 0 34px 0 #BEBEBE; border-radius: 20px; text-align:left; display:inline-block; padding:0 20px;}
+.content-area h4 { padding: 6px 0 10px 24px;}
+.welcome-text { float: left; padding: 0 24px; text-align: justify;}
+.logo{ float:left; width:33%; padding:5px 0px;}
+.logo img { width:97%;}
+nav li a:hover, nav li a.active, nav li a.home-active, nav li a.contect-active, nav li a.home:hover, nav li a.contect:hover, .free-consultation, .copyright a { color:#fff;}
+nav li a:hover, nav li a.active, nav li a.home-active, nav li a.contect-active, nav li a.home:hover, nav li a.contect:hover {background-color:#646464;}
+.free-consultation h1 span, nav li a { color:#fae5ba;}
+.consultation-main { float:left; width:39%; background-image:url(../../images/theme11/top-box-shedow.png); background-repeat:no-repeat; background-position:bottom center; height:47px; margin:6px 0 0 0px;}
+.free-consultation { width:100%; float:left; border-radius: 5px;}
+.free-consultation img { float:left; margin:3px 7px;}
+.free-consultation h1 { margin:6px 0 0 0; font-size:20px;}
+.social-icons { float:right; width:210px; margin:10px 10px 0 0;}
+.tweet-icons, .fb-icons, .linkdin-icons, .google-icons, .rss-icons, .tweet-icons:hover, .fb-icons:hover, .linkdin-icons:hover, .google-icons:hover, .rss-icons:hover { background-image:url(../../images/theme11/social-icon.png); background-repeat:no-repeat; width:25px; height:25px; float:left; margin:0 0 0 7px;}
+.tweet-icons { background-position:0 0;}
+.fb-icons {background-position:-41px 0;}
+.linkdin-icons {background-position:-81px 0;}
+.google-icons {background-position:-123px 0;}
+.rss-icons {background-position:-166px 0;}
+.tweet-icons:hover { background-position:0 -26px;}
+.fb-icons:hover {background-position:-41px -26px;}
+.linkdin-icons:hover {background-position:-81px -26px;}
+.google-icons:hover {background-position:-123px -26px;}
+.rss-icons:hover {background-position:-166px -26px;}
+.main-menu { width:100%; height:95px; margin:13px 0 0 0; background-image:none; float:left; position: relative;}
+nav {background-color:#525252; height:72px; float:left; width:100%; border-radius: 12px;}
+nav ul { margin:0; padding:0; border-radius: 12px;}
+nav li { display:inline; float:none;}
+nav li a { margin:0; padding:27px 0px; width:16.6%; float:left; font-size:20px; background-image:url(../../images/theme11/menu-line.png); background-repeat:no-repeat; background-position:right top; text-align:center;}
+nav li a:hover {}
+nav li a.active {}
+nav li a.home-active { border-radius: 12px 0 0 12px;}
+nav li a.contect-active { border-radius: 0 12px 12px 0;}
+nav li a.home:hover { border-radius: 12px 0 0 12px;}
+nav li a.contect:hover { border-radius: 0 12px 12px 0;}
+.contect {background-image:none!important;}
+
+.banner{
+	height:250px;
+}
+
+.services, .services:hover {
+    width: 182px;
+	height:135px;
+}
+
+.services h3 {
+    font-size: 21px;
+}
+
+.practice-area {
+    background-color: #F9F9F9;
+    box-shadow: 0 0 20px 20px #EBEBEB inset;
+    padding: 10px 15px;
+    width:31%;
+}
+
+.practice-area h2, .content-area h2 {
+    font-size: 21px;
+}
+
+.content-area {
+    width: 62%;
+}
+
+#home .content-area, #home .content-area, #faq .content-area, #contactus .content-area {
+    width:100%;
+	margin:0;
+}
+
+#faq .content-area, #contactus .content-area{
+	min-height:400px;
+}
+
+.social-icons {
+    margin-top:5px;
+	width:26%;
+	display:inline-block;
+	text-align:center;
+}
+.results-box {
+	display:none;
+}
+
+.content-right, .content-left {
+    float: left;
+    margin: 0 0 0 15px;
+    width: 57%;
+}
+#home .content-right {float: left; margin: 0 0 0 17px; width: 97%;}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page, #home .content-area, #faq .content-area, #contactus .content-area{
+	width:880px;
+}
+.content-area h4 { padding: 6px 0 10px 24px;}
+.welcome-text { float: left; padding: 0 24px; text-align: justify;}
+#contactus .content-area { width:100%;}
+#faq .content-area { width:100%;}
+
+#left-column .page, #right-column .page, #home .page {width:880px; margin:20px auto 0; -moz-box-shadow: inset 0 0 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 0 34px 0 #BEBEBE; box-shadow: inset 0 0 34px 0 #BEBEBE; border-radius: 20px; text-align:left; display:inline-block;}
+#contactus .page, #faq .page {width:84%; margin:0 auto; -moz-box-shadow: inset 0 0 34px 0 #BEBEBE; -webkit-box-shadow: inset 0 0 34px 0 #BEBEBE; box-shadow: inset 0 0 34px 0 #BEBEBE; border-radius: 20px; text-align:left; display:inline-block;}
+
+.banner{
+	height:350px;
+}
+
+.logo-part {
+    width: 250px;
+}
+.services, .services:hover {
+    width: 248px;
+}
+
+.practice-area {
+    background-color: #F9F9F9;
+    box-shadow: 0 0 20px 20px #EBEBEB inset;
+    padding: 10px 15px;
+    width: 26%;
+}
+
+.practice-area h2, .content-area h2 {
+    font-size: 24px;
+}
+
+.content-area{
+    width: 68%;
+}
+
+#home .content-area {
+    width: 880px;
+	margin:0;
+}
+
+#faq .content-area, #contactus .content-area{
+	min-height:400px;
+}
+
+.consultation-main {
+    background-image: url("../../images/theme11/top-box-shedow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    float: left;
+    height: 47px;
+    margin: 6px 0 0 30px;
+    width: 330px;
+}
+
+.main-menu {
+    background-image: none;
+    float: left;
+    height: 95px;
+    margin: 13px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+nav {background-color:#525252; height:72px; float:left; width:100%; border-radius: 12px;}
+nav ul { margin:0; padding:0; border-radius: 12px;}
+nav li { display:inline; float:none;}
+nav li a { margin:0; padding:27px 0; width:16.6%; float:left; font-size:20px; background-image:url(../../images/theme11/menu-line.png); background-repeat:no-repeat; background-position:right top; text-align:center;}
+nav li a:hover {}
+nav li a.active {}
+nav li a.home-active { border-radius: 12px 0 0 12px;}
+nav li a.contect-active { border-radius: 0 12px 12px 0;}
+nav li a.home:hover { border-radius: 12px 0 0 12px;}
+nav li a.contect:hover { border-radius: 0 12px 12px 0; width:149px;}
+.contect {background-image:none!important; width:149px;}
+.results-box {
+    background-color: #FFFFFF;
+    border-left: 7px solid;
+    border-radius: 20px 20px 0 0;
+    border-right: 7px solid;
+    border-top: 7px solid;
+    bottom: -1px;
+    box-shadow: 0 10px 34px 0 #BEBEBE inset;
+    float: right;
+    height: 160px;
+    top: 40px;
+    width: 370px;
+}
+.content-right, .content-left {
+    float: left;
+    margin: 0 0 0 15px;
+    width: 67%;
+}
+#home .content-right {float: left; margin: 0 0 0 17px; width: 97%;}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

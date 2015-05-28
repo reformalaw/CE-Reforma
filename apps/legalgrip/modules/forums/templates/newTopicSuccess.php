@@ -1,0 +1,1 @@
+<?php include_partial('topicForum', array('form' => $form,'forumsId'=>$forumsId)) ?>

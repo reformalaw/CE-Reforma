@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.7.2" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>dcWidgetColorPickerPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>Color picker Widget with jQuery.</summary>
+ <description>Color picker Widget with jQuery.</description>
+ <lead>
+  <name>Daniele Cesarini</name>
+  <user>murena</user>
+  <email>daniele.cesarini@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-27</date>
+ <time>18:37:25</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="06ba266eb988da0e906a7d418f13ba46" name="lib/validator/dcValidatorColorPicker.class.php" role="data"/>
+   <file md5sum="1bd181db1a15ec226b3f4502b4e61695" name="lib/widget/dcWidgetFormColorPicker.class.php" role="data"/>
+   <file md5sum="88ad8a6ad0054fcfa70e25a6c2474272" name="web/css/colorpicker.css" role="data"/>
+   <file md5sum="96e6db8dd2c341f8aee73603eccea3b9" name="web/js/colorpicker.js" role="data"/>
+   <file md5sum="56398e76be6355ad5999b262208a17c9" name="web/images/blank.gif" role="data"/>
+   <file md5sum="a79f1a2a81bfe3ed1c2ca4c41b8e1fbf" name="web/images/colorpicker_background.png" role="data"/>
+   <file md5sum="16d6870c36e379c06fb26ebd2e16bf44" name="web/images/colorpicker_hex.png" role="data"/>
+   <file md5sum="2be4e81b4a5c98674abe6fc60b447e9a" name="web/images/colorpicker_hsb_b.png" role="data"/>
+   <file md5sum="d47409a203bedc76b26dc60b71a69f6b" name="web/images/colorpicker_hsb_h.png" role="data"/>
+   <file md5sum="5ff5e43ab6b7b41b6123bfab692a9b19" name="web/images/colorpicker_hsb_s.png" role="data"/>
+   <file md5sum="f485d07540a89502e36dc1a55cec05d0" name="web/images/colorpicker_indic.gif" role="data"/>
+   <file md5sum="c7a33805ffda0d32bd2a9904c8b02750" name="web/images/colorpicker_overlay.png" role="data"/>
+   <file md5sum="2be4e81b4a5c98674abe6fc60b447e9a" name="web/images/colorpicker_rgb_b.png" role="data"/>
+   <file md5sum="dc17f953a6febbe174e92b54690586c3" name="web/images/colorpicker_rgb_g.png" role="data"/>
+   <file md5sum="87eeb205d093b713b68a341771f4ee27" name="web/images/colorpicker_rgb_r.png" role="data"/>
+   <file md5sum="cec464162af0cce10348e7bb7701ef86" name="web/images/colorpicker_select.gif" role="data"/>
+   <file md5sum="12d1746e6b52e007f1b78d772d9248ba" name="web/images/colorpicker_submit_orig.png" role="data"/>
+   <file md5sum="577edbb32615e4a21067e100aa8d6099" name="web/images/colorpicker_submit.png" role="data"/>
+   <file md5sum="06c91f7ae1561ccd8f1c79119529600d" name="web/images/custom_background.png" role="data"/>
+   <file md5sum="e27aaa92b15d9392d909f8b94e797524" name="web/images/custom_hex.png" role="data"/>
+   <file md5sum="b45588ca2fe9ba46673862300fcd3083" name="web/images/custom_hsb_b.png" role="data"/>
+   <file md5sum="4a1afa5636421aae4c44471d2273496d" name="web/images/custom_hsb_h.png" role="data"/>
+   <file md5sum="83aa97407fb76615a7db5ed721681148" name="web/images/custom_hsb_s.png" role="data"/>
+   <file md5sum="04660eb352eb259581a36a0fe8da2d4d" name="web/images/custom_indic.gif" role="data"/>
+   <file md5sum="f6e50cd567bd3059742d45ab224a413b" name="web/images/custom_rgb_b.png" role="data"/>
+   <file md5sum="b1e286e06692b3640862a3d07f636a80" name="web/images/custom_rgb_g.png" role="data"/>
+   <file md5sum="8ae4b3ef109ee66ec1022632470ddd0f" name="web/images/custom_rgb_r.png" role="data"/>
+   <file md5sum="35423f0f2538e507dec193b52f8d0327" name="web/images/custom_submit.png" role="data"/>
+   <file md5sum="c8d194d92dbad98615b2a9140b34ab48" name="web/images/select2.png" role="data"/>
+   <file md5sum="7b086953a8c62d2685a65644979d5d04" name="web/images/select.png" role="data"/>
+   <file md5sum="3a50b8078dea50b9811603a85ecef836" name="web/images/slider.png" role="data"/>
+   <file md5sum="feaa87b13f1e988871111b82559f6eb7" name="README" role="data"/>
+   <file md5sum="32ef2043d8a5c6decc55814c7c12c994" name="LICENSE" role="data"/>
+   <file md5sum="200443bc104ce6dd903c796b033ca612" name="LICENSE.colorpicker" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-11-25</date>
+   <notes>* first release</notes>
+  </release>
+ </changelog>
+</package>

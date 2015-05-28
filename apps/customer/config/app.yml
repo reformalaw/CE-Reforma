@@ -1,0 +1,178 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+dev:
+      site_url:                      'http://counceledge.demo.brainvire.com'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+stage:
+      site_url:                      'http://counceledge.demo.brainvire.com'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'    
+prod:
+      site_url:                      'http://vcdev.demo.brainvire.com'
+      smtp_username:                 'crazydev82@gmail.com'
+      smtp_password:                 'mitul123'
+      smtp_host:                     'smtp.gmail.com'
+      smtp_port:                     '465'
+      smtp_security:                 'ssl'
+      smtp_flag:                     'On'
+
+all:
+    counceledge_site_name: Counseledge.com
+    
+    theme1:
+        default:
+            css:    ['normalize.css', 'style.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css'] 
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery-min.js']
+        home:
+            #css:   ['mitul.css','-style.css']
+            js:     ['slider.js'] //'-jquery.js'
+    theme2:
+        default:
+            css:    ['normalize.css', 'style.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css'] 
+            js:     ['jquery.js','modernizr-2.0.6.min.js', 'sequence.jquery-min.js']
+        home:
+            #css:   ['mitul.css','-style.css']
+            js:     ['slider.js']
+
+    theme4:
+        default:
+            css:    ['custom.css', 'normalize.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css', 'style.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme3:
+        default:
+            css:    ['custom.css', 'normalize.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css', 'style.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme6:
+        default:
+            css:    ['custom.css', 'normalize.css', 'sequencejs-theme.modern-slide-in.css', 'style.css', 'responsive.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme7:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme9:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme10:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme11:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme14:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme16:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme12:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme8:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js', 'slider.js']
+
+    theme5:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme13:
+        default:
+            css:    ['style.css', 'normalize.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js', 'PIE.htc']
+        home:
+            js:     ['slider.js']
+
+    theme15:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme18:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme17:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme19:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    theme20:
+        default:
+            css:    ['normalize.css', 'style.css', 'custom.css', 'responsive.css', 'sequencejs-theme.modern-slide-in.css']
+            js:     ['jquery.js', 'modernizr-2.0.6.min.js', 'sequence.jquery.js', 'sequence.jquery-min.js']
+        home:
+            js:     ['slider.js']
+
+    Status:
+        Active:     Active
+        Inactive:   Inactive
+        
+    MenuType:
+        Header: Header
+        Footer: Footer                         

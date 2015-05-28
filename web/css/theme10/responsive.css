@@ -1,0 +1,717 @@
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 350px){
+
+.page{
+	width:96%;
+}
+
+
+header{
+	height:auto;
+}
+
+nav{
+	padding:0px;
+	width:100%;
+}
+
+nav ul{
+	width:100%;
+}
+
+nav ul li{
+	clear:both;
+	text-align:center;
+	float:none;
+}
+
+nav ul li a{
+	padding:10px 0px;
+	display:block;
+}
+
+nav ul li:hover ul{
+	display:none;
+}
+
+.bannerpart{
+	width:100%;
+	background-position:right;
+	min-height:auto;
+	background-image:none;
+	background-color:#312b25;
+}
+
+.bannercontent{
+	background-image:none;
+	margin:0px;
+	padding:0px;
+	width:auto;
+}
+
+.bannercontent h3{
+	padding:25px;
+}
+
+.bannercontent h2{
+	padding:0px 25px 25px 25px;
+}
+
+.tellus-form{
+	width:100%;
+	min-height:inherit;
+	padding-bottom:15px;
+}
+
+.tellus-form h2{
+	width:90%;
+	padding:3% 5%;
+	font-size:18px;
+}
+
+.tellus-form ul li{
+	width:100%;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+	width:94%;
+}
+
+.tellus-form ul li textarea{
+	height:30px;
+}
+
+.tellus-form ul li input[type="button"]{
+	float:left;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	padding:10px 0px;
+	text-align:center;
+	position:inherit;
+	-moz-box-shadow:0px 2px 5px #ffffff;
+	-webkit-box-shadow:0px 2px 5px #ffffff;
+	box-shadow:0px 2px 5px #ffffff;
+}
+
+.logo img{
+	height:40px;
+}
+
+.phoneno, .phoneno span, .phoneno img{
+	padding:0px;
+	float:none;
+	text-align:center;
+}
+
+.phoneno{	
+	padding-bottom:15px;
+}
+
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:100%;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#right-column .content-text, #left-column .content-text, #full-width .content-text, #home .content-text	{
+	padding:10px 10px 10px 0px;
+	height:200px;
+	overflow:auto;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+	margin-bottom:15px;
+}
+
+.practice-area ul, #full-width .practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:92%;
+	height:200px;
+	overflow:auto;
+	padding:4%;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:98%;
+	float:left;
+}
+
+.content-area h2{
+	height:auto;
+	font-size:18px;
+	line-height:21px;
+	padding:5px 10px;
+}
+
+#contactus .content-area div.contact-form li{	
+	width:100%;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+}
+
+}
+
+
+@media (min-width: 351px) and (max-width: 490px){
+
+.page{
+	width:340px;
+}
+
+
+header{
+	height:auto;
+}
+
+nav{
+	width:320px;
+}
+
+nav ul{
+	width:100%;
+}
+
+nav ul li{
+	clear:both;
+	text-align:center;
+	float:none;
+}
+
+nav ul li a{
+	padding:14px 14px 12px 14px;
+	display:block;
+}
+
+nav ul li:hover ul{
+	display:none;
+}
+
+.bannerpart{
+	width:340px;
+	background-position:right;
+	min-height:auto;
+	background-image:none;
+	background-color:#312b25;
+}
+
+.bannercontent{
+	background-image:none;
+	margin:0px;
+	padding:0px;
+	width:auto;
+}
+
+.bannercontent h3{
+	padding:25px;
+}
+
+.bannercontent h2{
+	padding:0px 25px 25px 25px;
+}
+
+.tellus-form{
+	width:340px;
+	min-height:inherit;
+	padding-bottom:15px;
+}
+
+.tellus-form h2{
+	width:310px;
+	font-size:18px;
+}
+
+.tellus-form ul li{
+	width:100%;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+	width:94%;
+}
+
+.tellus-form ul li textarea{
+	height:30px;
+}
+
+.tellus-form ul li input[type="button"]{
+	float:left;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	padding:10px 0px;
+	text-align:center;
+	position:inherit;
+	-moz-box-shadow:0px 2px 5px #ffffff;
+	-webkit-box-shadow:0px 2px 5px #ffffff;
+	box-shadow:0px 2px 5px #ffffff;
+}
+
+.logo img{
+	height:40px;
+}
+
+.phoneno, .phoneno span, .phoneno img{
+	padding:0px;
+	float:none;
+	text-align:center;
+}
+
+.phoneno{	
+	padding-bottom:15px;
+}
+
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:340px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#left-column .content-text, #right-column .content-text{
+	padding:0px;
+}
+
+.practice-area, #full-width .practice-area{
+	width:100%;
+}
+.practice-area ul, #full-width .practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:90%;
+	padding:4% 5%;
+	height:200px;
+	overflow:auto;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:100%;
+	float:left;
+}
+
+.content-area h2{/*margin:20px 0px 10px 0px;*/}
+
+.content-text{
+	height:300px;
+	overflow:auto;	
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 340px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 145px;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+}
+
+}
+
+
+@media (min-width: 491px) and (max-width: 700px){
+
+.page{
+	width:470px;
+}
+
+header{
+	height:auto;
+}
+
+nav{
+	width:448px;
+}
+
+nav ul{
+	width:100%;
+}
+
+nav ul li{
+	clear:both;
+	text-align:center;
+	float:none;
+}
+
+nav ul li a{
+	padding:14px 14px 12px 14px;
+	display:block;
+}
+
+nav ul li:hover ul{
+	display:none;
+}
+
+.bannerpart{
+	width:470px;
+	background-position:right;
+}
+
+.tellus-form{
+	width:470px;
+	min-height:inherit;
+}
+
+.tellus-form h2{
+	width:430px;
+	font-size:18px;
+}
+
+.tellus-form ul li{
+	width:50%;
+	float:left;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+	width:85%;
+}
+
+.tellus-form ul li textarea{
+	height:30px;
+}
+
+.tellus-form ul li input[type="button"]{
+	float:left;
+}
+
+.logo{
+	width:100%;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	padding:10px 0px;
+	text-align:center;
+	position:inherit;
+	-moz-box-shadow:0px 2px 5px #ffffff;
+	-webkit-box-shadow:0px 2px 5px #ffffff;
+	box-shadow:0px 2px 5px #ffffff;
+}
+
+.logo img{
+	height:40px;
+}
+
+.phoneno, .phoneno span, .phoneno img{
+	padding:0px;
+	float:none;
+	text-align:center;
+}
+
+.phoneno{	
+	padding-bottom:15px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:470px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:100%;
+	float:left;
+}
+
+#right-column .content-text, #left-column .content-text{
+	padding: 10px 0px 10px 0;
+}
+
+#full-width .practice-area{
+	width:100%;
+}
+
+.practice-area{
+	width:100%;
+}
+
+.practice-area ul{
+	min-height:inherit;
+	float:left;
+	width:92%;
+	padding:4%;
+}
+
+.practice-area ul li, #full-width .practice-area ul li{
+	width:46%;
+	float:left;
+	clear:none;
+}
+
+.content-area h2{/*margin:20px 0px 10px 0px;*/}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 470px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 132px;
+}
+
+#contactus .content-area div.contact-form{
+	width:100%;
+}
+
+#contactus .content-area div.contact-details{
+	width:90%;
+	min-height:inherit;
+	padding:5%;
+	margin-top:25px;
+}
+
+footer{
+	text-align:center;
+}
+
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+
+.page{
+	width:680px;
+}
+
+nav{
+	width:660px;
+}
+
+nav ul li a{
+	padding:14px 14px 12px 14px;
+}
+
+.bannerpart{
+	width:680px;
+}
+
+.tellus-form{
+	width:680px;
+	min-height:inherit;
+}
+
+.tellus-form h2{
+	width:650px;
+	font-size:18px;
+}
+
+.tellus-form ul li{
+	width:50%;
+	float:left;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+	width:90%;
+}
+
+.tellus-form ul li textarea{
+	height:30px;
+}
+
+.tellus-form ul li input[type="button"]{
+	float:left;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area{
+	width:680px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:460px;
+}
+
+#full-width .practice-area{
+	width:680px;
+}
+
+#full-width .practice-area li{
+	width:48%;
+}
+
+.practice-area{
+	width:220px;
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 680px;
+}
+
+.quick-contact li{padding-right:10px;}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 132px;
+}
+
+
+footer{
+	text-align:center;
+}
+footer .social-icons{
+	float:none;
+	margin-top:10px;
+	margin-bottom:5px;
+	display:inline-block;
+}
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+.page{
+	width:880px;
+}
+
+.banner{
+	/*height:auto;*/
+}
+
+.banner .page img{
+	width:880px;
+}
+
+nav{
+	width:858px;
+}
+
+nav ul li a{
+	padding:14px 30px 12px 30px;
+}
+
+.bannerpart{
+	width:630px;
+}
+
+.tellus-form{
+	width:250px;
+}
+
+.tellus-form h2{
+	width:220px;
+	font-size:18px;
+}
+
+.tellus-form ul li input, .tellus-form ul li textarea{
+	width:200px;
+}
+
+#full-width .content-area, #faq .content-area, #contactus .content-area, #full-width .practice-area{
+	width:880px;
+}
+
+#left-column .content-area, #right-column .content-area, #home .content-area{
+	width:630px;
+}
+
+.practice-area{
+	width:250px;
+}
+
+.service-box{
+	margin-right:35px;
+}
+
+.service-box div.content{
+	height:120px;
+}
+
+.quick-contact {
+    float: left;
+    padding: 15px 0;
+    width: 880px;
+}
+
+.quick-contact li input, .quick-contact li textarea {
+    background-color: #DDDCDC;
+    border: 1px solid #9F9F9F;
+    padding: 5px;
+    width: 160px;
+}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+
+
+}

@@ -1,0 +1,1067 @@
+/* 
+ * HTML5 ? Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+audio:not([controls]) {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	padding:0px;
+	margin: 0;
+	font-size: 13px;
+	line-height:18px;
+	background-image:url(../../images/theme2/main-bg.png);
+	background-repeat:repeat;
+	
+}
+body, button, input, select, textarea {
+	font-family: 'AmbleRegular';
+	color:#646464;
+}
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection {
+	background: #ccc;
+	color: #000;
+	text-shadow: none;
+}
+::selection {
+	background: #ccc;
+	color: #000;
+	text-shadow: none;
+}
+a {
+	font-size:13px;
+	text-decoration:none;
+	outline:none 0px;
+}
+a:hover {
+	color: #363636;
+}
+a img {
+	border:none;
+}
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+	outline:none 0px;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+blockquote {
+	margin: 1em 40px;
+}
+dfn {
+	font-style: italic;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px dotted #363636;
+	margin:5px 0;
+	padding: 0;
+}
+ins {
+	background: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp {
+	font-family: monospace, monospace;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+q {
+	quotes: none;
+}
+q:before, q:after {
+	content: "";
+	content: none;
+}
+small {
+	font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul, ol {
+	margin:0px;
+	padding:0px;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	/*list-style:none;*/
+	color:#15a7bd;
+	/*background-image:url(../../images/theme2/list-style-blue-image.png);
+	background-position:center left;
+	background-repeat:no-repeat;*/
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) {
+overflow: hidden;
+}
+/* Figures */
+figure {
+	margin: 0;
+}
+/* Forms */
+
+form {
+	margin: 0;
+	padding:0px;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+	cursor: pointer;
+}
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend {
+	border: 0;
+	*margin-left: -7px;
+	padding: 0;
+}
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+}
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button {
+	line-height: normal;
+	*overflow: visible;
+	background-color:#15a7bd;
+	color:#FFFFFF;
+}
+
+button:hover {
+	background-color:#FFFFFF;
+	color:#15a7bd;
+}
+
+input, textarea {
+	line-height: normal;
+	*overflow: visible;
+	background-color:#FFFFFF;
+}
+
+input:focus, textarea:focus {
+	background-color:#bbbbbb;
+	color:#FFFFFF;
+}
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input {
+	*overflow: auto;
+}
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+
+/* Colors for form validity */
+input:valid, textarea:valid {
+}
+input:invalid, textarea:invalid {
+	background-color: #f0dddd;
+}
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td {
+	vertical-align: top;
+}
+/* ==|== primary styles === */
+h1, h2, h3, h4, h5, h6 {
+	margin:0px;
+	padding:0px
+}
+
+@font-face {
+    font-family: 'AmbleRegular';
+    src: url('fonts/amble-regular/Amble-Regular-webfont.eot');
+    src: url('fonts/amble-regular/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amble-regular/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/amble-regular/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/amble-regular/Amble-Regular-webfont.svg#AmbleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarDreamsRegular';
+    src: url('fonts/caviar-dreams/CaviarDreams-webfont.eot');
+    src: url('fonts/caviar-dreams/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/caviar-dreams/CaviarDreams-webfont.woff') format('woff'),
+         url('fonts/caviar-dreams/CaviarDreams-webfont.ttf') format('truetype'),
+         url('fonts/caviar-dreams/CaviarDreams-webfont.svg#CaviarDreamsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CorbelRegular';
+    src: url('fonts/corbel/corbel-webfont.eot');
+    src: url('fonts/corbel/corbel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/corbel/corbel-webfont.woff') format('woff'),
+         url('fonts/corbel/corbel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/bebas-neue/BebasNeue-webfont.eot');
+    src: url('fonts/bebas-neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas-neue/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/bebas-neue/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.page {
+	width:980px;
+	margin:0 auto;
+}
+
+header, .top-number-part, nav, .banner, .our-services-part, footer, .middle{
+	margin:auto;
+	float:left;
+	width:100%;
+}
+
+.top-number-part{
+	background-image:url(../../images/theme2/top-number-part-bg.png);
+	background-repeat:repeat;
+}
+
+.top-social-icons{
+	float:right;
+	width:255px;
+	border-left:solid 1px #747474;
+	margin:5px 0px;
+	text-align:left;
+	color:#5d5d5d;
+	text-shadow:1px 1px #ffffff;
+	padding:0px 0px 0px 15px;
+}
+
+.top-social-icons span{
+	float:left;
+	line-height:23px;
+}
+
+.top-social-icons a.facebook, .top-social-icons a.twitter, .top-social-icons a.linkedin, .top-social-icons a.gmailplus{
+	float:left;
+	background-image:url(../../images/theme2/top-social-icons.png);
+	background-repeat:no-repeat;
+	width:23px;
+	height:23px;
+	margin-left:8px;
+}
+
+.top-social-icons a.facebook{
+	background-position:0px 0px;
+}
+
+.top-social-icons a:hover.facebook{
+	background-position:0px -27px;
+}
+
+.top-social-icons a.twitter{
+	background-position:-30px 0px;
+}
+
+.top-social-icons a:hover.twitter{
+	background-position:-30px -27px;
+}
+
+.top-social-icons a.gmailplus{
+	background-position:-61px 0px;
+}
+
+.top-social-icons a:hover.gmailplus{
+	background-position:-61px -27px;
+}
+
+.top-social-icons a.linkedin{
+	background-position:-92px 0px;
+}
+
+.top-social-icons a:hover.linkedin{
+	background-position:-92px -27px;
+}
+
+.top-number{
+	float:right;
+	width:200px;
+	margin:5px 0px;
+	text-align:right;
+	padding:0px 15px 0px 0px;
+}
+
+.top-number span{
+	font-size:21px;
+	line-height:22px;
+	padding-top:1px;
+	font-family: 'BebasNeueRegular';
+	float:right;
+	padding-left:8px;
+}
+
+.logo, .logo span.name{
+	float:left;
+	width:auto;
+	font-family: 'CaviarDreamsRegular';
+	font-size:45px;
+	color:#131313;
+	font-variant:small-caps;
+	padding:18px 0px;
+	line-height:30px;
+	text-align:right;
+}
+.logo span.name{
+	float:none;
+	color:#7a7a7a;
+}
+.logo span{
+	font-family: 'AmbleRegular';
+	font-size:13px;
+	font-variant:normal;
+	line-height:24px;
+}
+
+.logo img {
+    height: 50px;
+}
+.top-search{
+	float:right;
+	padding-top:30px;
+}
+
+.top-search input{
+	float:right;
+	padding:7px 5px;
+	border:none 0px;
+	border-left:solid 1px #bbbbbb;
+	border-top:solid 1px #bbbbbb;
+	-moz-box-shadow: inset 1px 1px 2px #bbbbbb;
+	-webkit-box-shadow: inset 1px 1px 2px #bbbbbb;
+	box-shadow: inset 1px 1px 2px #bbbbbb;
+	width:250px;
+}
+
+.top-search input[type="button"]{
+	float:right;
+	background-image:url(../../images/theme2/search-icon.png);
+	background-repeat:no-repeat;
+	background-position:center 6px;
+	width:24px;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	height:28px\9;
+}
+
+nav{
+	background-image:url(../../images/theme2/menu-black-bg.png);
+	background-repeat:repeat-x;
+	height:50px;
+	border-bottom-width:3px;
+	border-bottom-style:solid;
+}
+
+nav .menu ul{
+	background-image:url(../../images/theme2/menu-line.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	height:50px;
+}
+
+nav .menu ul li{
+	list-style:none;
+	background-image:url(../../images/theme2/menu-line.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	line-height:50px;
+	float:left;
+	padding-right:2px;
+}
+
+nav .menu ul li a{
+	font-size:14px;
+	padding:0px 45px;
+	display:block;
+	color:#FFFFFF;
+}
+
+nav .menu ul li a:hover{
+	background-image:url(../../images/theme2/menu-hvr-blue-bg.png);
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+}
+
+nav .menu ul li ul {
+    background-image: none;
+    display: none;
+    height: auto;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 121;
+}
+
+nav .menu ul li:hover ul {
+    display: block;
+}
+
+nav .menu ul li ul li {
+    background-color: #363636;
+    background-image: none;
+    border-top: 1px solid #363636;
+    clear: both;
+    color: #FFFFFF;
+    line-height: 18px;
+    max-width: 250px;
+    min-width: 175px;
+	padding-right:0px;
+}
+
+nav .menu ul li ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+nav .menu ul li ul li a:hover {
+    background-image: none;
+    color: #FFFFFF;
+}
+
+.banner{
+	/*background-image:url(../../images/theme2/banner-img.png);*/
+	background-repeat:repeat;
+	background-position:center;
+	border-bottom-style:solid;
+	border-bottom-width:7px;
+	height:420px;
+}
+
+.our-services-part{
+	border-bottom:dotted 1px #363636;
+}
+
+.our-services{
+	float:left;
+	width:204px;
+	padding:15px 20px;
+	border-right:dotted 1px #363636;
+	height:145px;
+	overflow:hidden;
+}
+
+.our-services a{
+	float:left;
+	width:100%;
+	text-align:justify;
+	display:block;
+	color:#828181;
+	height:148px;
+	overflow:hidden;
+}
+
+
+.our-services h4{
+	font-family: 'CorbelRegular';
+	font-size:24px;
+	font-weight:normal;
+	color:#363636;
+	padding-bottom:8px;
+	margin-bottom:10px;
+	border-bottom:dotted 1px #363636;
+}
+
+.middle div.our-services h4{
+	padding-bottom:5px;
+	padding-top:0px;
+	font-size:24px;  
+	color:#363636;  
+}
+
+.our-services a:hover p, .our-services:hover p{
+	color:#ffffff;
+}
+
+.our-services a.readmore{
+	color:#FFFFFF;
+	clear:both;
+	padding:4px 10px;
+	float:left;
+	border-width:1px;
+	border-style:solid;
+}
+
+.our-services a.readmore{
+	background-color:#FFFFFF;
+}
+
+.our-services:last-child, .our-services-last{
+	border-right:none 0px;
+}
+
+.middle div.our-services {
+    border-right: 0 none;
+    width:195px;
+    margin-top:10px;
+	padding:12px 15px;
+}
+
+.middle div.our-services p{
+	padding:0px;
+}
+
+.practice-area{
+	width:24%;
+	padding:2% 0% 0 0;
+}
+
+.practice-area p{
+	padding-top:8px;
+	float:right;
+}
+
+.practice-area p input, .practice-area p textarea{
+	padding:5px 5px;
+	border:none 0px;
+	border-left:solid 1px #bbbbbb;
+	border-top:solid 1px #bbbbbb;
+	-moz-box-shadow: inset 1px 1px 2px #bbbbbb;
+	-webkit-box-shadow: inset 1px 1px 2px #bbbbbb;
+	box-shadow: inset 1px 1px 2px #bbbbbb;
+	width:210px;
+	color:#717171;
+}
+
+.practice-area p textarea{
+	height:70px;
+}
+
+.practice-area p input[type=submit]{
+	float:right;
+	border:none 0px;
+	width:auto;
+    clear: both;
+    color: #FFFFFF;
+    padding: 5px 10px;
+	-moz-box-shadow: inset 0px 0px 0px #15A7BD;
+	-webkit-box-shadow: inset 0px 0px 0px #15A7BD;
+	box-shadow: inset 0px 0px 0px #15A7BD;
+}
+
+.content-area{
+	width:45%;
+	padding:1% 2%;
+	border-left:dotted 1px #363636;
+	text-align:justify;
+	min-height: 504px;
+}
+
+.content-area h2, .practice-area h2{
+	font-family: 'CorbelRegular';
+	font-size:23px;
+	color:#363636;
+	font-weight:normal;
+	text-transform:none;
+}
+
+.content-area h4, .practice-area h4{
+	font-size:15px;
+	font-weight:normal;
+	padding-top:10px;
+	padding-bottom:3px;
+	color:#1a1a1a;
+}
+
+.practice-area h4{
+	font-size:13px;
+}
+.content-area li {margin:0 0 0 20px;}
+.practice-area{
+	padding:1% 0 2% 1%;
+	background-image:url(../../images/theme2/practice-area-gradiation-bg.png);
+	background-repeat:repeat-x;
+	min-height:495px;
+}
+
+.tell-us{
+	padding:1% 2% 2% 0%;
+	background-image:none;
+	width:22.9%;
+}
+
+#cmspages div.practice-area{
+	width:25%;
+}
+
+#cmspages div.content-area{
+	border-left:none 0px;
+	border-right:none 0px;
+    padding: 1% 0  1% 0%;
+    width: 70%;
+}
+
+.content-area .content-text h1, .content-area .content-text h2, .content-area .content-text h3, .content-area .content-text h4, .content-area .content-text h5, .content-area .content-text h6{
+	margin:10px 0px;
+	font-weight:normal;
+}
+
+
+#faq div.content-area, #contactus div.content-area{
+	border-left:none 0px;
+	border-right:none 0px;
+    padding: 1% 0  1% 0%;
+    width: 100%;
+}
+
+#faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand {
+    background-color: #ffffff;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+}
+
+#faq .content-area h4 div.answer {
+    padding: 10px 30px;
+	font-size:14px;
+}
+
+#contactus .content-area div.contact-form{
+	width:67%;
+}
+
+#contactus .content-area div.contact-details{
+	width:30%;
+	padding:2% 0% 2% 2%;
+	background-color:#ffffff;
+	min-height: 235px;
+}
+
+#contactus .content-area div.contact-details label{
+	font-size:16px;
+	margin-bottom:10px;
+	float:left;
+	width:70px;
+	clear:both;
+}
+
+#contactus .content-area div.contact-details p{
+	float:left;
+	padding-left:5px;
+	padding-bottom:15px;
+}
+
+#contactus .content-area div.contact-form p.text{
+	font-size:16px;
+	padding-top:8px;
+	float:left;
+	width:97.3%;
+}
+
+#contactus .content-area div.contact-form li{
+	float:left;
+	width:50%;
+	list-style-type: none;
+    margin: 0;
+	color:#646464;
+}
+
+#contactus .content-area div.contact-form li input, #contactus .content-area div.contact-form li textarea, #contactus .content-area div.contact-form li select{
+	background-color: #E9E9E9;
+    border: 1px solid #BAB8B8;
+    color: #999999;
+    float: left;
+    margin: 0;
+    padding: 5px 2%;
+    width: 90%;
+}
+
+#contactus .content-area div.contact-form li input[type="radio"], #contactus .content-area div.contact-form li input[type="checkbox"]{
+    width:auto;
+	margin-right:10px;
+	float:left;
+}
+
+#contactus .content-area div.contact-form li.contact-radio label, #contactus .content-area div.contact-form li.contact-checkbox label{
+	float:left;
+	margin-right:2px; /*margin-right:25px;*/
+	line-height:15px;
+}
+
+#contactus .content-area div.contact-form li select{
+	width:94%;
+}
+
+#contactus .content-area div.contact-form li.contact-message{
+    width:100%;
+}
+
+#contactus .content-area div.contact-form li textarea{
+    width:93%;
+}
+
+
+#contactus .content-area div.contact-form li input[type="submit"]{
+	border:none;
+	color:#ffffff;
+	margin-top:15px;
+	width:auto;
+	padding:8px 20px;
+	border-width:1px;
+	border-style:solid;
+}
+
+#contactus .content-area div.contact-form li input:hover[type="submit"]{
+	
+	border-width:1px;
+	border-style:solid;
+}
+
+
+#contactus .content-area div.contact-form li p{
+	padding-top:15px;
+	color:#646464;
+	float:left;
+	width:100%;
+}
+
+#contactus .content-area div.contact-form li p span.required{
+	color:#FF0000;
+	font-size:16px;
+	line-height:10px;
+}
+
+.practice-area li{
+	/*padding-left:15px;*/
+	list-style:square inside;
+	font-size:16px;
+}
+
+.practice-area li a{
+	line-height:26px;
+	padding-left:3px;
+}
+
+.practice-area li a:hover{
+	
+}
+
+#cmspages div.content-area li{
+	font-size: 13px;
+	color:#363636;
+	padding-left:5px;
+	line-height:24px;
+}
+
+
+footer{
+	background-color:#3d3b3c;
+	border-top:solid 5px #dad9d9;
+	line-height:40px;
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+footer a{
+	padding:0px 5px;
+	color:#FFFFFF;
+}
+
+footer a:hover{
+	color:#c9c9c9;
+}
+
+footer a.facebook, footer a.twitter, footer a.linkedin, footer a.gmailplus{
+	background-image:url(../../images/theme2/footer-social-icons.png);
+	background-repeat:no-repeat;
+	float:right;
+	width:25px;
+	height:25px;
+	padding:0px;
+	margin-top:8px;
+	margin-left:8px;
+}
+
+footer a.facebook{
+	background-position:0px 0px;
+}
+
+footer a:hover.facebook{
+	background-position:0px -30px;
+}
+
+footer a.twitter{
+	background-position:-34px 0px;
+}
+
+footer a:hover.twitter{
+	background-position:-34px -30px;
+}
+
+footer a.linkedin{
+	background-position:-102px 0px;
+}
+
+footer a:hover.linkedin{
+	background-position:-102px -30px;
+}
+
+footer a.gmailplus{
+	background-position:-68px 0px;
+}
+
+footer a:hover.gmailplus{
+	background-position:-68px -30px;
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir {
+	display: block;
+	border: 0;
+	text-indent: -999em;
+	overflow: hidden;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+.ir br {
+	display: none;
+}
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+	visibility: hidden;
+}
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+
+#contactus .content-area div.contact-form li #captcha_img { margin:10px 0 0 0;}
+#contactus .content-area div.contact-form li input { padding:6px 2%;}
+#contactus .content-area div.contact-form li select option { margin:0 0 0 5px;}
+.practice-area .our-services:hover { background:none; color:#646464;}

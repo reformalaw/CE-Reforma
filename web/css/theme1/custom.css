@@ -1,0 +1,28 @@
+.facebook:hover, .twitter:hover, .linkedin:hover, .rss:hover, nav ul li ul li, #contactus .content-area div.contact-form li input[type=submit]{
+	/*background-color:#bf0000;*/
+    background-color:##BGCOLOR##;
+}
+
+.services h3, .services strong, .practice-area h2, .practice-area li, .content-area h2, #contactus .content-area div.contact-details label{
+	/*color:#bf0000;*/
+	color:##TEXTCOLOR##;
+}
+
+body, nav ul li a:hover, .services, .services:hover, footer, .facebook:hover, .twitter:hover, .linkedin:hover, .rss:hover{
+	/*border-color:#bf0000;*/
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area li a{
+    /*color:#bf0000;*/
+    color:##LINKCOLOR##
+}
+
+a:hover, .practice-area li a:hover{
+    /*color:#bf0000;*/
+    color:##LINKHOVERCOLOR##;
+}
+
+.banner {
+    background-image: ##BGIMAGE##;
+}

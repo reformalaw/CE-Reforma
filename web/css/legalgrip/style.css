@@ -1,0 +1,904 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+audio:not([controls]) {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html {
+	font-size: 100%;
+	/*overflow-y: scroll;*/
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	padding:0px;
+	margin: 0;
+	font-size: 12px;
+	line-height:18px;
+	background-image:url(../../images/legalgrip/main-bg.png);
+	background-repeat:repeat;
+	
+}
+body, button, input, select, textarea {
+	color:#646464;
+}
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection {
+	background: #ccc;
+	color: #000;
+	text-shadow: none;
+}
+::selection {
+	background: #ccc;
+	color: #000;
+	text-shadow: none;
+}
+ {
+	font-size:13px;
+	text-decoration:none;
+	outline:none 0px;
+}
+a{
+	text-decoration:none;
+	color:#000000;
+}
+a:hover {
+	color: #71716d;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	  /* ...and now for the proper property */
+	transition:.5s;
+}
+a img {
+	border:none;
+}
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+	outline:none 0px;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+blockquote {
+	margin: 1em 40px;
+}
+dfn {
+	font-style: italic;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px dotted #363636;
+	margin:5px 0;
+	padding: 0;
+}
+ins {
+	background: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp {
+	font-family: monospace, monospace;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+q {
+	quotes: none;
+}
+q:before, q:after {
+	content: "";
+	content: none;
+}
+small {
+	font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul, ol, p {
+	margin:0px;
+	padding:0px;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style:none;
+	margin:0 0 3px 0;
+	/*background-image:url(../images/list-style-blue-image.png);
+	background-position:center left;
+	background-repeat:no-repeat;*/
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) {
+overflow: hidden;
+}
+/* Figures */
+figure {
+	margin: 0;
+}
+/* Forms */
+
+form {
+	margin: 0;
+	padding:0px;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+	/*cursor: pointer;*/  /*commented by jaydip dodiya cause in homepage it gives the link in label*/
+}
+.fontLabel{
+	font-size: 15px;
+}
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend {
+	border: 0;
+	*margin-left: -7px;
+	padding: 0;
+}
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	outline: none;
+}
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button {
+	line-height: normal;
+	*overflow: visible;
+	background-color:#15a7bd;
+	color:#FFFFFF;
+}
+
+button:hover {
+	background-color:#FFFFFF;
+	color:#15a7bd;
+}
+
+input, textarea {
+	line-height: normal;
+	*overflow: visible;	
+	color:#1A1A1A;
+	/*-moz-box-shadow:inset 3px 3px 3px #bbbbbb;
+	-webkit-box-shadow:inset 3px 3px 3px #bbbbbb;
+	box-shadow:inset 3px 3px 3px #bbbbbb;*/
+}
+
+input:focus, textarea:focus, select:focus  {
+outline:none;
+	
+	/*-moz-box-shadow:inset 3px 3px 3px #dddcdc;
+	-webkit-box-shadow:inset 3px 3px 3px #dddcdc;
+	box-shadow:inset 3px 3px 3px #dddcdc;*/
+}
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input {
+	*overflow: auto;
+}
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+}
+input[type="search"] {
+	/*-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;*/
+}
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+
+/* Colors for form validity */
+input:valid, textarea:valid {
+}
+input:invalid, textarea:invalid {
+	background-color: #f0dddd;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td {
+	vertical-align: top;
+}
+
+
+/* ==|== primary styles === */
+h1, h2, h3, h4, h5, h6 {
+	/*margin:8px 0 0px 12px;*/
+	margin:5px 0 0 0;
+	padding:0px;
+	font-family: 'droid_sansregular';
+	float:left;
+}
+
+@font-face {
+    font-family: 'AmbleRegular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#AmbleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('fonts/droidsans-webfont.eot');
+    src: url('fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/droidsans-webfont.woff') format('woff'),
+         url('fonts/droidsans-webfont.ttf') format('truetype'),
+         url('fonts/droidsans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SegoeUIRegular';
+    src: url('fonts/segoeui.eot');
+    src: url('fonts/segoeui.eot') format('embedded-opentype'),
+         url('fonts/segoeui.woff') format('woff'),
+         url('fonts/segoeui.ttf') format('truetype'),
+         url('fonts/segoeui.svg#SegoeUIRegular') format('svg');
+}
+
+body { margin: 0px;	padding: 0px; font-family: 'AmbleRegular';color:#8d8c8c;}
+header, .banner, .middle, footer, { float: left; width: 100%;}
+.page { margin: 0 auto; width: 1000px;}
+
+/*====================================header=================================*/
+
+header { font-family: 'droid_sansregular';}
+.header-top { float:left; width:100%;}
+.header-top-left { float:left; width:435px; margin:2px 0 0 0;}
+.header-top-left p { float:left; margin:4px 5px 0 0;}
+.header-top-right { float:right; width:565px;}
+#state_dropdown, #county_dropdown{float:left;}
+#set_location{margin-left:5px;padding:5px 10px 6px 10px;}
+.search { float:left; margin:2px 0 0 0;}
+.input-search { border:1px solid #c9c7c7; float:left; width:160px; height:15px; margin:0 0 0 0;padding:5px;}
+.search-btn { float:left; margin:0; padding:5px 10px 6px 10px; background-color:#000; margin:0 10px 0 0; border:none;}
+.search-btn:hover { color:#71716D;}
+.search img { float:left; margin:5px 0 0 -23px;}
+.faq { float:right; padding:5px 15px 6px; background-color:#e8e8e8;}
+.forms {float:right; padding:5px 15px 6px; background-color:#ababab; margin:0 0 0 0px;}
+.logo { float:left; width:248px; margin:20px 0 0;}
+.header-legal-part { float: right; margin: 40px 0 0; width: 71%;}
+.legal-search { float:right; margin:0;color:#fff; padding:6px 18px; background-image:url(../../images/legalgrip/serch-bg.png); background-repeat:repeat-x;border:none;}
+.legal-search:hover { background-color:#000; color:#fff; background-image:none;}
+.header-legal-part h4 { float: left; font-size: 14px; font-weight: normal; width: 19%;}
+.legal-search, .search-btn {font-family:'droid_sansregular';}
+.headerlogin, .header-top-right div span{ float:right; padding:5px 15px 6px;}
+.headerlogin{background-color:#e8e8e8;margin-right:1px;}
+.headerlogout{float:left;padding:0px 5px}
+.header-top-right div span{padding:5px 0px 6px 0px;}
+.header-top-right div span.username, .header-top-right div p span{float:left;padding:0px;font-size:13px;line-height:16px;}
+.header-top-right div span.username{padding-top:2px}
+.header-top-right div p, .header-top-right div p label{float:right;}
+.header-top-right div p, .header-top-right div p span{line-height:28px;}
+ 
+/*======================================middle==============================================*/
+.featured { float:left; width:100%; background-image: url(../../images/legalgrip/con-shedow-bg.png); background-repeat:no-repeat; height:237px;}
+.read-more { font-size:30px; float:left; margin:50px 0 0 -51px; *width:175px;}
+.middle h2, .professionals-box h2 { background-image: url("../../images/legalgrip/border-arrow.png"); background-position: 29px bottom; background-repeat: no-repeat; border-bottom: 2px solid #F89123; font-size: 25px; margin: 55px 0 0; padding: 0 0 15px; width: 30%; font-weight:normal;}
+#faq h2{margin:25px 0 15px;width:100%}
+.featured h2 { background-image: url("../../images/legalgrip/border-arrow.png"); background-position: 29px bottom; background-repeat: no-repeat; border-bottom: 2px solid #F89123; font-size: 25px; margin: 55px 0 0; padding: 0 0 15px; width: 30%; font-weight:normal;}
+.read-more, .practice-area-read-more, .areas-search {background-color:#f89123; font-family: 'SegoeUIRegular'; padding:7px 12px;}
+.read-more:hover, .practice-area-read-more:hover, .areas-search:hover {background-color:#000; font-family: 'SegoeUIRegular'; color:#fff;}
+.client-post { border-top: 1px solid #D0D0CF; float: left; margin: 0 0 10px; padding: 25px 0 0; width: 100%;}
+.client-box{ float:left; width:25%;}
+.client-box a img { float:left; 
+     width:80px; 
+	 height:80px; 
+     border-radius:100%; 
+}
+.client-box .homestar{float:left;margin:8px 0 0 10px;width:60%;}
+.client-box .featuredattlist{float:left;margin:8px 0 0 10px;width:60%;}
+.client-box .homestar img { float:left; 
+     width:auto; 
+	 height:auto; 
+	 margin-right:5px;
+}
+.client-box h3 {margin:0px 0 0 10px;width:60%;}
+.client-box p { float:left; margin:5px 0 0 10px; width:126px;}
+.practice-area { float:left; width:69%;}
+.practice-area h2 { width:60%; margin:25px 0 0 0;}
+.practice-area ul { float:left; width:100%; margin:0; border-top:1px solid #d0d0cf; padding:15px 0 0 0;}
+.practice-area li { float:left; width:33%; margin:5px 0 0 0;}
+.practice-area li a { color:#868686; background-image:url(../../images/legalgrip/arrow.png); background-repeat:no-repeat; padding:0 0 0 15px; background-position: left center;}
+.practice-area li a:hover{color:#000;}
+.practice-area-read-more { float: right; font-size: 15px; margin: 15px 10px 0 0; line-height:22px; width:83px; text-align:center;}
+.read-more-img { float: right !important; height: 20px; margin: 2px 0 0 7px !important; *margin: -22px 0 0 7px !important; background-image:url(../../images/legalgrip/readmore-arrow.png); background-repeat:no-repeat; background-position:center right; width:12px;}
+.client-say { float:right; width:29.9%; border-left:1px solid #d0d0cf; margin:0;}
+.client-say h2 { width:90%; margin:25px 0 25px 10px;}
+.client-say p { float:left; margin:0px 0 0 0px; padding:0px 0 0 10px; line-height:18px;}
+.client-say p a {float: left; font-size: 15px; margin:0px 0 0;}
+.client-say p.star {padding:5px 0px;width:60%;}
+.client-say p.desc {color:#000000; line-height:18px;clear:both;padding-top:5px;width:90%;}
+.client-say img { float:left; margin:0px 0 0 10px;width:80px;height:80px;}
+.client-say p.star img{width:auto;height:auto;}
+
+/*========================================footer================================*/
+
+.footer p, .footer-menu li a, .social-icon li a, .search-btn, .read-more, .practice-area-read-more, .read-more:hover, .practice-area-read-more:hover, .inner-box-title, .inner-top-link li a:hover, .inner-top-link li a.active, .areas-search, .profile-left h3, .profile-right h3, .add-btn { color:#fff;}
+#sequence-theme .subtitle, .client-box h3 a, .client-say p a, .footer-menu h3, .social-icon h3, .result-box-title {color: #F89123; font-size:16px; font-weight:normal;}
+.footer-bg, .footer, .footer-bg-in {float:left; width:100%;}
+.footer-bg { background-image:url(../../images/legalgrip/footer-bg.png); background-repeat:repeat-x; margin:0px 0 0 0;}
+.footer {background-image:url(../../images/legalgrip/footer-logo.png); background-repeat:no-repeat; background-position:right;padding:20px 0px;}
+.footer-menu { float:left; width:480px}
+.footer-menu ul, .social-icon ul { border-left:1px solid #938e8e; float:left; margin:10px 0px 0 0; width:100%}
+.footer-menu li, .social-icon li { margin:0 0 5px 2%; padding:0; width:23%; float:left;}
+.footer-menu li a:hover, .social-icon li a:hover { color:#F89123;}
+.footer-menu h3,  .social-icon h3 { margin: 10px 0 0 0px; width:100%;}
+.social-icon { float:left; width:480px; }
+.social-icon li a {line-height:25px;}
+.fb-icon, .google-icon, .twitt-icon, .in-icon, .rss-icon, .flickr-icon { background-image:url(../../images/legalgrip/social-icons.png); background-repeat:no-repeat; height:20px; width:26px; float:left; margin:0 2px 0 0; border:none;}
+.fb-icon { background-position:0 0;}
+.google-icon {background-position:-30px 0;}
+.twitt-icon {background-position:-60px 0;}
+.in-icon {background-position:-90px 0;}
+.rss-icon {background-position:-120px 0;}
+.flickr-icon {background-position:-150px 0;}
+.footer p { float:left; width:100%; margin:25px 0 0 0;}
+.border { border:none!important;}
+
+
+/*===============================middle-inner=============================*/
+.middle {float: left; margin: 0 0 25px; width: 100%;}
+.middle-inner { float:left; width:100%; background-image:url(../../images/legalgrip/inner-top-bg.png); background-repeat:repeat-x; margin:20px 0 0 0; background-color:#f0f0f0;min-height:400px;}
+#faq{border-top:solid 5px #252422; margin:20px 0 0 0; background-color:#f0f0f0;padding-bottom:20px;}
+.inner-top-link { float:left; width:100%; margin:15px 0 0 0;}
+.inner-top-link ul { float:left; width:100%;}
+.inner-top-link li { display:inline; list-style:none; margin:0 5px; padding:0;}
+.inner-top-link li a { text-decoration:none; background-image: url(../../images/legalgrip/listing-arrow.png); background-repeat:no-repeat; background-position:center right; color:#afafaf; padding:0 10px 0 0; font-size:13px;}
+.inner-top-link li a:hover, .inner-top-link li a.active { background-image:none;}
+.filter-search { float:left; width:100%; background-color:#c6c5c5; border:1px solid #d7d5d5; margin:10px 0 0 0;}
+.inner-box-title { background-image: url("../../images/legalgrip/inner-title-bg.png"); background-repeat: repeat-y; font-size: 16px; padding: 7px 0 7px 10px; width: 100%;}
+.inner-box-title a{ color:#FFFFFF}
+.filter-practice-areas { float:left; width:70%; background-image: url(../../images/legalgrip/inner-line.png); background-repeat:no-repeat; background-position:center right;}
+.practice-areas-box { float:left; width:100%;}
+.filter-practice-areas h2 { margin:17px 0 4px 14px;}
+.top-counties h2 { margin:10px 0 3px 5px;}
+.top-counties { float:right; width:28%;padding-top:13px;}
+.top-counties img{height:190px;width:260px}
+.top-counties ul { float:left; margin:10px 0 0 0; width:100%;}
+.top-counties ul li { float:left; width:115px; display:inline; color:#202020; margin:3px 0px;}
+.top-counties ul li span { margin:0 0 0 5px;}
+.top-counties ul li input, .practice-areas-search input { margin:3px 0 0 0; float:left;}
+.practice-areas-search { float:left; width:96%; margin:13px 0 10px 15px;}
+.practice-areas-search p { float:left; color:#202020; margin:2px 0 0 5px;}
+.areas-search { float:right; font-size:14px; border:1px solid #e0e0e0; padding:1px 12px 4px;}
+.wrapper { float:left; margin:0 0 0 0;}
+.links{margin:10px 0 0 10px;}
+.links a{display:inline-block; padding:2px 10px; margin:10px; background:#C30; text-decoration:none; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;}
+.content ul li a:hover{color:#de7d00;}
+.demo{margin:20px 40px 0 40px;}
+.demo a{margin-right:10px;}
+.content { background: none repeat scroll 0 0 #FFFFFF; margin: 6px 0 0 15px; max-height: 100px; overflow: auto; padding: 10px; width: 194px;min-height:100px;}
+.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
+.content p:nth-child(3n+0){color:#c96;}
+.mCSB_container li a { font-weight:normal; color:#393938;}
+.mCSB_container li.active { font-weight:normal; background-color:#C1C1C1; padding:2px 5px;}
+
+		
+		
+/*==============================content-left=========================*/
+.content-left { float:left; width:70%;}
+.content-left h1 { font-size:24px; margin:20px 0 15px 14px; font-weight:normal; color:#3a3a37;}
+.content-left h1 span { font-size:14px!important; margin:0 0 0 5px;}
+.content-left h1 a{color: #8D8C8C;}
+.content-main { float:left; width:100%; background-color:#ebeaea; border:1px solid #d7d5d5; padding:0 0 10px 0;border-top:none 0px;}
+.content-left .sbHolder { width:100px; height:25px;}
+.content-left .sbOptions { width:100px;}
+.sort { float:right; margin:18px 0 0 0; line-height:27px; color:#5b5b5b; width:22%;}
+.result-box { float:left; margin:0 0 14px 15px; width:685px; background-color:#fff; box-shadow: 0 0 3px; }
+.result-box.active { float:left; margin:0px 0 14px 15px; width:685px; background-color:#fffaed; box-shadow: 0 0 3px; }
+.result-box-title { float:left; width:100%; border-bottom:1px solid #d6d5d4;}
+.result-box-title h2 {font-weight:normal!important; float:left; width:680px; border-bottom:1px solid #d6d5d4; font-size:16px; padding:5px 0 7px 5px;text-transform:capitalize}
+.result-box-title h2 a{color:#F89123;}
+.result-box-title h2 span { font-size:12px; color:#949494; float:right; *float:none; margin:0 10px 0 0; *margin:0 0px 0 340px; width:33%; text-align:right;}
+.result-box-title h2 span img { /*float:right; *float:right; float:none\9;*/ margin:-2px 0px 0 5px;}
+.result-box-in { float:left; width:100%;}
+.result-box-in img { float:left; border:2px solid #d0cfce; margin:8px 10px; width:80px; }
+.result-box-in p{ float:left; width:139px; border-right:1px solid #d0cfce; color:#474747; padding:0 15px 0 0; font-size:12px; margin:8px 0 0 5px; min-height: 90px;}
+.result-box-in ul { float:left; margin:8px 0 5px 25px; border-right:1px solid #d0cfce; padding: 0 15px 0 0;width:115px;}
+.result-box-in li { margin:0; padding:0; list-style:disc; color:#f9a115;}
+.result-box-in li a { font-size:12px; color:#747373;}
+.result-box-in li a:hover {color:#f9a115;}
+.view-profile { float:right; width:245px; margin:8px 10px 0 0;}
+.view-profile p{ width:100%; color:#747373; border:none; margin:0; min-height:70px!important;}
+.con-icon { float:left; background-image:url(../../images/legalgrip/contact-icon.png); background-repeat:no-repeat; background-position:center left; padding:0 0 0 15px; font-size:14px; background-position: 0 2px;}
+.view-arrow {float:left; background-image:url(../../images/legalgrip/view-arrow.png); background-repeat:no-repeat; background-position:center left; padding:0 0 0 10px; font-size:14px; margin:0 0 0 10px; background-position: 0 3px;}
+.page-ul { float:left; width:100%; margin:0px;text-align:center;}
+.page-ul ul{ display:inline-block;}
+.page-ul li { display:inline; margin:0 3px; float:left;}
+.page-ul li.active { float:left; width:20px; height:18px;  text-align:center; padding:3px 3px;color:#224429;font-weight:bold; border: 1px solid #224429;}
+.page-ul li a { float:left; width:20px; height:18px; background-color:#fff; text-align:center; padding:3px 3px; border:1px solid #c6c5c5;}
+.page-ul li a:hover { background-color:#ef6a00; color:#fff;border: 1px solid #224429;}
+.page-ul li a img {margin:3px 0 0px 0;}
+
+/*=======================================content-right==============================*/
+.content-right, .right-view a, .view-more a, .right-view a img { float:right;}
+.right-add, .professionals-box, .professionals-box h2, .right-box, .right-box img, .right-box p img, .right-box p, .right-view, .professionals-box p, .view-more { float:left;}
+.content-right {width:28%; margin:18px 5px 0 0;}
+.right-add { width:100%; text-align:center;}
+.professionals-box {width:92%; background-color:#fff; box-shadow: 0 0 3px; margin:0 0 15px 6px; padding:5px 5px 10px;}
+.professionals-box h2 { margin: 7px 5px 0; width: 94%; padding:0 0 15px 5px; font-size:18px;}
+.right-box { width:100%; margin:13px 0 0 5px;}
+.right-box img { width:55px;  border:1px solid #d0cfce;}
+.right-box p img { height:auto; border:none;margin-right:5px;}
+.right-box p { width:46%; text-align:left; margin:0 0 0 10px!important;}
+.right-view { margin: 0; width:100%; background-image:url(../../images/legalgrip/right-view-bg.png); background-repeat:repeat-y;}
+.right-view a img { height:auto; border:none; margin:3px 0 0 5px; *margin:0px 0 0 5px; *float:none;}
+.right-view img { height:auto; width:auto; border:none; margin:6px 0 0 5px; *margin:0px 0 0 5px; *float:none;}
+.right-view a { margin:5px 15px 2px 0; }
+.right-view h4 { margin:4px 0 4px 5px; *font-size:13px; font-size:13px\9;}
+.professionals-box p { margin:10px 5px;line-height:14px; }
+.professionals-box h4 { margin:-3px 0px 3px 10px;text-transform:capitalize; }
+.view-more { margin: 0; width:96%; background-image:url(../../images/legalgrip/view-more-bg.png); background-repeat:repeat-y; margin:0 0 0 5px; background-position:right;}
+.view-more a { margin:4px 5px 4px 0;}
+.footer-bg-in { background-image:url(../../images/legalgrip/footer-bg.png); background-repeat:repeat-x; margin:0 0 0 0;}
+
+
+/*==============================profile-main======================*/
+.profile-main { float:left; width:100%;}
+.profile-left { float:left; width:70%; /*background-image: url(../../images/legalgrip/inner-line.png); background-repeat:no-repeat; background-position:center right;*/}
+.profile-left img { float:left; margin:13px 0 10px 15px; border:2px solid #e4e4e4;}
+.profile-left h3 { float: left; font-size: 18px; font-weight: normal; margin: 7px 0 0 15px; width:70%; line-height:22px;}
+.profile-left h3 a { color:#d6740a; text-decoration:underline;}
+.client-rating { float:left; margin:15px 0 0 15px; width:70%;}
+.client-rating h3{ float:left; width:100%; color:#202020; font-size:16px; margin:0 0 15px 0;}
+.client-rating h3 img { border:none; margin:0px 5px 0 0;}
+.client-rating a{font-size:14px;margin:0px 5px;}
+
+.profile-left p { float:left; margin:20px 0 0 10px;}
+.profile-left p a { color:#6f6d6d;}
+.profile-left p a:hover { color:#000;}
+
+.profile-right { float:right; width:28%; margin:13px 0 13px 15px;}
+.profile-right h3 {font-size: 18px; font-weight: normal;}
+.profile-right p { float:left; font-size:13px; color:#585858; text-align:justify; margin:10px 0 0 0; width:92%;}
+.profile-right p a { float:right; color:#fff; font-style:italic; text-decoration:underline;}
+.profile-right img {height: 190px; width: 267px;}
+
+.add-btn { float:left; background-image:url(../../images/legalgrip/serch-bg.png); background-repeat:repeat-x; padding:4px 20px; font-size:15px; margin:15px 0 0 0; border:1px solid #f98e17;}
+.add-btn:hover { background-color:#000; color:#fff; background-image:none; border:1px solid #fff;}
+.overview-practice-area { float:left; width:100%;}
+.overview-practice-area p { float:left; width:140px; padding:8px 0 0 10px; color:#f99727; font-size:15px; font-weight:bold;}
+.overview-practice-area ul { float: left; margin: 8px 0 0 0px; padding: 0px 0 10px 10px; width: 75%; border-left: 1px solid #D0D0CF;}
+
+.overview-practice-area li {float: left; margin:5px 0; width:50%; display:inline;}
+.overview-practice-area li a { color: #868686; padding: 0 0 0 23px; background-image:url(../../images/legalgrip/dott.png); background-repeat:no-repeat; background-position:8px center ;float:left;}
+.overview-practice-area li a.main{background-color:#e8e7e7;width:85%;padding:3px 10px 3px 23px;}
+.overview-practice-area li a:hover { color:#000;}
+
+.overview-practice-area ul ul{border:none;clear:both;margin:0px;padding:0px;padding-left:5%;margin-top:5px;width:93%}
+.overview-practice-area ul li ul li{margin:1px 0px;width:100%;}
+
+
+
+.payment { float:left; width:97%; margin:0 0 0 10px; border-top: 1px solid #D0D0CF;}
+.payment p { float:left; width:140px; padding:8px 0 0 0px; color:#f99727; font-size:15px; font-weight:bold;}
+.payment-right {border-left: 1px solid #D0D0CF; float:left; width:78%; padding:0 0 10px 0;}
+.payment-right p { color:#747373; font-size:13px; font-weight:normal; float:left; width:100%; padding:5px 0 0 10px; line-height: 20px;}
+.address { float:left; width:147px!important; padding:0 0 0 0!important; margin:7px 0 0 7px;}
+.payment-right img { float:left; margin:10px 0 0 10px;}
+.email-box { float:left; width:250px; margin:3px 15px;}
+.email-box img { float:left; margin:10px 5px 0 0;}
+.email-box p { float:left; margin:7px 0 0 5px; width:78%; padding:0;}
+.email-box-main { float:left; width:200px;}
+.email-box a { margin:2px 0 0 5px!important;}
+.address strong { float:left; width:100%;}
+
+.position { float: left; margin: 7px 0 0 7px; padding: 0 !important; width: 300px !important;}
+.position strong { color:#747373;}
+
+.active { font-weight:normal; /*background-color:#C1C1C1; padding:2px 5px;*/}		
+
+#faq .content-text h4{width:100%;}
+#faq .content-text h4 a{background-color:#ababab;color:#000000;padding:8px 1%;width:98%;display:block;font-size:15px;font-weight:normal;}
+#faq .content-text h4 div.answer, #faq .content-text h4 div.answer p{color:#000000;font-weight:normal;}
+#faq .content-text h4 div.answer{margin:5px 0px 10px 0px;}
+
+
+.forum-list { float:left; width:998px; background-color:#ebeaea; border:1px solid #d7d5d5;border-bottom:none 0px; margin:10px 0 0 0;padding-bottom:15px;min-height:370px;}
+.forum-list .inner-box-title{width:988px;}
+.forum-heading{float:left;padding:15px;width:968px;}
+.forum-pagination{float:left;}
+.post-topic-btn, .forum-search{float:left; width:100%;}
+.forum-search{padding-right:15px;}
+.forum-search input{border:solid 1px #a5a5a5;padding:4px 5px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.forum-search input[type="button"]{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border:solid 1px #f89224;color: #FFFFFF; font-size:14px;padding:3px 10px;margin-left:5px;}
+.forum-search input[type="submit"]{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border:solid 1px #f89224;color: #FFFFFF; font-size:14px;padding:3px 10px;margin-left:5px;}
+
+/*============================== Forum List ======================*/
+
+.forum-listing{border:solid 1px #d3d2d2;margin:0px 15px 15px 15px;width:966px;padding:1px;background-color:#FFFFFF;float:left;}
+.forum-listing li.head{background-color:#c6c5c5;font-size:15px;color:#1a1a1a;display:inline-block;width:966px;margin:0px;}
+.forum-listing li div.first, .forum-listing li div.second, .forum-listing li div.third, .forum-listing li div.forth{float:left;width:530px;padding:8px;border-right:solid 1px #474743;}
+.forum-listing li div.second, .forum-listing li div.third{width:90px;}
+.forum-listing li div.forth{width:188px;border-right:none 0px;}
+.forum-listing li.row{margin:0px;background-color:#e8e8e8;border-bottom:solid 1px #474743;float:left;}
+.forum-listing li.last, .forum-listing li:last-child{border-bottom:none 0px;}
+.forum-listing li.row div.first, .forum-listing li.row div.second, .forum-listing li.row div.third, .forum-listing li.row div.forth{background-color:#e8e8e8;min-height:38px;color:#5a5a5a;font-size:14px;}
+.forum-listing li.row div.first{background-color:#FFFFFF;color:#ee9303;font-size:12px;}
+.forum-listing li.row div.first img{padding:2px 8px 22px 5px;float:left;}
+.forum-listing li.row div.first a, .forum-listing li.row div.forth a{font-size:14px;}
+.forum-listing li.row div.forth{border-right:solid 1px #e8e8e8;font-size:12px;color:#494945;}
+.forum-listing li.row div.forth a{color:#ee9303;}
+
+
+/*============================== Forum Topic List ======================*/
+
+.forum-topic-list{border:solid 1px #d3d2d2;margin:15px 15px 0px 15px;width:966px;padding:1px;background-color:#FFFFFF;float:left;}
+.forum-topic-list li.head{background-color:#c6c5c5;font-size:15px;color:#1a1a1a;display:inline-block;width:966px;margin:0px;}
+.forum-topic-list li div.first, .forum-topic-list li div.second, .forum-topic-list li div.third{float:left;width:577px;padding:8px;border-right:solid 1px #474743;}
+.forum-topic-list li div.second, .forum-topic-list li div.third{width:150px;}
+.forum-topic-list li div.third{width:188px;border-right:none 0px;}
+.forum-topic-list li.row{margin:0px;background-color:#e8e8e8;border-bottom:solid 1px #474743;float:left;}
+.forum-topic-list li.last, .forum-topic-list li:last-child{border-bottom:none 0px;}
+.forum-topic-list li.row div.first, .forum-topic-list li.row div.second, .forum-topic-list li.row div.third, .forum-topic-list li.row div.forth{background-color:#e8e8e8;min-height:25px;color:#5a5a5a;font-size:14px;}
+.forum-topic-list li.row div.first{background-color:#FFFFFF;color:#9c9c9c;font-size:12px;}
+.forum-topic-list li.row div.first img{padding:1px 8px 11px 5px;float:left;}
+.forum-topic-list li.row div.first a{font-size:14px; color:#ed9303;}
+.forum-topic-list li.row div.third{border-right:solid 1px #e8e8e8;}
+.forum-topiclist-paging{display: inline-block;margin-top: 15px;text-align: center;width: 100%;}
+
+
+
+/*============================== Forum Topic Reply List ======================*/
+
+.topiclist-heading{margin:15px 15px 0px 15px;width:966px;}
+.topiclist-heading div.topiclist-img{width:95px;float:left;}
+/*.topiclist-heading div.topiclist-img img{width:83px;height:83px}*/
+.topiclist-heading div.topiclist-detail{width:870px;float:left;font-size:14px;color:#ee9303;line-height:25px;}
+.topiclist-heading div.topiclist-detail h3{font-size:20px;color:#464743;margin:0px;float:none;}
+.topiclist-heading div.topiclist-detail span{font-size:20px;color:#464743;}
+.topiclist-heading div.topiclist-detail p.date-time{font-size:12px;}
+.topiclist-heading div.topiclist-detail p.desc{font-size:13px;color:#8D8C8C;line-height:18px;}
+
+.topicreply-listing{border:solid 1px #d3d2d2;margin:15px 15px 0px 15px;width:966px;padding:1px;background-color:#FFFFFF;float:left;}
+.topicreply-listing li.head{background-color:#c6c5c5;font-size:15px;color:#1a1a1a;display:inline-block;width:950px;margin:0px;padding:8px;}
+.topicreply-listing li.details{margin:0px;background-color:#ffffff;float:left;padding:15px;}
+.topicreply-listing li.details div.replyimage{font-size:14px;color:#494945;float:left;width:70px;}
+/*.topicreply-listing li.details div.replyimage img{padding-bottom:10px;}*/
+.topicreply-listing li.details div.replydetails{float:left;color:#9b9b9a;font-size:13px;width:865px;}
+.topicreply-listing li.details div.replydetails p{padding-top:10px;}
+.topicreply-listing li.details div.replydetails p.posted{padding-top:0px;color:#ee9303;font-size:14px;}
+.topicreply-listing li.details div.replydetails p.posted span{color:#494945;}
+
+.topicforum{padding:25px 40px;float:left;width:700px}
+.topicforum h2{color: #000000;font-size:20px;font-weight:normal;}
+.topicforum p.text{padding:10px 0px;font-size:13px;}
+.topicforum span.text{padding:0px;font-size:13px;}
+.topicforum ul {background-color:#e6e6e6;float:left;padding:15px 25px;margin-top:10px;width:650px}
+.topicforum ul li{padding:5px 0px;margin:0px;float:left;width:50%;min-height:50px;}
+.topicforum ul li label{font-size:14px;color: #1A1A1A;width:100px;float:left;line-height:24px;}
+.topicforum ul li label{width:100%;}
+.topicforum ul li.message{clear:both;width:100%;}
+.topicforum ul li input, .topicforum ul li select, .topicforum ul li textarea{background-color: #FCFCFC;border: 1px solid #cc7e00;border-bottom:solid 2px #cc7e00;padding:3px 5px;width:80%;}
+.topicforum ul li input[type="submit"], .topicforum ul li input[type="reset"]{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border: medium none; color: #FFFFFF;float: left; margin: 0; padding:10px 25px;width:auto;font-size:15px;font-weight:bold;background-color:#f89223;text-shadow:1px 1px #db7200;}
+.topicforum ul li textarea{width:90%;height:60px;padding:2px 5px;color: #1A1A1A;}
+.topicforum ul li select{width:83%;}
+
+.topicforum ul li ul.checkbox_list{float:left;width:100%;margin:0px;padding:0px;}
+.topicforum ul li ul.checkbox_list li{clear:none;width:30%;min-height:inherit;}
+.topicforum ul li ul.checkbox_list li label{line-height:18px;clear:none;float:left;width:auto;}
+.topicforum ul li ul.checkbox_list input[type="checkbox"]{float:left;width:auto;margin-right:5px;}
+
+.topicforum ul li ul.radio_list{float:left;width:100%;margin:0px;padding:0px;}
+.topicforum ul li ul.radio_list li{clear:none;width:30%;min-height:inherit;}
+.topicforum ul li ul.radio_list li label{line-height:18px;clear:none;float:left;width:auto;}
+.topicforum ul li ul.radio_list input[type="radio"]{float:left;width:auto;margin-right:5px;}
+
+.topicforum ul li.contact-captcha input{width:30%;}
+#captcha_img{width:100px;height:24px;padding-bottom:4px;}
+
+.topicforum div.errormsgs{padding-left:0px;}
+
+
+/*============================== Login and Register ======================*/
+
+.loginregister{float:left; width:998px; background-color:#ebeaea; border:1px solid #d7d5d5;border-bottom:none 0px; margin:20px 0 0 0;padding-bottom:15px;}
+.loginregister .inner-box-title{padding:0px;margin:0px;height:20px;}
+.loginregister div.login, .loginregister div.register, .loginregister div.myprofile{float:left;background-color:#ffffff;width:450px;margin:30px 15px 30px 30px;padding:1px;}
+.loginregister div.register{margin:30px 30px 30px 15px;}
+.loginregister div.myprofile{width:932px;margin:30px;}
+.loginregister div.login h2{background-color:#c6c5c5;width:434px;margin:0px;color: #1A1A1A;font-size: 15px;padding:8px;font-weight:normal;}
+.loginregister div.myprofile h2{width:916px;}
+.loginregister div.login ul{padding:20px;float:left;min-height:245px;}
+.loginregister div.login ul li{padding:5px 0px;margin:0px;float:left;clear:both;}
+.loginregister div.myprofile ul li{width:50%;clear:none;}
+.loginregister div.myprofile ul li.changepassword{width:870px;clear:both;background-color:#C6C5C5;padding:5px 10px;margin:10px 0px;font-size:16px;color: #1A1A1A;}
+.loginregister div.myprofile ul li.changepassword label{font-size:16px;}
+.loginregister div.myprofile ul li.save-register{width:830px;clear:both;border-top:solid 3px #f0f0f0;padding:10px;margin:20px 0px 0px 0px;text-align:center;}
+.loginregister div.login ul li label{font-size:14px;color: #1A1A1A;width:100px;float:left;line-height:24px;}
+.loginregister div.myprofile ul li label{width:140px;}
+.loginregister div.login ul li input, .loginregister div.login ul li select{background-color: #FCFCFC;border: 1px solid #D9D8D8;padding:3px 5px;width:250px;}
+.loginregister div.login ul li input[type="submit"]{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border: medium none; color: #FFFFFF;float: right; margin: 0; padding: 6px 18px;width:auto;font-size:13px;}
+.loginregister div.login ul li select{width:262px;padding:2px 5px;}
+.loginregister div.myprofile ul li.save-register input[type="submit"]{float:none;}
+.loginregister div.login ul li input:hover[type="submit"]{background-image:none; background-color:#000000;}
+
+.forgotpassword h2{background-color:#c6c5c5;width:434px;margin:0px;color: #1A1A1A;font-size: 15px;padding:8px;font-weight:normal;margin-bottom:15px;}
+.forgotpassword ul li label{width:53px;}  /*100px*/
+.forgotpassword ul li input[type="submit"], .forgotpassword ul li input[type="reset"]{float:left;}
+.forgotpassword ul li input[type="submit"]{margin-right:10px;}
+
+
+
+/*message CSS */
+.errormss{font-weight:bold; font-size:12px; color:#E20B00; line-height:20px; /*background:url(../../images/admin/Delete.png) no-repeat left 6px;*/ padding:0 0 0 22px; margin:0 auto; /*display:inline-block;*/ background-color:#FFBABA; border:solid 1px #D63301; }
+.errormss a {color:#E20B00;}
+.errormsg{font-weight:bold; font-size:12px; color:#E20B00; background:url(../../images/admin/Delete.png) no-repeat left 4px; padding:0 0 0 22px; margin:0 auto; line-height:19px; display:inline-block;}
+.errormsgPosition{margin:0 auto; width:448px; text-align:center;padding:10px;}
+.success{font-weight:bold; font-size:12px; background-color:#dff2bf; color:#4F8A10; line-height:20px; /*background:url(../../images/admin/Apply.png) no-repeat left 4px;*/ padding:0 0 0 22px; margin:0 auto; /*display:inline-block;*/ border:solid 1px #bad49a;}
+.success a{color:#4F8A10;}
+ul#files .success{font-weight:bold; font-size:12px; color:#569647; line-height:25px; text-align:left; background:none; width:auto; padding:0px; }
+ul#files .imagName{min-width:108px; display:block; text-align:center; height:20px;}
+
+ul#files2 .success{font-weight:bold; font-size:12px; color:#569647; line-height:20px; text-align:left; background:none; width:auto; padding:0px; }
+
+.errormsgs{ font-size:11px; color:red; margin: 2px 0px 2px 0px;border-color:red;font-weight:bold;padding-left:100px;}
+.topicforum div.errormsgs{/*padding-left:140px;*/}
+.successmsgs{ font-size:11px; color:#06437F; margin: 2px 0px 2px 0px;}
+errorDV, .errorDV li {
+    color: #FF0000;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 0 0;
+}
+
+
+.reviewlist{padding:10px 15px;width:655px;float:left;border-bottom:solid 2px #c6c5c5;}
+.reviewlist .image{float:left;width:95px;}
+.reviewlist .reviewdetails{float:left;width:560px;}
+.reviewlist .reviewdetails h4{float:none;text-transform:capitalize;font-size:16px;color:#000000;margin:0px;margin-bottom:5px;font-weight:normal;}
+.reviewlist .reviewdetails h4 a{font-size:16px;color:#000000;}
+.reviewlist .reviewdetails p.star img{margin-right:5px;}
+.reviewlist .reviewdetails p.star span{margin-left:5px;}
+.reviewlist .reviewdetails p.desc{margin-top:10px;font-size:13px;}
+
+span.required{
+	color:#FF0000;
+	font-size:16px;
+}
+
+.static-content-main{background-color:#FFFFFF;-webkit-box-shadow: 0 0 3px;-moz-box-shadow: 0 0 3px;box-shadow: 0 0 3px;margin:15px;float:left;width:968px;min-height:400px;}
+.static-content{float:left;width:700px;margin:15px;border-right:solid 1px #d0d0cf;padding-right:20px;font-size:13px;color:#8d8c8c;}
+.static-content p{padding:10px 0px 0px 0px;}
+.static-content p img{text-align:center;}
+.static-content ul{padding:10px 0px;}
+.static-content li{background-image: url("../../images/legalgrip/arrow.png");background-repeat:no-repeat;background-position:left 9px;padding:5px 0px 5px 15px;color:#525252;}
+
+.static-menu{float:right;width:195px;margin:15px 15px 15px 0px;}
+.static-menu li{border-bottom:solid 2px #f89123; font-size:14px;line-height:28px;padding-top:5px;padding-left:16px;}
+.static-menu li:hover, .static-menu li.select{background-image: url("../../images/legalgrip/staticmenu-arrow.png");background-repeat:no-repeat;background-position:bottom left;}
+.static-menu li:hover a, .static-menu li.select a{color:#f89123;}
+
+.browseArea-main{
+    float: left;
+    margin: 15px;
+    min-height: 400px;
+    width: 968px;}
+.browsepracticearea{background-color: #FFFFFF;
+    box-shadow: 0 0 3px;
+    float: left;
+    margin: 0 0 14px 0px;
+    width: 665px;
+	padding:0px 0px 10px 20px;
+	}
+.practiceareafalist{width:28%;float:right;}
+.practiceareafalist .professionals-box{float:right;}
+
+.overview-review h1{font-size:14px; margin: 15px 0 0px 16px;clear:both;position:relative;}
+.overview-review h1 span{font-size:14px;background-color:#ffffff;padding:6px 20px 8px 20px;float:left;border:solid 1px #c6c5c5;border-bottom:none 0px;}
+.overview-review h1 a{font-size:14px;background-color:#c6c5c5;padding:6px 20px 8px 20px;float:left;margin-left:5px;color:#000000;}
+
+.addReview{padding:25px 40px;float:left;width:700px}
+.addReview h2{color: #000000;font-size:20px;font-weight:normal;}
+.addReview div.reviewdetails{background-color:#e6e6e6;float:left;padding:25px 25px;margin-top:10px;width:650px}
+.addReview div.reviewdetails textarea{background-color: #FCFCFC;border: 1px solid #cc7e00;border-bottom:solid 2px #cc7e00;padding:3px 5px;width:90%;;height:100px;}
+.addReview div.reviewdetails .CommonButton{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border: medium none; color: #FFFFFF;float: left; margin: 0; padding:10px 25px;width:auto;font-size:15px;font-weight:bold;background-color:#f89223;text-shadow:1px 1px #db7200;}
+.addReview div.reviewdetails .errormsgs{padding-left:0px}
+
+.browseArea ul li{width:45%;float:left;clear:none;}
+.browseArea ul li ul li{width:100%;clear:both;float:none;background-image:none;list-style:disc inside;padding:0px;color:#F89123;}
+.browseArea ul li ul{padding:5px 0px;}
+.browseArea ul li ul li a{color:#F89123;}
+.browseArea ul li ul li ul li{width:100%;clear:both;float:none;background-image:none;list-style:disc inside;padding:0px 0px 0px 20px;color:#868686;}
+.browseArea ul li ul li ul li a{color:#868686;}
+
+.contactUsForm{background-color:#e6e6e6;width:650px;padding:15px 25px;float:left;margin:10px 0px;}
+.contactUsForm ul {padding:0px;}
+.contactUsForm ul li{padding:5px 0px;margin:0px;float:left;width:50%;min-height:50px;background-image:none;}
+.contactUsForm ul li label{font-size:14px;color: #1A1A1A;width:100px;float:left;line-height:24px;}
+.contactUsForm ul li label{width:100%;}
+.contactUsForm ul li.message{clear:both;width:100%;}
+.contactUsForm ul li input, .contactUsForm ul li select, .contactUsForm ul li textarea{background-color: #FCFCFC;border: 1px solid #cc7e00;border-bottom:solid 2px #cc7e00;padding:3px 5px;width:80%;}
+.contactUsForm ul li input[type="submit"], .contactUsForm ul li input[type="reset"]{background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border: medium none; color: #FFFFFF;float: left; margin: 0; padding:10px 25px;width:auto;font-size:15px;font-weight:bold;background-color:#f89223;text-shadow:1px 1px #db7200;}
+.contactUsForm ul li textarea{width:90%;height:60px;padding:2px 5px;color: #1A1A1A;}
+.contactUsForm ul li select{width:83%;}
+
+.contactUsForm ul li ul.checkbox_list{float:left;width:100%;margin:0px;padding:0px;}
+.contactUsForm ul li ul.checkbox_list li{clear:none;width:30%;min-height:inherit;}
+.contactUsForm ul li ul.checkbox_list li label{line-height:18px;clear:none;float:left;width:auto;}
+.contactUsForm ul li ul.checkbox_list input[type="checkbox"]{float:left;width:auto;margin-right:5px;}
+
+.contactUsForm ul li ul.radio_list{float:left;width:100%;margin:0px;padding:0px;}
+.contactUsForm ul li ul.radio_list li{clear:none;width:30%;min-height:inherit;}
+.contactUsForm ul li ul.radio_list li label{line-height:18px;clear:none;float:left;width:auto;}
+.contactUsForm ul li ul.radio_list input[type="radio"]{float:left;width:auto;margin-right:5px;}
+
+#state_dropdown_span {/*border: 1px solid #000000; float: left;*/ margin: 0 0 0 5px; margin: 0 0 0 1px\9;  padding: 5px 10px; padding: 5px 5px \9; width:205px; width:205px\9;}
+#state_dropdown .sbHolder {float: left;}
+
+.linkClass {background-image: url("../../images/legalgrip/serch-bg.png");background-repeat: repeat-x;border:solid 1px #f89224;color: #FFFFFF; font-size:14px;padding:3px 10px;margin-left:5px; border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.static-content-main h4 {padding:0 15px;width:97%;}
+.static-content-main h4 a{background-color:#ababab;color:#000000;padding:4px 1% 8px;width:98%;display:block;font-size:15px;font-weight:normal;}
+.static-content-main .answer p {font-family:arial; font-size:13px; font-weight: normal;}
+.legalgrip_professional{ position:fixed; right:0; top:50px; width:35px; height:20px; z-index:111;}
+
+.popup-from { float:left; width:100%;}
+.popup-from label { float:left; width:auto!important; margin:0 5px 0 0!important;}

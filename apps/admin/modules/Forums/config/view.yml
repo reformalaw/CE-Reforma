@@ -1,0 +1,3 @@
+all: 
+ javascripts:    [ admin/jquery-ui.js,admin/jquery.fancybox.js]
+ stylesheets:    [admin/jquery.fancybox.css]

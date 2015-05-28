@@ -1,0 +1,25 @@
+
+/**=== Start Change Color =================================================************************/
+
+.practice-area ul li:hover, .our-services .services, .quick-contact li input[type=submit], #contactus .content-area div.contact-form li input[type=submit]{
+	background-color:##BGCOLOR##;
+}
+
+.phoneno, nav ul li a:hover, nav ul li ul li a:hover, .content-text h5, .content-area h2, .practice-area h4, #contactus .content-area div.contact-details label{
+	color:##TEXTCOLOR##;
+}
+
+header, footer{
+	border-color:##BORDERCOLOR##;
+}
+
+a, .practice-area ul li a, #faq .content-area h4 a.twisty-collapse, #faq .content-area h4 a.twisty-expand{
+	color:##LINKCOLOR##;
+}
+
+a:hover, .practice-area ul li a:hover, #faq .content-area h4 a:hover{
+	color:##LINKHOVERCOLOR##;
+}
+
+
+/**=== End Change Color =================================================************************/
