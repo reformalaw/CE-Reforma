@@ -6,7 +6,7 @@
  * @package    counceledge
  * @subpackage case
  * @author     Your name here
- * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $ this is very old
  */
 class caseActions extends sfActions
 {
